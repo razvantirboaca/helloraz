@@ -1,0 +1,32 @@
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divider {
+    position: relative;
+    padding-top: 5px;
+    margin: 6px 0 40px;
+    border-bottom: 1px solid $color-divider;
+
+    section > & {
+        margin-left: -40px;
+        margin-right: -40px;
+    }
+
+    .zigzag {
+        position: absolute;
+        left: 30px;
+        top: 0;
+        padding: 0 10px;
+        background: white;
+
+        svg {
+            display: block;
+            fill: none;
+            stroke-miterlimit: 10;
+            stroke-width: 2;
+            stroke: $color-accent;
+        }
+    }
+}

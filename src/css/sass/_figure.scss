@@ -1,0 +1,77 @@
+/*----------  Companies  ----------*/
+
+.companies {
+    margin-bottom: 30px;
+}
+
+.figure-logo {
+    padding: 16px;
+    background: $color-gray-lighter;
+    border-radius: 4px;
+
+    img {
+        max-height: 100px;
+        margin: 0 auto;
+        filter: grayscale(100%);
+        opacity: .66;
+        transition: all .2s ease;
+    }
+
+    &:hover img {
+        filter: none;
+        opacity: 1;
+    }
+}
+
+/*----------  App icons  ----------*/
+
+.figure-icon-app {
+    overflow: hidden;
+    width: 72px;
+    height: 72px;
+    border-radius: 16px;
+    @media all and (min-width: $size-md) {
+        width: 88px;
+        height: 88px;
+    }
+
+    img {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    &:after {
+        z-index: 2;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 18px;
+        box-shadow: inset 0 0 0 1px rgba(black, .098);
+    }
+}
+
+/*----------  Screenshots  ----------*/
+
+.screenshots {
+
+    .timeline &.grid {
+        margin-top: 24px;
+        margin-bottom: 20px;
+    }
+}
+
+.figure-screenshot {
+    padding: 6px;
+    background: white;
+    box-shadow: 0 1px 6px 0 rgba($color-gray, .35);
+
+    img {
+        margin: 0 auto;
+    }
+}

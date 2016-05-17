@@ -1,0 +1,102 @@
+.timeline {
+    position: relative;
+    margin-left: -24px;
+    padding: 0 0 16px 28px;
+    @media all and (min-width: $size-md) {
+        margin-left: 0;
+    }
+
+    &:before {
+        content: '';
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 4px;
+        width: 3px;
+        height: 100%;
+        background: $color-divider;
+    }
+
+    .year {
+        z-index: 2;
+        position: relative;
+        margin-top: 36px;
+        margin-left: -28px;
+        padding: 4px 0;
+        background: $color-background;
+        color: $color-accent;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    .company,
+    .project,
+    .event {
+        position: relative;
+        margin: 0 -24px 16px 0;
+        @media all and (min-width: $size-md) {
+            margin-right: 0;
+            margin-bottom: 24px;
+        }
+
+        &:before {
+            content: '';
+            z-index: 1;
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            background: $color-gray;
+            box-shadow: 0 0 0 3px $color-background;
+            border-radius: 50%;
+        }
+    }
+
+    p {
+        margin: 0;
+
+        & + p {
+            margin-top: 1.1em;
+        }
+
+        & + ul {
+            margin-top: .3em;
+        }
+    }
+}
+
+.company,
+.event {
+    padding-top: 12px;
+
+    &:before {
+        top: 21px;
+        left: -26px;
+    }
+}
+
+
+.project {
+    padding: 22px;
+    background: $color-gray-lighter;
+    border: 2px solid $color-gray-light;
+    border-radius: 4px;
+
+    &:before {
+        top: 31px;
+        left: -28px;
+    }
+
+    header {
+        margin-bottom: 24px;
+
+        .media-body {
+            margin-left: 16px;
+        }
+
+        .content-subtitle {
+            margin-bottom: 4px;
+        }
+    }
+}

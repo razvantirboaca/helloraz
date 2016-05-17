@@ -1,0 +1,42 @@
+dl {
+    overflow: hidden;
+    border-width: 1px 2px 2px;
+    border-style: solid;
+    border-color: $color-border;
+    border-radius: 4px;
+
+    dt,
+    dd {
+        float: left;
+        padding: 8px 6px 8px 12px;
+        border-top: 1px solid $color-border;
+        white-space: nowrap;
+    }
+
+    dt {
+        width: 30%;
+    }
+
+    dd {
+        width: 70%;
+        background: $color-gray-lighter;
+    }
+}
+
+ul,
+ol {
+    margin-left: 24px;
+
+    li {
+        margin-bottom: .1em;
+    }
+}
+
+.list {
+    list-style: none;
+    margin-left: 0;
+
+    li {
+        display: block;
+    }
+}

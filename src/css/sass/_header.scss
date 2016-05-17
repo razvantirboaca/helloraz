@@ -1,0 +1,16 @@
+header {
+    overflow: hidden;
+    @media all and (min-width: $container-width) {
+        border-radius: 8px;
+    }
+
+    .header-caption {
+        position: absolute;
+        left: 40px;
+        bottom: 20%;
+        padding: 8px;
+        background: $color-background-header-text;
+        color: white;
+        text-shadow: 0 1px 1px rgba(black, .1);
+    }
+}
