@@ -10,7 +10,7 @@ var gulp = require('gulp'),
   notify  = require('gulp-notify'),
   del = require('del'),
   bs = require('browser-sync').create(),
-  proxyUrl = 'localhost/cv';
+  proxyUrl = 'localhost/razvan';
 
 var paths = {
   watch : {
