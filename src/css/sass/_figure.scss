@@ -56,28 +56,6 @@
     }
 }
 
-/*----------  Screenshots  ----------*/
-
-/*.screenshots {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 24px -8px 20px;
-}
-
-.figure-screenshot {
-    flex: 1;
-    margin: 8px;
-    padding: 6px;
-    background: white;
-    box-shadow: 0 1px 6px 0 rgba($color-gray, .35);
-
-    img {
-        margin: 0 auto;
-    }
-}*/
-
 .screenshots {
     font-size: 0;
     margin: 20px 0;
@@ -92,16 +70,6 @@
         > a > img {
             max-width: none;
             height: 262px;
-        }
-
-        &:only-child {
-            max-width: 100%;
-            width: 100%;
-
-            > a > img {
-                width: 100%;
-                height: auto;
-            }
         }
 
         &:last-child {
