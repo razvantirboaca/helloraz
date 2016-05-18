@@ -1,3 +1,21 @@
+ul,
+ol {
+    margin-left: 24px;
+
+    li {
+        margin-bottom: .1em;
+    }
+}
+
+.list {
+    list-style: none;
+    margin-left: 0;
+
+    li {
+        display: block;
+    }
+}
+
 dl {
     overflow: hidden;
     border-width: 1px 2px 2px;
@@ -20,23 +38,5 @@ dl {
     dd {
         width: 70%;
         background: $color-gray-lighter;
-    }
-}
-
-ul,
-ol {
-    margin-left: 24px;
-
-    li {
-        margin-bottom: .1em;
-    }
-}
-
-.list {
-    list-style: none;
-    margin-left: 0;
-
-    li {
-        display: block;
     }
 }
