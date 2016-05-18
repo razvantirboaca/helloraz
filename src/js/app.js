@@ -151,7 +151,14 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
                 return {x:rect.left, y:rect.top + pageYScroll, w:rect.width};
             },
 
-            bgOpacity: '0.85'
+            bgOpacity: '0.85',
+            preload: [1,1],
+            captionEl: false,
+            fullscreenEl: false,
+            shareEl: false,
+            counterEl: false,
+            zoomEl: false,
+            barsSize: {top: 0, bottom: 0}
 
         };
 
