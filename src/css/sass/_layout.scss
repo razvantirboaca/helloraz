@@ -24,3 +24,20 @@ footer {
     padding: 40px;
     text-align: center;
 }
+
+/*----------  Scrollbar  ----------*/
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: $color-gray-light;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: darken($color-gray-light, 6%);
+    border-radius: 50px;
+}

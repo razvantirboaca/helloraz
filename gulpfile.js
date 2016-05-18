@@ -53,8 +53,8 @@ return gulp.src(paths.src.css)
 
 gulp.task('js', function () {
 return gulp.src([
-    paths.src.js + 'libs/responsivelyLazy.min.js',
-    //paths.src.js + 'libs/photoswipe.min.js',
+    paths.src.js + 'libs/photoswipe.min.js',
+    paths.src.js + 'libs/photoswipe-ui-default.min.js',
     paths.src.js + 'app.js'
   ])
   .pipe(concat('app.min.js'))
