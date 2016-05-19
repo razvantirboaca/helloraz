@@ -34,6 +34,7 @@
     .company,
     .project,
     .event {
+        z-index: 2;
         position: relative;
         margin: 0 -24px 16px 0;
         @media all and (min-width: $size-md) {

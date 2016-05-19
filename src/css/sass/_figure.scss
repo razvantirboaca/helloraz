@@ -58,10 +58,21 @@
 
 .screenshots {
     font-size: 0;
-    margin: 20px 0;
-    padding: 4px 4px 12px;
+    margin: 20px -40px 20px -68px;
+    padding: 4px 40px 4px 68px;
     white-space: nowrap;
     overflow: auto;
+
+    @media all and (max-width: $size-md - 1px) {
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    @media all and (min-width: $size-md) {
+        margin: 20px 0;
+        padding: 4px 4px 12px;
+    }
 
     figure {
         margin-right: 16px;
