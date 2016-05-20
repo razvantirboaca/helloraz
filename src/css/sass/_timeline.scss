@@ -33,7 +33,8 @@
 
     .company,
     .project,
-    .event {
+    .event,
+    .school {
         z-index: 2;
         position: relative;
         margin: 0 -24px 16px 0;
@@ -68,7 +69,8 @@
 }
 
 .company,
-.event {
+.event,
+.school {
     padding-top: 12px;
 
     &:before {
