@@ -1,18 +1,40 @@
 ul,
 ol {
-    margin-left: 24px;
+    margin-left: 25px;
 
     li {
         margin-bottom: .1em;
     }
 }
 
-.list {
+ul {
     list-style: none;
+
+    li {
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background: $color-gray;
+            border-radius: 50%;
+            left: -22px;
+            top: 9px;
+        }
+    }
+}
+
+.list {
     margin-left: 0;
 
     li {
         display: block;
+
+        &:before {
+            display: none;
+        }
     }
 }
 

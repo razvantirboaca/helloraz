@@ -9,5 +9,9 @@
         padding: 3px 16px;
         border: 2px solid $color-border;
         border-radius: 100px; 
+
+        &:before {
+            display: none;
+        }
     }
 }

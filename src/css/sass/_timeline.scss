@@ -63,7 +63,7 @@
         }
 
         & + ul {
-            margin-top: .3em;
+            margin-top: .6em;
         }
     }
 }
@@ -71,7 +71,7 @@
 .company,
 .event,
 .school {
-    padding-top: 12px;
+    padding: 12px 24px;
 
     &:before {
         top: 22px;

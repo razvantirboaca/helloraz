@@ -2,6 +2,10 @@
 
 .companies {
     margin-bottom: 30px;
+
+    li:before {
+        display: none;
+    }
 }
 
 .figure-logo {
