@@ -3,30 +3,15 @@
     margin-right: auto;
 }
 
-.divider {
-    position: relative;
-    padding-top: 5px;
-    margin: 6px 0 40px;
-    border-bottom: 1px solid $color-divider;
+.sticky {
+    position: sticky;
 
-    section > & {
-        margin-left: -40px;
-        margin-right: -40px;
+    &.sticky-fixed.is-sticky {
+        position: fixed;
+        backface-visibility: hidden;
     }
 
-    .zigzag {
+    &.sticky-fixed.is-absolute {
         position: absolute;
-        left: 30px;
-        top: 0;
-        padding: 0 10px;
-        background: white;
-
-        svg {
-            display: block;
-            fill: none;
-            stroke-miterlimit: 10;
-            stroke-width: 2;
-            stroke: $color-accent;
-        }
     }
 }

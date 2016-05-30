@@ -1,3 +1,11 @@
+/*
+ * DeveloperPortfolio
+ * One page portfolio for developers which non-tech people can actually understand.
+ * https://github.com/RazvanTirboaca/DeveloperPortfolio
+ * Copyright 2016, Razvan Tirboaca
+ * Free to use under the MIT license.
+*/
+
 var initPhotoSwipeFromDOM = function(gallerySelector) {
 
     // parse slide data (url, title, size ...) from DOM elements 
@@ -212,3 +220,18 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 
 // execute above function
 initPhotoSwipeFromDOM('.screenshots');
+
+
+// scroll to top
+var scrollBtn = document.querySelector('a[href="#up"]'),
+target = document.getElementById('up');
+scrollBtn.addEventListener('click', function(e) {
+    if (window.scrollTo) {
+        e.preventDefault();
+        window.scrollTo(0, target.offsetTop);
+    }
+})
+
+
+// make elements sticky
+StickyState.apply(document.querySelectorAll('.sticky'));

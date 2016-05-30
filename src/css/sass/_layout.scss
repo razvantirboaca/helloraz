@@ -1,5 +1,6 @@
 body {
     background: $color-background;
+    scroll-behavior: smooth;
 }
 
 article {
@@ -8,7 +9,7 @@ article {
     margin-right: auto;
     background: white;
     @media all and (min-width: $container-width) {
-        margin: 40px auto;
+        padding: 40px 0;
     }
 }
 
