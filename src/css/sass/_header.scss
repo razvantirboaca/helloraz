@@ -27,11 +27,11 @@ header {
     width: 100%;
     max-width: $container-width;
     height: 68px;
-    padding: 0 16px;
+    padding: 0 16px 0 18px;
     background: white;
     opacity: .01;
     @media all and (min-width: $size-md) {
-        padding: 0 40px;
+        padding: 0 40px 0 42px;
     }
 
     &.is-sticky {
