@@ -30,7 +30,7 @@ header {
     padding: 0 16px;
     background: white;
     opacity: .01;
-    transition: all .2s ease-out;
+    transition: all .2s ease-in;
     @media all and (min-width: $size-md) {
         padding: 0 40px;
     }
@@ -38,6 +38,7 @@ header {
     &.is-sticky {
         opacity: .96;
         box-shadow: 0 1px 0 rgba(black, .058);
+        transition: all .2s ease-out 1s;
     }
 
     .content-title {
