@@ -57,14 +57,16 @@
 
     p {
         margin: 0;
+    }
 
-        & + p {
-            margin-top: 1.1em;
-        }
+    p + p,
+    ul + p,
+    ol + p {
+        margin-top: 1.1em;
+    }
 
-        & + ul {
-            margin-top: .6em;
-        }
+    p + ul {
+        margin-top: .6em;
     }
 }
 
