@@ -24,7 +24,7 @@ body {
 
 a {
     color: $color-primary;
-    border-bottom: 1px solid lighten($color-primary, 10%);
+    text-decoration: none;
 
     &:hover {
         color: darken($color-primary, 16%);
