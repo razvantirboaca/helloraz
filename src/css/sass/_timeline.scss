@@ -73,7 +73,10 @@
 .company,
 .event,
 .school {
-    padding: 12px 24px;
+    padding: 12px 0;
+    @media all and (min-width: $size-md) {
+        padding: 12px 24px;
+    }
 
     &:before {
         top: 22px;
