@@ -79,8 +79,11 @@
     }
 
     &:before {
-        top: 22px;
+        top: 20px;
         left: -25px;
+        @media all and (min-width: $size-md) {
+            top: 22px;
+        }
     }
 }
 
