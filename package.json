@@ -23,8 +23,7 @@
     "gulp-sass": "^2.2.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^2.0.0",
-    "photoswipe": "^4.1.1",
-    "sticky-state": "^2.2.0"
+    "photoswipe": "^4.1.1"
   },
   "dependencies": {
     "graceful-fs": "^4.1.3",
