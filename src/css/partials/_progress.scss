@@ -10,16 +10,16 @@ progress {
 progress[value] {
     -webkit-appearance: none;
     appearance: none;
-    background-color: $color-gray-light;
-    color: darken($color-gray-light, 6%);
+    background-color: $color-accent;
+    color: $color-secondary;
     border: 0;
 }
 
 progress[value]::-webkit-progress-bar {
-    background-color: $color-gray-light;
+    background-color: $color-accent;
     border-radius: 6px;
 }
 
 progress[value]::-webkit-progress-value {
-    background-color: darken($color-gray-light, 6%);
+    background-color: $color-secondary;
 }

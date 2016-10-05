@@ -1,10 +1,4 @@
-/*
- * DeveloperPortfolio
- * One page portfolio for developers which non-tech people can actually understand.
- * https://github.com/RazvanTirboaca/DeveloperPortfolio
- * Copyright 2016, Razvan Tirboaca
- * Free to use under the MIT license.
-*/
+// configure Photoswipe
 
 var initPhotoSwipeFromDOM = function(gallerySelector) {
 
@@ -221,7 +215,6 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 // execute above function
 initPhotoSwipeFromDOM('.screenshots');
 
-
 // scroll to top
 var scrollBtn = document.querySelector('a[href="#up"]'),
 target = document.getElementById('up');
@@ -231,7 +224,6 @@ scrollBtn.addEventListener('click', function(e) {
         window.scrollTo(0, target.offsetTop);
     }
 })
-
 
 // make elements sticky
 StickyState.apply(document.querySelectorAll('.sticky'));

@@ -19,7 +19,8 @@ var paths = {
   },
   src: {
     css: ['src/css/style.scss'],
-    js: 'src/js/'
+    js: 'src/js/',
+    node: 'node_modules/'
   },
   dist: 'dist/'
 };
@@ -36,9 +37,14 @@ proxy: proxyUrl,
 
 gulp.task('css', function () {
 return gulp.src(paths.src.css)
-  .pipe(sass({
-    errLogToConsole: true
+  .pipe(plumber({
+    handleError: function (err) {
+      notify('Something is wrong');
+      console.log(err);
+      this.emit('end');
+    }
   }))
+  .pipe(sass())
   .pipe(postcss([
     autoprefixer({
       browsers: ['last 2 versions'],
@@ -55,7 +61,7 @@ gulp.task('js', function () {
 return gulp.src([
     paths.src.js + 'libs/photoswipe.min.js',
     paths.src.js + 'libs/photoswipe-ui-default.min.js',
-    paths.src.js + 'libs/stickystate.min.js',
+    paths.src.node + 'sticky-state/dist/stickystate.min.js',
     paths.src.js + 'app.js'
   ])
   .pipe(concat('app.min.js'))

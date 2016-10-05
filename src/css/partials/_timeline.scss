@@ -1,58 +1,36 @@
 .timeline {
-    position: relative;
-    margin-left: -24px;
-    padding: 0 0 16px 28px;
-    @media all and (min-width: $size-md) {
-        margin-left: 0;
-    }
+    overflow: hidden;
+    max-width: 100%;
+    background: $color-gray-lighter;
 
-    &:before {
-        content: '';
-        z-index: 1;
-        position: absolute;
-        top: 0;
-        left: 4px;
-        width: 3px;
-        height: 100%;
-        background: $color-divider;
-    }
+    &__year {
+        padding: 12px 16px;
+        text-align: center;
+        background: $color-gray-lighter;
 
-    .year {
-        z-index: 2;
-        position: relative;
-        margin-top: 36px;
-        margin-left: -28px;
-        padding: 4px 0;
-        background: $color-background;
-        color: $color-accent;
-
-        &:first-child {
-            margin-top: 0;
+        &.sticky-fixed {
+            top: 56px;
         }
-    }
 
-    .company,
-    .project,
-    .event,
-    .school {
-        z-index: 2;
-        position: relative;
-        margin: 0 -24px 16px 0;
+        &.is-sticky,
+        &.is-absolute {
+            z-index: 2;
+            left: 0;
+            width: 100%;
+        }
+
         @media all and (min-width: $size-md) {
-            margin-right: 0;
-            margin-bottom: 24px;
-        }
 
-        &:before {
-            content: '';
-            z-index: 1;
-            position: absolute;
-            width: 5px;
-            height: 5px;
-            background: $color-accent;
-            box-shadow: 0 0 0 3px $color-background;
-            border-radius: 50%;
+            &.sticky-fixed {
+                top: 64px;
+            }
         }
+    }
+
+    &__story {
+        margin-top: 36px;
+
+        &:before {}
     }
 
     p {
@@ -73,33 +51,18 @@
 .company,
 .event,
 .school {
-    padding: 12px 0;
-    @media all and (min-width: $size-md) {
-        padding: 12px 24px;
-    }
-
-    &:before {
-        top: 20px;
-        left: -25px;
-        @media all and (min-width: $size-md) {
-            top: 22px;
-        }
-    }
+    display: none;
 }
 
-
 .project {
-    padding: 22px;
-    background: $color-gray-lighter;
-    border: 2px solid $color-border;
-    border-radius: 4px;
+    max-width: 720px;
+    margin-left: -10vw;
+    margin-right: -10vw;
+    margin-bottom: 8px;
+    padding: 16px;
+    background: white;
 
-    &:before {
-        top: 32px;
-        left: -27px;
-    }
-
-    header {
+    &__header {
         margin-bottom: 24px;
 
         .media-body {
@@ -109,5 +72,13 @@
         .content-subtitle {
             margin-bottom: 4px;
         }
+    }
+
+    @media all and (min-width: $size-md) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 36px;
+        padding: 34px;
+        border-radius: 9px;
     }
 }

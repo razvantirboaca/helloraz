@@ -2,10 +2,10 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: -6px;
+    margin: -4px;
 
     .btn {
-        margin: 6px;
+        margin: 4px;
     }
 }
 
@@ -15,12 +15,10 @@
     justify-content: center;
     min-width: 10px;
     max-width: 100%;
-    min-height: 24px;
-    padding: 16px 23px;
-    font-size: 16px;
-    font-size: 1.6rem;
-    line-height: 24px;
-    line-height: 2.4rem;
+    min-height: 20px;
+    padding: 1em 1.5em;
+    font-size: 1.4rem;
+    line-height: 1.5em;
     text-align: center;
     text-decoration: none;
     white-space: nowrap;
@@ -28,20 +26,29 @@
     border: 1px solid $color-primary;
     color: white;
     border-radius: 4px;
-    
-    &:hover {
-        background: darken($color-primary, 6%);
-        border-color: darken($color-primary, 6%);
-        color: white;
+    @media all and (min-width: $size-md) {
+        font-size: 1.6rem;
+    }
+    @media all and (min-width: $size-lg) {
+        &:hover {
+            background: darken($color-primary, 6%);
+            border-color: darken($color-primary, 6%);
+            color: white;
+        }
     }
 
     > svg {
-        width: 24px;
-        height: 24px;
+        width: 1.5em;
+        height: 1.5em;
         margin-left: -2px;
 
         &:only-child {
             margin-left: 0;
+        }
+
+        & + * {
+            flex: 1;
+            min-width: 0;
         }
     }
 
@@ -52,24 +59,38 @@
         margin-left: 5px;
     }
 
-    &.btn--outline {
-        background: transparent;
-        border-color: lighten($color-primary, 12%);
+    &--outline {
         color: $color-primary;
-
-        &:hover {
-            color: darken($color-primary, 6%);
+        background: transparent;
+        border-color: $color-primary;
+        @media all and (min-width: $size-lg) {
+            &:hover {
+                color: white;
+                background: darken($color-primary, 6%);
+                border-color: darken($color-primary, 6%);
+            }
         }
     }
 
-    &.btn--badge {
-        padding: 0;
-        border: none;
+    &--sm {
+        padding: .6em 1em;
+        font-size: 1.4rem;
     }
 
-    &.btn--sm {
-        padding: 7px 15px;
-        font-size: 14px;
-        font-size: 1.4rem;
+    &--block {
+        width: 100%;
+    }
+
+    &--badge {
+        padding: 0;
+        background: none !important;
+        border: none;
+
+        img {
+            height: 51px;
+            @media all and (min-width: $size-md) {
+                height: 58px;
+            }
+        }
     }
 }

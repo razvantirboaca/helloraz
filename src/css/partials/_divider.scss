@@ -1,27 +1,37 @@
 .divider {
     position: relative;
-    padding-top: 5px;
-    margin: 6px 0 40px;
-    border-bottom: 1px solid $color-divider;
+    margin-bottom: 16px;
+    text-align: center;
+    vertical-align: top;
 
-    section > & {
-        margin-left: -40px;
-        margin-right: -40px;
+    &:not(:first-child) {
+        margin-top: 64px;
     }
 
-    .zigzag {
-        position: absolute;
-        left: 30px;
-        top: 0;
-        padding: 0 10px;
-        background: white;
+    &__title {
+        letter-spacing: .2em;
+        line-height: 1;
+        text-transform: uppercase;
+        color: $color-primary;
+    }
+
+    &__zigzag {
+        display: inline-block;
 
         svg {
             display: block;
             fill: none;
             stroke-miterlimit: 10;
             stroke-width: 2;
-            stroke: $color-accent;
+            stroke: $color-secondary;
+        }
+    }
+    
+    @media all and (min-width: $size-lg) {
+        margin-bottom: 24px;
+
+        &:not(:first-child) {
+            margin-top: 96px;
         }
     }
 }

@@ -8,22 +8,23 @@
     }
 }
 
+/*----------  Logos  ----------*/
+
 .figure-logo {
-    padding: 16px;
+    padding: 24px;
     background: $color-gray-lighter;
     border-radius: 4px;
 
     img {
         max-height: 100px;
         margin: 0 auto;
+        opacity: .9;
         filter: grayscale(100%);
-        opacity: .66;
         transition: all .2s ease;
     }
 
     &:hover img {
         filter: none;
-        opacity: 1;
     }
 }
 
@@ -48,22 +49,22 @@
     }
 
     &:after {
-        z-index: 2;
+        z-index: 1;
         content: '';
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        border-radius: 18px;
-        box-shadow: inset 0 0 0 1px rgba(black, .098);
+        border-radius: 16px;
+        box-shadow: inset 0 0 0 1px rgba(black, .2);
     }
 }
 
 .screenshots {
     font-size: 0;
-    margin: 20px -40px 20px -68px;
-    padding: 4px 40px 4px 68px;
+    margin: 20px -25px;
+    padding: 4px 25px;
     white-space: nowrap;
     overflow: auto;
 
@@ -74,8 +75,8 @@
     }
 
     @media all and (min-width: $size-md) {
-        margin: 20px 0;
-        padding: 4px 4px 12px;
+        margin: 24px 0;
+        padding: 0 0 12px;
 
         &::-webkit-scrollbar {
             width: 10px;
@@ -83,13 +84,17 @@
         }
 
         &::-webkit-scrollbar-track {
-            background: $color-gray-light;
+            background: $color-gray-lighter;
             border-radius: 50px;
         }
 
         &::-webkit-scrollbar-thumb {
-            background: darken($color-gray-light, 6%);
+            background: $color-gray-light;
             border-radius: 50px;
+
+            &:hover {
+                background: $color-gray;
+            }
         }
     }
 
@@ -99,7 +104,7 @@
 
         > a > img {
             max-width: none;
-            height: 262px;
+            height: 250px;
         }
 
         &:last-child {
@@ -109,9 +114,11 @@
 }
 
 .figure-screenshot {
-    padding: 6px;
+    padding: 8px;
     background: white;
-    box-shadow: 0 1px 3px 1px rgba($color-gray, .55);
+    border: 1px solid $color-border;
+    border-radius: 3px;
+    //box-shadow: 0 1px 3px 0 rgba($color-gray, .55);
 
     img {
         margin: 0 auto;
@@ -119,10 +126,11 @@
 }
 
 .figure-video {
-    margin-top: 20px;
-    padding: 6px;
-    background: black;
-    box-shadow: 0 1px 3px 1px rgba($color-gray, .55);
+    margin: 24px 0;
+    padding: 8px;
+    background: white;
+    border: 1px solid $color-border;
+    border-radius: 3px;
 
     .figure-video-player {
         position: relative;
@@ -145,7 +153,7 @@
     }
 
     .figure-video-title {
-        margin-top: 6px;
+        margin: 8px 4px 0;
         text-align: center;
         color: $color-text-hint;
     }

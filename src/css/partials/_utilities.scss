@@ -1,6 +1,12 @@
+// Layout
+
 .centered {
     margin-left: auto;
     margin-right: auto;
+}
+
+.restrict-width {
+    max-width: $container-width;
 }
 
 .sticky {
@@ -13,5 +19,31 @@
 
     &.sticky-fixed.is-absolute {
         position: absolute;
+    }
+}
+
+
+// Text
+
+.text-center {
+    text-align: center;
+}
+
+
+// Responsive visibility
+
+.is-hidden {
+    display: none;
+}
+
+.visible-md {
+    @media all and (max-width: $size-md - 1px) {
+        display: none !important;
+    }
+}
+
+.visible-lg {
+    @media all and (max-width: $size-lg - 1px) {
+        display: none !important;
     }
 }

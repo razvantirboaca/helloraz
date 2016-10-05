@@ -1,68 +1,42 @@
-header {
-    overflow: hidden;
-    @media all and (min-width: $container-width) {
-        border-radius: 8px;
-    }
-
-    .img {
-        width: 100%;
-    }
-
-    .header-caption {
-        position: absolute;
-        left: 40px;
-        bottom: 20%;
-        padding: 8px;
-        background: $color-background-header-text;
-        color: white;
-        text-shadow: 0 1px 1px rgba(black, .1);
-    }
-}
-
-.contact-bar {
-    z-index: 3;
+.header {
+    position: fixed;
     display: flex;
     align-items: center;
-    top: 0;
     width: 100%;
-    max-width: $container-width;
-    height: 68px;
-    padding: 0 16px 0 18px;
+    height: 56px;
+    padding: 0 8px 0 16px;
     background: white;
-    opacity: .01;
+    box-shadow: 0 1px 0 rgba(black, .075);
     @media all and (min-width: $size-md) {
-        padding: 0 40px 0 42px;
+        height: 64px;
+        padding: 0 36px;
     }
 
-    &.is-sticky {
-        opacity: .96;
-    }
-
-    .content-title {
+    &__title {
         flex: 1;
         margin: 0;
 
         a {
-            border-bottom: none;
-        } 
+            font-size: 2rem;
+            color: $color-primary;
+            border-bottom: 2px solid $color-secondary;
+            box-shadow: inset 0 -6px 0 0  $color-accent;
+        }
     }
 
     @media all and (max-width: $size-sm - 1px) {
-        .btn { 
-
-            svg {
-                margin: 0;
-            }
-
-            b {
-                position: absolute !important;
-                top: -9999px !important;
-                left: -9999px !important;
-            }
+        &__actions .btn {
+            padding: 9px;
+            border-color: transparent !important;
         }
     }
 }
 
-.sticky-wrap + * {
-    margin-top: -64px;
+.header-is-fixed {
+    z-index: 1000;
+    position: relative;
+    height: 56px;
+    @media all and (min-width: $size-md) {
+        height: 64px;
+    }
 }

@@ -1,13 +1,13 @@
 .tags {
     list-style: none;
     margin-left: 0;
-    margin-bottom: 30px;
 
     li {
         display: inline-block;
-        margin: 0 4px 10px 0;
-        padding: 3px 16px;
-        border: 2px solid $color-border;
+        margin: 0 6px 16px 0;
+        padding: .25em 1em;
+        font-size: 1.6rem;
+        border: 1px solid $color-secondary;
         border-radius: 100px; 
 
         &:before {

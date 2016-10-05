@@ -1,13 +1,12 @@
-ul,
-ol {
-    margin-left: 25px;
+ul:not([class]),
+ol:not([class]) {
 
-    li {
-        margin-bottom: .1em;
+    li:not(:last-child) {
+        margin-bottom: 1em;
     }
 }
 
-ul {
+ul:not([class]) {
     list-style: none;
 
     li {
@@ -15,13 +14,11 @@ ul {
 
         &:before {
             content: '';
-            position: absolute;
-            width: 5px;
-            height: 5px;
-            background: $color-gray;
-            border-radius: 50%;
-            left: -22px;
-            top: 9px;
+            display: block;
+            width: 24px;
+            height: 2px;
+            margin-bottom: .2em;
+            background: $color-secondary;
         }
     }
 }

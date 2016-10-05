@@ -1,0 +1,9 @@
+.cv {
+    padding: 34px;
+    background: $color-gray-lighter;
+    border-top: 2px solid $color-gray-light;
+
+    &__entry {
+        margin-bottom: 24px;
+    }
+}
