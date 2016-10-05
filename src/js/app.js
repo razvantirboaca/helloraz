@@ -215,15 +215,5 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 // execute above function
 initPhotoSwipeFromDOM('.screenshots');
 
-// scroll to top
-var scrollBtn = document.querySelector('a[href="#up"]'),
-target = document.getElementById('up');
-scrollBtn.addEventListener('click', function(e) {
-    if (window.scrollTo) {
-        e.preventDefault();
-        window.scrollTo(0, target.offsetTop);
-    }
-})
-
 // make elements sticky
-StickyState.apply(document.querySelectorAll('.sticky'));
+new StickyState(document.querySelectorAll('.sticky'));
