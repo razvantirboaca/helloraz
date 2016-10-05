@@ -68,6 +68,20 @@
     white-space: nowrap;
     overflow: auto;
 
+    figure {
+        margin-right: 16px;
+        display: inline-block;
+
+        > a > img {
+            max-width: none;
+            height: 200px;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
     @media all and (max-width: $size-md - 1px) {
         &::-webkit-scrollbar {
             display: none;
@@ -96,19 +110,9 @@
                 background: $color-gray;
             }
         }
-    }
 
-    figure {
-        margin-right: 16px;
-        display: inline-block;
-
-        > a > img {
-            max-width: none;
+        figure > a > img {
             height: 250px;
-        }
-
-        &:last-child {
-            margin-right: 0;
         }
     }
 }
