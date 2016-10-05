@@ -14,11 +14,11 @@ var gulp = require('gulp'),
 
 var paths = {
   watch : {
-    sass: ['src/css/**/**/*.scss'],
+    sass: 'src/css/**/**/*.scss',
     js: 'src/js/**/**/*.js'
   },
   src: {
-    css: ['src/css/style.scss'],
+    css: 'src/css/style.scss',
     js: 'src/js/',
     node: 'node_modules/'
   },
@@ -59,13 +59,14 @@ return gulp.src(paths.src.css)
 
 gulp.task('js', function () {
 return gulp.src([
-    paths.src.js + 'libs/photoswipe.min.js',
-    paths.src.js + 'libs/photoswipe-ui-default.min.js',
-    paths.src.node + 'sticky-state/dist/stickystate.min.js',
+    paths.src.node + 'photoswipe/dist/photoswipe.min.js',
+    paths.src.node + 'photoswipe/dist/photoswipe-ui-default.min.js',
+    paths.src.node + 'sticky-state/dist/sticky-state.min.js',
     paths.src.js + 'app.js'
   ])
-  .pipe(concat('app.min.js'))
-  .pipe(gulp.dest(paths.dist + '/js'))
+  .pipe(concat('app.js'))
+  //.pipe(uglify())
+  .pipe(gulp.dest(paths.dist + 'js'))
   .pipe(notify({ message: 'JS task complete' }))
   .pipe(bs.stream())
 });
