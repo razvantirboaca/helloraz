@@ -11,15 +11,15 @@
 
 .sticky {
     position: sticky;
+}
 
-    &.sticky-fixed.is-sticky {
-        position: fixed;
-        backface-visibility: hidden;
-    }
+.is-sticky {
+    position: fixed;
+    backface-visibility: hidden;
+}
 
-    &.sticky-fixed.is-absolute {
-        position: absolute;
-    }
+.is-absolute {
+    position: absolute;
 }
 
 

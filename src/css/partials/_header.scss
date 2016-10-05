@@ -1,5 +1,4 @@
 .header {
-    position: fixed;
     display: flex;
     align-items: center;
     width: 100%;
@@ -32,11 +31,13 @@
     }
 }
 
-.header-is-fixed {
+.headroom {
     z-index: 1000;
-    position: relative;
-    height: 56px;
-    @media all and (min-width: $size-md) {
-        height: 64px;
+    top: 0;
+    transition: transform .2s ease-in-out;
+
+    &.is-sticky.headroom-scroll-down {
+        transform: translateY(-100%);
+        transition-delay: .4s;
     }
 }
