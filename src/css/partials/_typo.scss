@@ -87,6 +87,9 @@ dl {
 .meta {
     font-size: 1.4rem;
     line-height: 1.4;
+    @media all and (min-width: $size-md) {
+        font-size: 1.5rem;
+    }
 }
 
 .color-text-secondary {

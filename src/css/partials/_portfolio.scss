@@ -1,0 +1,47 @@
+.portfolio {
+    overflow: hidden;
+    max-width: 100%;
+    background: $color-gray-lighter;
+
+    &__group:not(:last-child) {
+        margin-bottom: 48px;
+        padding-bottom: 1px;
+        @media all and (min-width: $size-md) {
+            margin-bottom: 64px;
+        }
+    }
+
+    &__year {
+        margin-bottom: 20px;
+        padding: 0 16px;
+        text-align: center;
+        background: $color-gray-lighter;
+    }
+
+    &__entry:not(:last-child) {
+        margin-bottom: 8px;
+        @media all and (min-width: $size-md) {
+            margin-bottom: 32px;
+        }
+    }
+
+    p {
+        margin: 0;
+    }
+
+    p + p,
+    ul + p,
+    ol + p {
+        margin-top: 1.1em;
+    }
+
+    p + ul {
+        margin-top: .6em;
+    }
+}
+
+.company,
+.event,
+.school {
+    display: none;
+}
