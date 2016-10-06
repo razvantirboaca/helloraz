@@ -1,9 +1,15 @@
 .cv {
-    padding: 34px;
-    background: $color-gray-lighter;
-    border-top: 2px solid $color-gray-light;
 
     &__entry {
-        margin-bottom: 24px;
+        max-width: 720px;
+        margin: 0 auto 16px;
+        padding: 34px;
+        border: 1px solid $color-gray-light;
+        border-radius: 9px;
+    }
+
+    &__view-more {
+        max-width: 720px;
+        margin: 0 auto;
     }
 }

@@ -52,11 +52,14 @@
         }
     }
 
-    > svg + span,
-    > span + svg,
-    svg + b,
-    > b + svg {
-        margin-left: 5px;
+    &:not(.btn--block) {
+
+        > svg + span,
+        > span + svg,
+        svg + b,
+        > b + svg {
+            margin-left: .5em;
+        }
     }
 
     &--outline {
