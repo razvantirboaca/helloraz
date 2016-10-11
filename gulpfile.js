@@ -38,8 +38,7 @@ proxy: proxyUrl,
 gulp.task('css', function () {
 return gulp.src(paths.src.css)
   .pipe(plumber({
-    handleError: function (err) {
-      notify('Something is wrong');
+    errorHandler: function (err) {
       console.log(err);
       this.emit('end');
     }
