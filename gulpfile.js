@@ -60,7 +60,7 @@ gulp.task('js', function () {
 return gulp.src([
     paths.src.node + 'photoswipe/dist/photoswipe.min.js',
     paths.src.node + 'photoswipe/dist/photoswipe-ui-default.min.js',
-    paths.src.node + 'sticky-state/dist/sticky-state.min.js',
+    //paths.src.node + 'sticky-state/dist/sticky-state.min.js',
     paths.src.js + 'app.js'
   ])
   .pipe(concat('app.js'))

@@ -214,13 +214,4 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 
 // execute above function
 initPhotoSwipeFromDOM('.screenshots');
-
-// headroom
-new StickyState(document.querySelector('.headroom'), {
-scrollClass:{
-  down: 'headroom-scroll-down',
-  up: 'headroom-scroll-up',
-  persist: true
-}
-});
   
