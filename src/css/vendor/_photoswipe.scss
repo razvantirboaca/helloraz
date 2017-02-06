@@ -14,9 +14,8 @@ $pswp__box-sizing-border-box: false !default; // disable .pswp * { box-sizing:bo
 $pswp__root-z-index: 1500 !default;
 $pswp__assets-path: '../images/' !default; // path to skin assets folder (preloader, PNG and SVG sprite)
 $pswp__error-text-color: #CCC !default; // "Image not loaded" text color
-$pswp__include-minimal-style: true !default;
+$pswp__include-minimal-style: true !default;  
 
- 
 /* pswp = photoswipe */
 .pswp {
     display: none;
