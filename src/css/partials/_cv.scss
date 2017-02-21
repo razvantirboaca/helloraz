@@ -3,9 +3,21 @@
     &__entry {
         max-width: 720px;
         margin: 0 auto 16px;
-        padding: 34px;
+        padding: 24px;
+        background-color: $color-gray-lighter;
         border: 1px solid $color-gray-light;
         border-radius: 9px;
+
+        @media all and (min-width: $size-lg) {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 32px;
+
+            &-meta {
+                margin-top: 2px;
+            }
+        }
     }
 
     &__view-more {
