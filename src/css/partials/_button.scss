@@ -16,7 +16,7 @@
     min-width: 10px;
     max-width: 100%;
     min-height: 20px;
-    padding: 1em 1.5em;
+    padding: .75em 1.25em;
     font-size: 1.4rem;
     line-height: 1.5em;
     text-align: center;
@@ -30,6 +30,7 @@
         font-size: 1.6rem;
     }
     @media all and (min-width: $size-lg) {
+        padding: 1em 1.5em;
         &:hover {
             background: darken($color-primary, 6%);
             border-color: darken($color-primary, 6%);
@@ -90,7 +91,7 @@
         border: none;
 
         img {
-            height: 51px;
+            height: 44px;
             @media all and (min-width: $size-md) {
                 height: 58px;
             }
