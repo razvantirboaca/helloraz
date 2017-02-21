@@ -13,9 +13,27 @@
     ExpiresDefault "access 1 month"
 </IfModule>
 
-<FilesMatch "\\.(js|css|html|htm|php|xml)$">
-    SetOutputFilter DEFLATE
-</FilesMatch>
+<IfModule mod_headers.c>
+    Header set Connection keep-alive
+    <filesmatch "\.(ico|flv|gif|swf|eot|woff|otf|ttf|svg)$">
+        Header set Cache-Control "max-age=2592000, public"
+    </filesmatch>
+    <filesmatch "\.(jpg|jpeg|png)$">
+        Header set Cache-Control "max-age=1209600, public"
+    </filesmatch>
+    <filesmatch "\.(eot|woff|otf|ttf|svg)$">
+        Header set Cache-Control "max-age=2592000, public"
+    </filesmatch>
+    <filesmatch "\.(css)$">
+        Header set Cache-Control "max-age=31536000, private"
+    </filesmatch>
+    <filesmatch "\.(js)$">
+        Header set Cache-Control "max-age=1209600, private"
+    </filesmatch>
+    <filesMatch "\.(x?html?|php)$">
+        Header set Cache-Control "max-age=600, private, must-revalidate"
+      </filesMatch>
+</IfModule>
 
 <IfModule mod_gzip.c>
     mod_gzip_on Yes
