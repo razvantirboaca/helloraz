@@ -1,14 +1,16 @@
 .project {
-    max-width: 720px;
+    max-width: 648px;
     margin-left: -10vw;
     margin-right: -10vw;
     padding: 24px;
     background: white;
+    box-shadow: 0 2px 4px rgba(black, .04);
 
     &__header {
         margin-bottom: 24px;
 
-        .media-figure + .media-body {
+        .media-figure {
+            order: 2;
             margin-left: 16px;
         }
 
@@ -17,15 +19,11 @@
         }
     }
 
-    &__title {
-        margin-top: 4px;
-    }
-
     @media all and (min-width: $size-md) {
         margin-left: auto;
         margin-right: auto;
         padding: 34px;
-        border: 1px solid $color-gray-light;
-        border-radius: 9px;
+        border-radius: 3px;
+        box-shadow: 0 4px 10px rgba(black, .06);
     }
 }

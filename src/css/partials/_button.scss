@@ -15,22 +15,20 @@
     justify-content: center;
     min-width: 10px;
     max-width: 100%;
-    min-height: 20px;
-    padding: .75em 1.25em;
-    font-size: 1.4rem;
-    line-height: 1.5em;
+    min-height: 24px;
+    padding: 1.2em 1.5em;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1;
     text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
     white-space: nowrap;
     background: $color-primary;
     border: 1px solid $color-primary;
     color: white;
     border-radius: 4px;
-    @media all and (min-width: $size-md) {
-        font-size: 1.6rem;
-    }
     @media all and (min-width: $size-lg) {
-        padding: 1em 1.5em;
         &:hover {
             background: darken($color-primary, 6%);
             border-color: darken($color-primary, 6%);
@@ -39,8 +37,8 @@
     }
 
     > svg {
-        width: 1.5em;
-        height: 1.5em;
+        width: 2.4rem;
+        height: 2.4rem;
         margin-left: -2px;
 
         &:only-child {
@@ -77,8 +75,7 @@
     }
 
     &--sm {
-        padding: .6em 1em;
-        font-size: 1.4rem;
+        padding: 1em;
     }
 
     &--block {
@@ -91,10 +88,7 @@
         border: none;
 
         img {
-            height: 44px;
-            @media all and (min-width: $size-md) {
-                height: 58px;
-            }
+            height: 46px;
         }
     }
 }

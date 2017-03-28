@@ -32,13 +32,9 @@
 
 .figure-icon-app {
     overflow: hidden;
-    width: 72px;
-    height: 72px;
-    border-radius: 16px;
-    @media all and (min-width: $size-md) {
-        width: 88px;
-        height: 88px;
-    }
+    width: 56px;
+    height: 56px;
+    border-radius: 9px;
 
     img {
         z-index: 1;
@@ -56,8 +52,18 @@
         left: 0;
         width: 100%;
         height: 100%;
-        border-radius: 16px;
+        border-radius: 9px;
         box-shadow: inset 0 0 0 1px rgba(black, .2);
+    }
+
+    @media all and (min-width: $size-md) {
+        width: 72px;
+        height: 72px;
+        border-radius: 16px;
+
+        &:after {
+            border-radius: 16px;
+        }
     }
 }
 

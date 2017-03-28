@@ -1,4 +1,5 @@
 .highlight {
+    padding: 3em 0;
     text-align: center;
 
     &__no {
@@ -6,8 +7,8 @@
         display: block;
         width: 100%;
         margin: 0 auto;
-        padding: .3em 0 0;
         font-size: 5em;
+        line-height: 1;
     }
 
     &__text {

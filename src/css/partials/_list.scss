@@ -2,7 +2,7 @@ ul:not([class]),
 ol:not([class]) {
 
     li:not(:last-child) {
-        margin-bottom: 1em;
+        margin-bottom: .4em;
     }
 }
 
@@ -11,14 +11,18 @@ ul:not([class]) {
 
     li {
         position: relative;
+        padding-left: 16px;
 
         &:before {
             content: '';
             display: block;
-            width: 24px;
-            height: 2px;
-            margin-bottom: .2em;
+            position: absolute;
+            left: 0;
+            top: 9px;
+            width: 6px;
+            height: 6px;
             background: $color-secondary;
+            border-radius: 50%;
         }
     }
 }
