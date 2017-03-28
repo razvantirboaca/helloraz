@@ -16,10 +16,10 @@
     min-width: 10px;
     max-width: 100%;
     min-height: 24px;
-    padding: 1.2em 1.5em;
+    padding: 1em 1.3em;
     font-size: 1.3rem;
     font-weight: 400;
-    line-height: 1;
+    line-height: 2.4rem;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -46,19 +46,12 @@
         }
 
         & + * {
-            flex: 1;
             min-width: 0;
         }
     }
 
-    &:not(.btn--block) {
-
-        > svg + span,
-        > span + svg,
-        svg + b,
-        > b + svg {
-            margin-left: .5em;
-        }
+    > * + * {
+        margin-left: .5em;
     }
 
     &--outline {
@@ -75,7 +68,7 @@
     }
 
     &--sm {
-        padding: 1em;
+        padding: .7em 1em;
     }
 
     &--block {
@@ -88,7 +81,7 @@
         border: none;
 
         img {
-            height: 46px;
+            height: 52px;
         }
     }
 }
