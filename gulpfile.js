@@ -1,4 +1,4 @@
-var gulp = require('gulp'),
+ var gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     sass = require('gulp-sass'),
     cssnano = require('gulp-cssnano'),
@@ -8,7 +8,6 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     notify  = require('gulp-notify'),
-    del = require('del'),
     bs = require('browser-sync').create(),
     proxyUrl = 'localhost/razvan';
 
