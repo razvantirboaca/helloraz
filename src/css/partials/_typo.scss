@@ -2,11 +2,7 @@
     font-family: $font-primary;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    -webkit-font-feature-settings: 'lnum';
-    -webkit-font-variant-ligatures: no-common-ligatures;
-    font-variant-ligatures: no-common-ligatures;
-    -moz-osx-font-smoothing: grayscale;
-    -moz-font-feature-settings: 'lnum';
+    font-feature-settings: "kern" 1, "dlig" 1, "ss01" 1;
 }
 
 html {
