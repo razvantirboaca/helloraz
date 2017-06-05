@@ -46,10 +46,7 @@ return gulp.src(paths.src.css)
     .pipe(plumber({errorHandler: onError}))
     .pipe(sass())
     .pipe(postcss([
-        autoprefixer({
-            browsers: ['last 2 versions'],
-            cascade: false
-        })
+        autoprefixer()
     ]))
     .pipe(cssnano())
     .pipe(gulp.dest(paths.dist + 'css'))
