@@ -1,0 +1,47 @@
+.skill {
+    display: flex;
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 32px;
+
+    &__figure {
+        width: 64px;
+        margin-right: 24px;
+
+        svg {
+            width: 100%;
+            height: auto;
+            fill: $color-text-secondary;
+        }
+    }
+
+    &-body {
+        flex: 1;
+        overflow: hidden;
+        min-width: 1;
+    }
+
+    &__title {
+        margin-bottom: .5em;
+    }
+
+    @media all and (min-width: $size-sm) {
+        
+        &__figure {
+            width: 128px;
+        }
+
+    }
+
+    @media all and (min-width: $size-md) {
+        display: block;
+        margin-bottom: 0;
+        padding: 32px;
+        border: 1px solid $color-border;
+        
+        &__figure {
+            margin-right: 0;
+            margin-bottom: 24px;
+        }
+    }
+}
