@@ -1,0 +1,36 @@
+.hero {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 10%;
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        padding-top: 10%;
+        background: white;
+        clip-path: polygon(0 0, 100% 36%, 100% 100%, 0% 100%);
+    }
+
+    &__body {
+        padding-top: 10%;
+        padding-bottom: 10%;
+        text-shadow: 0 2px 1px rgba(black, .07);
+    }
+
+    &.home {
+            background: linear-gradient(to right, rgba($color-secondary, .7), rgba($color-primary, .7)), url(../images/cover.jpg);
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-size: cover;
+    }
+
+    &.baneasa {
+            background: #101011;
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-size: cover;
+    }
+}

@@ -1,6 +1,44 @@
+html,
+body {
+    min-height: 100vh;
+}
+
 body {
     background-color: $color-background;
     scroll-behavior: smooth;
+    @media all and (min-width: $size-lg) {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+            "header"
+            "main"
+            "footer";
+    }
+}
+
+.appheader {
+    grid-area: header;
+}
+
+.appbar,
+.header {
+    height: 56px;
+    @media all and (min-width: $size-md) {
+        height: 64px;
+    }
+}
+
+.appmain {
+    grid-area: main;
+    overflow: hidden;
+}
+
+.appfooter {
+    grid-area: footer;
+    padding: 16px;
+    text-align: center;
+    background: $color-primary;
+    color: $color-accent;
 }
 
 .section {
@@ -23,11 +61,4 @@ body {
     @media all and (min-width: $size-xl) {
         padding: 96px 2vw;
     }
-}
-
-footer {
-    padding: 16px;
-    text-align: center;
-    background: $color-primary;
-    color: $color-accent;
 }
