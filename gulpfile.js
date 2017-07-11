@@ -30,7 +30,7 @@ bs.init({
         scriptPath: function (path, port, options) {
             return options.get("absolute");
         },
-        files: ['./index.html', '!' + paths.dist + 'css/*']
+        files: ['./*.html', '!' + paths.dist + 'css/*']
     });
 });
 

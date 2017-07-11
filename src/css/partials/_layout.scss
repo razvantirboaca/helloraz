@@ -8,14 +8,6 @@ body {
     scroll-behavior: smooth;
 }
 
-.appbar,
-.header {
-    height: 56px;
-    @media all and (min-width: $size-md) {
-        height: 64px;
-    }
-}
-
 .appmain {
     overflow: hidden;
 }
