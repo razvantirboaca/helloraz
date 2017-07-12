@@ -6,8 +6,14 @@
     }
 
     &__body {
-        padding-top: 10%;
-        padding-bottom: 10%;
+        position: relative;
+        padding: 10vw calc(10vw - 16px);
+        @media all and (min-width: $size-lg) {
+            padding: 10vw 8vw;
+        }
+        @media all and (min-width: $size-xl) {
+            padding: 10vw 2vw;
+        }
         text-shadow: 0 2px 1px rgba(black, .07);
     }
 
@@ -28,29 +34,21 @@
     }
 
     &.home {
-        background: linear-gradient(to right, rgba($color-secondary, .8), rgba($color-primary, .7)), url(../images/cover.jpg);
+        background: linear-gradient(to right, rgba($color-secondary, .8), rgba($color-primary, .7)), 
+        url(../images/cover.jpg);
         background-repeat: no-repeat;
         background-position: right top;
         background-size: cover;
     }
 
     &.baneasa {
-        background: #A463F2;
-        background-repeat: no-repeat;
-        background-position: right top;
-        background-size: cover;
+        background: #7F4091;
 
-        figure {
-            width: 60%;
-            min-width: 320px;
-            margin: 56px auto -10%;
-            transform: skewX(4deg) skewY(-4deg);
-            box-shadow: 
-                5px -5px 10px rgba(black, .14);
-
-            img {
-
-            }
+        .hero__image {
+            position: absolute;
+            bottom: 0;
+            right: -25%;
+            width: 70%;
         }
     }
 }
