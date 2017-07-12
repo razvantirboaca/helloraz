@@ -8,6 +8,14 @@ body {
     scroll-behavior: smooth;
 }
 
+.appbar,
+.header {
+    height: 56px;
+    @media all and (min-width: $size-md) {
+        height: 64px;
+    }
+}
+
 .appmain {
     overflow: hidden;
 }
@@ -15,8 +23,8 @@ body {
 .appfooter {
     padding: 16px;
     text-align: center;
-    background: $color-primary;
-    color: $color-accent;
+    background: $color-dark;
+    color: white;
 }
 
 .section {

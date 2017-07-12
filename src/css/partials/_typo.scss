@@ -1,7 +1,6 @@
 * {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    font-feature-settings: "kern" 1, "dlig" 1, "ss01" 1;
 }
 
 html {
@@ -74,7 +73,6 @@ dl {
 }
 
 .title {
-    font-family: $font-secondary;
     font-size: 2rem;
     line-height: 1.4;
     color: $color-text-title;

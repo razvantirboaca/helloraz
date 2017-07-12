@@ -6,11 +6,12 @@
     display: flex;
     align-items: center;
     width: 100%;
-    height: 56px;
     padding: 0 8px 0 16px;
     @media all and (min-width: $size-md) {
-        height: 64px;
         padding: 0 36px;
+    }
+    @media all and (min-width: $size-xl) {
+    position: fixed;
     }
 
     &__title {
@@ -21,40 +22,36 @@
     &__actions { 
 
         .btn {
-            color: white;
-            border-color: rgba(white, .2);
+            color: rgba(black, .9);
+            border-color: transparent;
         }
     }
 }
 
-
-
 .logo {
     position: relative;
+    display: inline-block;
     font-family: $font-secondary;
-    font-size: 2rem;
+    font-size: 2.8rem;
+    line-height: 1;
     font-weight: bold;
-    color: white;
-    padding: 4px 8px;
-    border-width: 0 0 2px 2px;
-    border-style: dashed;
-    border-color: white;
+    color: rgba(black, .88);
+    padding: 4px 6px;
 
     &:before,
     &:after {
         content: '';
         position: absolute;
-        left: -6px;
-        bottom: -2px;
-        width: 6px;
-        height: 2px;
-        background: white;
+        left: 0;
+        top: 0;
+        width: 10px;
+        height: 1px;
+        background: rgba(black, .88);
     }
 
     &:after {
-        left: -2px;
-        bottom: -6px;
-        width: 2px;
-        height: 6px;
+        left: -1px;
+        width: 1px;
+        height: 10px;
     }
 }
