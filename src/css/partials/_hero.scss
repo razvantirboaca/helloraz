@@ -7,8 +7,15 @@
 
     &__body {
         position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 50vw;
         padding: 10vw calc(10vw - 16px);
+        @media all and (min-width: $size-sm) {
+            min-height: 40vw;
+        }
         @media all and (min-width: $size-lg) {
+            min-height: 30vw;
             padding: 10vw 8vw;
         }
         @media all and (min-width: $size-xl) {
