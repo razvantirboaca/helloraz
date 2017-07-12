@@ -8,7 +8,8 @@
     &__body {
         position: relative;
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        justify-content: center;
         min-height: 50vw;
         padding: 10vw calc(10vw - 16px);
         @media all and (min-width: $size-sm) {
@@ -51,11 +52,18 @@
     &.baneasa {
         background: #7F4091;
 
+        .hero__body {
+            padding-right: 20vw;
+        }
+
         .hero__image {
             position: absolute;
             bottom: 0;
-            right: -25%;
-            width: 70%;
+            right: -25vw;
+            width: 60%;
+            @media all and (min-width: $size-lg) {
+                right: -20vw;
+            }
         }
     }
 }
