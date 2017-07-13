@@ -16,10 +16,26 @@
     text-align: center;
 }
 
+.text-caps {
+    text-transform: uppercase;
+}
+
 // Color
 
 .bg-gray-lighter {
     background: $color-gray-lighter;
+}
+
+.color-text-white {
+    color: white;
+}
+
+.color-text-secondary {
+    color: $color-text-secondary;
+}
+
+.color-text-danger {
+    color: $color-danger;
 }
 
 

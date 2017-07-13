@@ -1,15 +1,3 @@
-/*----------  Companies  ----------*/
-
-.companies {
-    margin-bottom: 30px;
-
-    li:before {
-        display: none;
-    }
-}
-
-/*----------  Logos  ----------*/
-
 .figure-logo {
     margin: 24px 0;
     padding: 24px;
@@ -28,8 +16,6 @@
         filter: none;
     }
 }
-
-/*----------  App icons  ----------*/
 
 .figure-icon-app {
     overflow: hidden;
@@ -129,7 +115,6 @@
     background: white;
     border: 1px solid $color-border;
     border-radius: 3px;
-    //box-shadow: 0 1px 3px 0 rgba($color-gray, .55);
 
     img {
         margin: 0 auto;
