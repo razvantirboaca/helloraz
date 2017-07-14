@@ -61,7 +61,7 @@ body {
         margin: 0 auto;
 
         img {
-            max-height: 100vh;
+            //max-height: 100vh;
         }
 
         figcaption {
@@ -69,5 +69,9 @@ body {
             text-align: center;
             color: $color-text-secondary;
         }
+    }
+
+    .insights {
+        margin-top: 2em;
     }
 }
