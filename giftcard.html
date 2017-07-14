@@ -59,9 +59,9 @@
         </div>
     </header>
     <main class="appmain">
-        <article class="article">
+        <article class="article giftcard">
             <!-- Hero -->
-            <section class="hero giftcard">
+            <section class="hero">
                 <div class="hero__body restrict-width centered">
                     <h1 class="headline color-text-white">Gift Card case study</h1>
                     <p class="title color-text-white">The UX and UI design behind a digital adventure into the depth of retail innovation.</p>
@@ -72,7 +72,7 @@
             </section>
             <section class="section restrict-width centered">
                 <h2 class="text-center text-caps">Overview</h2>
-                <h3 class="text-center">How can we bridge the offline shopping experience with online to create delight?<br>Ask the right questions.</h3>
+                <h3 class="text-center">How can we mix the offline shopping experience with online super powers to create customer excitement?</h3>
                 <hr class="centered">
                 <h4>Background</h4>
                 <p>Baneasa Shopping City is the most popular shopping mall in Romania having 1.4M foot-traffic every month. In 2016 we built and launched CITY iLOVE, Baneasa's loyalty app for iOS and Android. With over 25k active users in less than 1 year, CITY iLOVE won numerous prizes in the fields of digital, emerging technology and innovation in retail like "2016 ICSC Solal Marketing Awards: Silver Award for EMERGING TECHNOLOGY, Berlin, Germany".</p>
@@ -103,14 +103,42 @@
                 <p>After 3 workshops with the stakeholders where we have established the business requirements, we started to research <b>who</b> are the customers and <b>why</b> do they buy gift cards.</p>
                 <p>We conducted customer and market research to drive our planning phase. As a starting point, I used all the quantitative data we had from Baneasa Shopping City and Mastercard in order to map the customer lifetime value and the average value of an order.<br><span class="meta"><b class="color-text-danger">*TIP:</b> the output is as accurate as the input</span></p>
                 <p>One of the key insight we needed to move forward was user's online shopping behavior. We conducted qualitative reasearch inside the shopping mall.<br><span class="meta"><b class="color-text-danger">*TIP:</b> avoid asking questions that can be answered with YES/NO</span></p>
-                <p>From this research, I developed several use-cases that we used to evaluate design decisions throughout the wireframing process, to map the user journey and prepare the marketing campaigns by targeting the right user acquisition channels.</p>
                 <hr class="centered">
                 <h3 class="text-center color-text-danger">Interesting finding: 1 of 8 people has a craked screen. Make those buttons bigger!</h3>
-                <p>These are the key insights that defined the launch version:</p>
-                <figure class="article__figure">
-                    <img src="dist/images/cases/giftcard-4.jpg" alt="Customer profiles">
-                    <figcaption>Customer profiles found, changed insights for NDA</figcaption>
-                </figure>
+                <p>From this research, I developed several use-cases that we used to evaluate design decisions throughout the wireframing process, to map the user journey and prepare the marketing campaigns by targeting the right user acquisition channels.</p>
+                <p>These are the key insights that defined our customer profiles:</p>
+                <ol class="grid has-gutter has-gutter-bottom">
+                    <li class="grid__tile col-xs-12 col-lg-4">
+                        <div class="insight">
+                            <p><b>The corporate</b></p>
+                            <ul>
+                                <li>+450€ order value, buys for company’s employees.</li>
+                                <li>Multiple legal documents required.</li>
+                                <li>Recommended channel: offline assisted by the Sales Dept.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="grid__tile col-xs-12 col-lg-4">
+                        <div class="insight">
+                            <p><b>The gifter</b></p>
+                            <ul>
+                                <li>100€ order value, buys for gifting a family member or a friend.</li>
+                                <li>Standard checkout process.</li>
+                                <li>Recommended channel: online, mostly desktop, via SEO, AdWords and FB ads</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="grid__tile col-xs-12 col-lg-4">
+                        <div class="insight">
+                            <p><b>The loyalist</b></p>
+                            <ul>
+                                <li>~300€ order value, loyal shopper, buys for personal usage or for her kids.</li>
+                                <li>Standard checkout process.</li>
+                                <li>Recommended channel: online, mobile user, via social media and the native app</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
             </section>
             <section class="section bg-gray-lighter">
                 <div class="restrict-width centered">
@@ -119,47 +147,136 @@
                     <hr class="centered">
                     <p>Feeling confident about the key insights we had, we were ready to proceed to the next phase. I informed the rest of the development team of the findings and started working on the user journey.</p>
                     <h4>User journey map, API based architecture</h4>
-                    <p>Being in a cross-functional team, I engage developers very early in the design process. We worked together to sketch the user journey and API architecture. By collaborating in this step, we make sure that the internal communication flows freely and the relationship between  design &amp; code is tight.<br><span class="meta"><b class="color-text-danger">*TIP:</b> I highly recommend the User Flow template for Sketch by Greg Dlubacz. <a href="https://dribbble.com/shots/1918079-User-Flow" target="_blank">Check it out</a></span></p>
+                    <p>Being a cross-functional team, I engaged developers very early in the design process. We worked side by side to map the user journey and API architecture. By collaborating in this step, we made sure that everybody was confident enough to take ownership and the relationship between design &amp; code was flawless.<br><span class="meta"><b class="color-text-danger">*TIP:</b> I highly recommend the User Flow template for Sketch by Greg Dlubacz. <a href="https://dribbble.com/shots/1918079-User-Flow" target="_blank">Check it out</a></span></p>
                 </div>
                 <figure class="article__figure">
                     <img src="dist/images/cases/giftcard-5.jpg" alt="User journey">
-                    <figcaption>User journey map blurred for NDA</figcaption>
+                    <figcaption>User journey map, blurred NDA</figcaption>
                 </figure>
                 <figure class="article__figure">
                     <img src="dist/images/cases/giftcard-6.jpg" alt="API">
-                    <figcaption>API's endpoints blurred for NDA</figcaption>
+                    <figcaption>API's endpoints, blurred NDA</figcaption>
                 </figure>
                 <div class="restrict-width centered">
                     <p>The map highlighted how the frontend and backend will work together and provided the opportunity to discover and fix bottlenecks very early in the process. This research created a deeper empathy amongst the team.</p>
                     <h4>Wireframes</h4>
-                    <p>I designed over 10 iterations through the wireframing process getting feedback from usability testing, the stakeholders and development team.</p>
-                </div>
-                <figure class="article__figure">
-                    <img src="dist/images/cases/giftcard-7.jpg" alt="wireframes">
-                </figure>
-                <figure class="article__figure">
-                    <img src="dist/images/cases/giftcard-8.jpg" alt="wireframes">
-                </figure>
-                <div class="restrict-width centered">
-                    <hr class="centered">
+                    <p>I designed 8 iterations through the wireframing process getting feedback from usability testing, the stakeholders and development team.</p>
                     <figure class="article__figure" style="width:315px">
                         <img src="dist/images/cases/giftcard-9.png" alt="wireframes">
                         <figcaption>The wireframes were done in Sketch and I used Invision for usability testing.</figcaption>
                     </figure>
+                    <hr class="centered">
+                    <div class="article__figure">
+                        <div class="grid has-gutter has-gutter-bottom">
+                            <div class="grid__tile col-xs-6 col-sm-4 col-md-3">
+                                <figure>
+                                    <img class="screenshot" src="dist/images/cases/wireframes/giftcard-1.png" alt="wireframes">
+                                </figure>
+                            </div>
+                            <div class="grid__tile col-xs-6 col-sm-4 col-md-3">
+                                <figure>
+                                    <img class="screenshot" src="dist/images/cases/wireframes/giftcard-2.png" alt="wireframes">
+                                </figure>
+                            </div>
+                            <div class="grid__tile col-xs-6 col-sm-4 col-md-3">
+                                <figure>
+                                    <img class="screenshot" src="dist/images/cases/wireframes/giftcard-3.png" alt="wireframes">
+                                </figure>
+                            </div>
+                            <div class="grid__tile col-xs-6 col-sm-4 col-md-3">
+                                <figure>
+                                    <img class="screenshot" src="dist/images/cases/wireframes/giftcard-4.png" alt="wireframes">
+                                </figure>
+                            </div>
+                            <div class="grid__tile col-xs-6 col-sm-4 col-md-3">
+                                <figure>
+                                    <img class="screenshot" src="dist/images/cases/wireframes/giftcard-5.png" alt="wireframes">
+                                </figure>
+                            </div>
+                            <div class="grid__tile col-xs-6 col-sm-4 col-md-3">
+                                <figure>
+                                    <img class="screenshot" src="dist/images/cases/wireframes/giftcard-6.png" alt="wireframes">
+                                </figure>
+                            </div>
+                            <div class="grid__tile col-xs-6 col-sm-4 col-md-3">
+                                <figure>
+                                    <img class="screenshot" src="dist/images/cases/wireframes/giftcard-7.png" alt="wireframes">
+                                </figure>
+                            </div>
+                            <div class="grid__tile col-xs-6 col-sm-4 col-md-3">
+                                <figure>
+                                    <img class="screenshot" src="dist/images/cases/wireframes/giftcard-8.png" alt="wireframes">
+                                </figure>
+                            </div>
+                            <div class="grid__tile col-xs-6 col-sm-4 col-md-3">
+                                <figure>
+                                    <img class="screenshot" src="dist/images/cases/wireframes/giftcard-9.png" alt="wireframes">
+                                </figure>
+                            </div>
+                            <div class="grid__tile col-xs-6 col-sm-4 col-md-3">
+                                <figure>
+                                    <img class="screenshot" src="dist/images/cases/wireframes/giftcard-10.png" alt="wireframes">
+                                </figure>
+                            </div>
+                            <div class="grid__tile col-xs-6 col-sm-4 col-md-3">
+                                <figure>
+                                    <img class="screenshot" src="dist/images/cases/wireframes/giftcard-11.png" alt="wireframes">
+                                </figure>
+                            </div>
+                            <div class="grid__tile col-xs-6 col-sm-4 col-md-3">
+                                <figure>
+                                    <img class="screenshot" src="dist/images/cases/wireframes/giftcard-12.png" alt="wireframes">
+                                </figure>
+                            </div>
+                            <div class="grid__tile col-xs-6 col-sm-4 col-md-3">
+                                <figure>
+                                    <img class="screenshot" src="dist/images/cases/wireframes/giftcard-13.png" alt="wireframes">
+                                </figure>
+                            </div>
+                            <div class="grid__tile col-xs-6 col-sm-4 col-md-3">
+                                <figure>
+                                    <img class="screenshot" src="dist/images/cases/wireframes/giftcard-14.png" alt="wireframes">
+                                </figure>
+                            </div>
+                            <div class="grid__tile col-xs-6 col-sm-4 col-md-3">
+                                <figure>
+                                    <img class="screenshot" src="dist/images/cases/wireframes/giftcard-15.png" alt="wireframes">
+                                </figure>
+                            </div>
+                            <div class="grid__tile col-xs-6 col-sm-4 col-md-3">
+                                <figure>
+                                    <img class="screenshot" src="dist/images/cases/wireframes/giftcard-16.png" alt="wireframes">
+                                </figure>
+                            </div>
+                            <div class="grid__tile col-xs-6 col-sm-4 col-md-3">
+                                <figure>
+                                    <img class="screenshot" src="dist/images/cases/wireframes/giftcard-17.png" alt="wireframes">
+                                </figure>
+                            </div>
+                            <div class="grid__tile col-xs-6 col-sm-4 col-md-3">
+                                <figure>
+                                    <img class="screenshot" src="dist/images/cases/wireframes/giftcard-18.png" alt="wireframes">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <p>One of our high level goals was to <b>make it easy to order online for everyone, everywhere.</b> That meant that the checkout process had to be easily accessible from desktop to mobile, on website and native apps. More so, it had to be accessible cross-devices. The customer could start the order from the mobile app and finish it later on the desktop, from the website.</p>
+                    <p>Remember when I said that I engaged developers early in the process and worked side by side to map the user journey? We analyzed all the use-cases, advantages and disadvantages of having 3 platforms to support (web, iOS and Android), and the time needed for development, and reached the decision that the right approach was to build the full feature on the website as a responsive solution. Would be enough to have only the first step on the native app to be accessible cross-devices.</p>
                 </div>
             </section>
             <section class="section">
                 <div class="restrict-width centered">
                     <h2 class="text-center text-caps">UI</h2>
-                    <h3 class="text-center">The Key To Success: Be Empirical, Be Specific.</h3>
+                    <h3 class="text-center">Fluid and Responsive.</h3>
                     <hr class="centered">
+                    <p></p>
                 </div>
             </section>
         </article>
     </main>
     <!-- Footer -->
     <footer class="appfooter">
-        <p class="meta">Thanks for reading, cheers!</p>
+        <p class="meta">Thank you for reading!<br>Website design and content &copy; Razvan Tirboaca</p>
     </footer>
     <!-- Photoswipe -->
     <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">

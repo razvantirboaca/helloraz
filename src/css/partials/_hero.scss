@@ -48,22 +48,4 @@
         background-position: right top;
         background-size: cover;
     }
-
-    &.giftcard {
-        background: $color-giftcard;
-
-        .hero__body {
-            padding-right: 16vw;
-        }
-
-        .hero__image {
-            position: absolute;
-            bottom: 0;
-            right: -25vw;
-            width: 60%;
-            @media all and (min-width: $size-lg) {
-                right: -18vw;
-            }
-        }
-    }
 }

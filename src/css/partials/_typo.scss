@@ -99,7 +99,7 @@ strong {
 .meta,
 figcaption {
     font-size: 1.4rem;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 .article {
@@ -126,7 +126,6 @@ figcaption {
 
         & + hr {
             margin-top: -2em;
-            margin-bottom: 3em;
         }
     }
 
@@ -149,10 +148,21 @@ figcaption {
     }
 
     p,
-    hr,
     ol,
     ul {
         margin-top: 1em;
         margin-bottom: 1em;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.insight {
+
+    p,
+    li {
+        font-size: 1.6rem;
     }
 }
