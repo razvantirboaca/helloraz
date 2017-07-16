@@ -4,7 +4,10 @@
         background: $color-giftcard;
 
         &__body {
-            padding-right: 16vw;
+            padding-right: 18vw;
+            @media all and (min-width: $size-lg) {
+                padding-right: 12vw;
+            }
         }
 
         &__image {

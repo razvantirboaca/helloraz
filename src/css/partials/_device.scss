@@ -82,27 +82,10 @@
         max-width: 1440px;
     
         .device__body {
-            padding: 3% 0 0;
-            background: #ddd;
+            padding: 4% 0 0;
+            background: $color-gray-light;
             border-radius: 6px;
-            box-shadow: 0 5px 30px rgba(black, .15);
-        
-            &:before,
-            &:after {
-                content: '';
-                z-index: 1;
-                position: absolute;
-                top: 10px;
-                left: 16px;
-                width: 8px;
-                height: 8px;
-                background: rgba(black, .07);
-                border-radius: 50%;
-                box-shadow: 
-                    0 0 0 1px rgba(black, .07), 
-                    1em 0 0 1px rgba(black, .07), 
-                    2em 0 0 1px rgba(black, .07);
-            }
+            box-shadow: 0 2px 4px rgba(50,50,93, .1);
         }
     }
 }

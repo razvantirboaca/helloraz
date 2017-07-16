@@ -2,18 +2,18 @@
     list-style: none;
     
     &.has-gutter {
-        margin-left: -16px;
-        margin-right: -16px;
+        margin-left: -12px;
+        margin-right: -12px;
 
         > .grid__tile {
-            padding-left: 16px;
-            padding-right: 16px;
+            padding-left: 12px;
+            padding-right: 12px;
         }
 
         &.has-gutter-bottom {
 
             > .grid__tile {
-                margin-bottom: 32px;
+                margin-bottom: 24px;
             }
         }
     }

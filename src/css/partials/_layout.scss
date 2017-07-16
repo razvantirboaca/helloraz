@@ -28,7 +28,7 @@ body {
 }
 
 .section {
-    padding: 72px 10vw;
+    padding: 72px 0;
 
     &__title {
         margin-bottom: 32px;
@@ -38,27 +38,39 @@ body {
         }
     }
     @media all and (min-width: $size-lg) {
-        padding: 96px 8vw;
+        padding: 96px 0;
 
         &__title--xl {
             margin-bottom: 128px;
         }
-    }
-    @media all and (min-width: $size-xl) {
-        padding: 96px 2vw;
-    }        
-    
-    .article__figure {
-        margin-top: 4em;
-        margin-bottom: 4em;
     }
 }
 
 .article {
 
     &__figure {
-        max-width: 1440px;
-        margin: 0 auto;
+        max-width: $figure-width-fill;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4em;
+        &:not(:last-child) {
+            margin-bottom: 4em;
+        }
+
+        &--fill {
+            margin-left: 16px;
+            margin-right: 16px;
+            
+            @media all and (min-width: $size-md) {
+                margin-left: 36px;
+                margin-right: 36px;
+            }
+
+            @media all and (min-width: calc($figure-width-fill + 73px)) {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
 
         img {
             //max-height: 100vh;

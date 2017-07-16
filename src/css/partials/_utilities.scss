@@ -6,6 +6,8 @@
 }
 
 .restrict-width {
+    padding-left: 32px;
+    padding-right: 32px;
     max-width: $container-width;
 }
 
@@ -43,6 +45,10 @@
 
 .is-hidden {
     display: none;
+}
+
+.is-block {
+    display: block;
 }
 
 .visible-md {

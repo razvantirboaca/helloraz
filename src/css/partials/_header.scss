@@ -10,8 +10,8 @@
     @media all and (min-width: $size-md) {
         padding: 0 36px;
     }
-    @media all and (min-width: $size-xl) {
-    position: fixed;
+    @media all and (min-width: $size-lg) {
+        position: fixed;
     }
 
     &__title {

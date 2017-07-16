@@ -21,8 +21,13 @@
         min-width: 1;
     }
 
-    &__title {
+    p {
+        margin-top: 0;
         margin-bottom: .5em;
+    }
+
+    ul {
+        margin: 0;
     }
 
     @media all and (min-width: $size-sm) {
@@ -36,8 +41,6 @@
     @media all and (min-width: $size-md) {
         display: block;
         margin-bottom: 0;
-        padding: 32px;
-        border: 1px solid $color-border;
         
         &__figure {
             margin-right: 0;

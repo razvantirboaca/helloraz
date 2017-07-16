@@ -10,8 +10,9 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        max-width: $container-width;
         min-height: 50vw;
-        padding: 10vw calc(10vw - 16px);
+        padding: 10vw 24px;
         @media all and (min-width: $size-sm) {
             min-height: 40vw;
         }
@@ -41,7 +42,7 @@
 
     }
 
-    &.home {
+    .home & {
         background: linear-gradient(to right, rgba($color-secondary, .8), rgba($color-primary, .7)), 
         url(../images/cover.jpg);
         background-repeat: no-repeat;
