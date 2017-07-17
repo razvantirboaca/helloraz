@@ -34,7 +34,7 @@ a {
     text-decoration: none;
     @media all and (min-width: $size-lg) {
         &:hover {
-            color: darken($color-primary, 16%);
+            color: darken($color-primary, 6%);
             text-decoration: none;
         }
     }
