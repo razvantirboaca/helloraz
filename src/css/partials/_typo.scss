@@ -32,6 +32,8 @@ h5 {
 a {
     color: $color-primary;
     text-decoration: none;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
     @media all and (min-width: $size-lg) {
         &:hover {
             color: darken($color-primary, 6%);
