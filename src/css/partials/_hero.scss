@@ -21,6 +21,7 @@
             padding: 10vw 8vw;
         }
         @media all and (min-width: $size-xl) {
+            min-height: 20vw;
             padding: 10vw 2vw;
         }
         text-shadow: 0 2px 1px rgba(black, .07);
