@@ -72,23 +72,6 @@ strong {
     }
 }
 
-.title {
-    font-size: 2rem;
-    line-height: 1.4;
-    color: $color-text-title;
-    @media all and (min-width: $size-md) {
-        font-size: 2.6rem;
-    }    
-    
-    .headline + & {
-        margin-top: .4em;
-    }
-
-    & + * {
-        margin-top: 1.5em;
-    }
-}
-
 .subtitle {
     font-size: 1.6rem;
     line-height: 1.4;
@@ -113,6 +96,13 @@ figcaption {
         @media all and (min-width: $size-md) {
             font-size: 5.2rem;
         }
+        @media all and (min-width: $size-xxl) {
+            font-size: 5.8rem;
+        }
+
+        & + h3 {
+            margin-top: .5em;
+        }
     }
 
     h2 {
@@ -129,7 +119,7 @@ figcaption {
         }
 
         & + h3 {
-            margin-top: -1.8em;
+            margin-top: -2.2em;
         }
     }
 
@@ -150,19 +140,23 @@ figcaption {
         }
 
         & + hr {
-            margin-top: -1em;
+            margin-top: -1.6em;
         }
     }
 
     h4 {
-        margin-top: 2em;
+        &:not(:first-child) {
+            margin-top: 2em;
+        }
         margin-bottom: .6em;
         font-size: 1.8rem;
         font-weight: 600;
         line-height: 1.26;
-        color: $color-text-title;
         @media all and (min-width: $size-md) {
             font-size: 2.2rem;
+        }
+        @media all and (min-width: $size-xxl) {
+            font-size: 2.5rem;
         }
     }
 
@@ -176,6 +170,9 @@ figcaption {
         @media all and (min-width: $size-md) {
             font-size: 2.6rem;
         }
+        @media all and (min-width: $size-xxl) {
+            font-size: 3rem;
+        }
     }
 
     p,
@@ -185,13 +182,16 @@ figcaption {
         @media all and (min-width: $size-md) {
             font-size: 2rem;
         }
+        @media all and (min-width: $size-xxl) {
+            font-size: 2.4rem;
+        }
     }
 
     p,
     ol,
     ul {
-        margin-top: 1em;
-        margin-bottom: 1em;
+        margin-top: 1.4em;
+        margin-bottom: 1.4em;
 
         &:last-child {
             margin-bottom: 0;
@@ -200,7 +200,8 @@ figcaption {
 }
 
 .insight,
-.skill {
+.skill,
+.project {
 
     p,
     li {

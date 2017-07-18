@@ -1,11 +1,13 @@
 .hero {
     position: relative;
     margin: 0 16px;
+
     @media all and (min-width:$size-md) {
         margin: 0 36px;
     }
 
     &__body {
+        overflow: hidden;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -15,15 +17,17 @@
         padding: 10vw 16px;
         @media all and (min-width: $size-sm) {
             min-height: 40vw;
+            padding: 10vw 30px;
+        }
+        @media all and (min-width: $container-width) {
+            overflow: visible;
         }
         @media all and (min-width: $size-lg) {
             min-height: 30vw;
-            padding: 10vw 32px;
         }
         @media all and (min-width: $size-xl) {
             min-height: 20vw;
         }
-        text-shadow: 0 2px 1px rgba(black, .07);
     }
 
     &.is-skewed {

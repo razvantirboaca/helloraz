@@ -61,20 +61,20 @@
     <main class="appmain">
         <article class="article home">
             <!-- Hero -->
-            <section class="hero is-skewed">
+            <!--<header class="hero is-skewed">
                 <div class="hero__body centered">
-                    <h1 class="color-text-white">I'm Razvan,<br> product designer based in Barcelona, Spain.</b></h2>
+                    <h1 class="color-text-white">I'm Razvan,<br> product designer based in Barcelona, Spain.</b></h4>
                 </div>
-            </section>
+            </header>-->
             <!-- About -->
             <section class="section about">
                 <div class="restrict-width centered">
-                    <h2 class="text-center text-caps">About me</h2>
-                    <h3 class="text-center">Hi there and welcome.</h3>
+                    <h1 class="text-center text-caps color-text-dark">Hi there</h1>
+                    <h3 class="text-center">Welcome.</h3>
                     <hr class="centered">
-                    <p id="contact">I'm Razvan, a multidisciplinary designer with a background in UX/UI design, UI development and project management. I'm passionate about designing online products and the way tech improves our life.</p>
-                    <p>I would love you to get in touch, I reply to every mail in less than 3h. Also, Linkedin is a good choice.</p>
-                    <ul class="grid has-gutter-sm has-gutter-bottom">
+                    <p><b>I'm Razvan, a multidisciplinary designer with a background in UX/UI design, UI development and project management. I'm passionate about designing online products and the way tech improves our life.</b></p>
+                    <p><b>I would love you to get in touch, I reply to every <a href="mailto:razvan.tirboaca@gmail.com?subject=Hi" target="_blank">mail</a> in less than 3h. Also, <a href="https://www.linkedin.com/in/razvantirboaca" target="_blank">Linkedin</a> is a good choice.</b></p>
+                    <!--<ul class="grid has-gutter-sm has-gutter-bottom">
                         <li class="grid__tile col-xs-6 col-md-4">
                             <a class="btn btn--outline btn--block" href="mailto:razvan.tirboaca@gmail.com?subject=Hi" target="_blank">
                                 <svg viewbox="0 0 24 24" height="24" width="24">
@@ -96,13 +96,18 @@
                                 <b>Download resume</b>
                             </a>
                         </li>
-                    </ul>
+                    </ul>-->
+                </div>
+            </section>
+            <section class="section">
+                <div class="restrict-width centered">
                     <!-- Specialities -->
                     <h4>Specialities</h4>
-                    <p>With a decade of experience, my focus is on UX/UI design and UI development.</p>
-                    <ol class="skills grid has-gutter">
+                    <p>My focus is on UX/UI design and UI development.</p>
+                    <hr>
+                    <ol class="skills grid has-gutter-sm">
                         <li class="grid__tile col-xs-12 col-md-4">
-                            <div class="skill">
+                            <div class="skill skill-ux">
                                 <figure class="skill__figure">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
                                         <path d="M61.4 2H2.6C1.1 2 0 3.1 0 4.6v54.9C0 60.9 1.1 62 2.6 62h58.9c1.4 0 2.6-1.1 2.6-2.6V4.6C64 3.1 62.9 2 61.4 2zM63 59.1c0 1.1-.8 1.9-1.9 1.9H2.9c-1 0-1.9-.9-1.9-1.9V4.9C1 3.9 1.8 3 2.9 3h58.2c1 0 1.9.9 1.9 1.9v54.2z"/>
@@ -114,7 +119,7 @@
                                     </svg>
                                 </figure>
                                 <div class="skill__body">
-                                    <p class="skill__title subtitle"><b>UX design</b></p>
+                                    <p class="skill__title"><b>UX design</b></p>
                                     <ul class="skill__list list">
                                         <li>User research</li>
                                         <li>Wireframes & prototypes</li>
@@ -124,14 +129,14 @@
                             </div>
                         </li>
                         <li class="grid__tile col-xs-12 col-md-4">
-                            <div class="skill">
+                            <div class="skill skill-ui">
                                 <figure class="skill__figure">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
                                         <path d="M57.2 59c-.3-1.1-.5-2.4-.7-3.7-.1-1.3-.2-2.6-.3-3.8-.1-1.3-.1-2.3-.2-3.3-.1-1.5-.3-3-.6-4.5s-.8-2.9-1.5-4.1c-.7-1.3-1.6-2.4-2.7-3.3-.6-.5-1.4-1-2.2-1.4v.8c.6.3 1.2.7 1.7 1.1 1 .9 1.9 1.9 2.5 3.1.7 1.2 1.1 2.5 1.5 3.9.3 1.4.5 2.9.6 4.4.1.9.1 2 .2 3.3l.3 3.9c.1 1.3.4 2.6.7 3.8l.3.9h.8c-.1-.4-.3-.8-.4-1.1zM50 5.7l.7-.4c-1.3-1.1-2.8-2.1-4.4-2.8-1-.4-2.1-.8-3.2-1v.8c1 .2 2 .5 3 .9 1.3.7 2.7 1.5 3.9 2.5zM8 1h30v1H8zM5 4h1v56H5zM43.8 60c-.4-1.4-.6-3-.7-4.8-.2-2.6-.4-5.2-.8-7.7-.2-1.3-.5-2.5-.8-3.5h-.8c.4 1.1.7 2.3.9 3.7.3 2.4.6 5 .8 7.6.1 1.7.3 3.3.7 4.7h.7zM18 41h1v19h-1zM32 38H21v1h11c3.5 0 6 1.1 6 1.1l.5-.8S36 38 32 38zM8 62h8v1H8zM47 62h8v1h-8zM42.2 17h.8c-.4-1.5-1.1-2.8-2.1-3.7-.8-.7-1.8-1.2-2.9-1.5v.8c1 .3 1.8.7 2.4 1.3.9.8 1.5 1.8 1.8 3.1zM21 28h12v1H21zM21 11h12v1H21zM18 14h1v12h-1zM38 28c1.2-.3 2.1-.7 2.9-1.3 1.4-1 2.2-2.6 2.4-4.7h-.8c-.2 1.9-.9 3.3-2.1 4.2-.6.5-1.4.8-2.4 1.1v.7zM4 0h3v3H4zM39 0h3v3h-3zM17 10h3v3h-3zM17 27h3v3h-3zM17 37h3v3h-3zM39 40h3v3h-3zM17 61h3v3h-3zM4 61h3v3H4zM43 61h3v3h-3zM56 61h3v3h-3zM45 32h3v3h-3zM41 18h3v3h-3zM34 10h3v3h-3zM34 27h3v3h-3zM50 6h3v3h-3zM56.3 18.1h-.9v2.7h.9c0 1.6-1.2 4.9-2.2 6.6-1.1 1.9-3.2 3.5-5.3 4.7v.9c2.5-1.3 4.8-3 6-5.2.7-1.1 1.1-2.4 1.5-3.7v12c-.6.2-1 .7-1 1.3 0 .7.6 1.4 1.4 1.4.7 0 1.4-.6 1.4-1.4 0-.6-.4-1.1-1-1.3V20.8h1v-2.7h-1V2.6c.6-.2 1-.7 1-1.3C58 .6 57.4 0 56.6 0c-.7 0-1.4.6-1.4 1.4 0 .6.4 1.1 1 1.3V13c-.1-.5-.3-.9-.5-1.3-.3-.8-1.5-2.6-1.5-2.6l-.5.5c.6.8 2.3 4.9 2.3 6.4l.3 2.1z"/>
                                     </svg>
                                 </figure>
                                 <div class="skill__body">
-                                    <p class="skill__title subtitle"><b>UI design</b></p>
+                                    <p class="skill__title"><b>UI design</b></p>
                                     <ul class="skill__list list">
                                         <li>Responsive web design</li>
                                         <li>iOS & Material design</li>
@@ -141,7 +146,7 @@
                             </div>
                         </li>
                         <li class="grid__tile col-xs-12 col-md-4">
-                            <div class="skill">
+                            <div class="skill skill-front">
                                 <figure class="skill__figure">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
                                         <path d="M42 41h9v2h-9zM42 44h17v2H42zM42 47h17v2H42zM42 50h17v2H42zM43.3 25h14.4c.7 0 1.3.6 1.3 1.3v7.4c0 .7-.6 1.3-1.3 1.3H43.3c-.7 0-1.3-.6-1.3-1.3v-7.4c0-.7.6-1.3 1.3-1.3zM42 17h17v4H42v-4z"/>
@@ -152,7 +157,7 @@
                                     </svg>
                                 </figure>
                                 <div class="skill__body">
-                                    <p class="skill__title subtitle"><b>Frontend development</b></p>
+                                    <p class="skill__title"><b>Frontend development</b></p>
                                     <ul class="skill__list list">
                                         <li>HTML5 & CSS3(Sass)</li>
                                         <li>BEM & OOCSS</li>
@@ -164,586 +169,558 @@
                     </ol>
                 </div>
             </section>
+            <!--section class="section">
+                <div class="restrict-width centered">
+                    <h4>Love case studies?</h4>
+                    <div class="giftcard">
+                        <section class="hero">
+                            <div class="hero__body centered">
+                                <figure class="hero__image">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/cases/giftcard-hero.png">
+                                </figure>
+                                <h1>Gift Card case study</h1>
+                                <p>The UX and UI design behind a digital adventure into the depth of retail innovation.</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section-->
+            <!-- Work -->
+            <section class="section portfolio bg-gray-lighter">
+                <div class="restrict-width centered">
+                    <!-- Project -->
+                    <div class="portfolio__entry project">
+                        <header class="project__header media">
+                            <figure class="media-figure figure-icon-app">
+                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/icons/icon-cityilove.jpg" alt="CITY iLOVE">
+                            </figure>
+                            <div class="media-body">
+                                <h4 class="project__title title">CITY iLOVE</h4>
+                                <p class="project__role">My role: UX/UI design, frontend, project manager</p>
+                                <p class="project__owner">Company: eAD Interactive</p>
+                            </div>
+                        </header>
+                        <!-- screenshots -->
+                        <div class="project__gallery screenshots">
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cityilove-5.jpg" data-size="750x1344">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cityilove-5.jpg" alt="CITY iLOVE">
+                                </a>
+                            </figure>
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cityilove-2.jpg" data-size="750x1344">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cityilove-2.jpg" alt="CITY iLOVE">
+                                </a>
+                            </figure>
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cityilove-3.jpg" data-size="750x1344">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cityilove-3.jpg" alt="CITY iLOVE">
+                                </a>
+                            </figure>
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cityilove-4.jpg" data-size="750x1344">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cityilove-4.jpg" alt="CITY iLOVE">
+                                </a>
+                            </figure>
+                        </div>
+                        <!-- Description -->
+                        <p>Lead the UX/UI design and development teams and launched <a href="https://www.baneasa.ro/cityilove" target="_blank">Baneasa Shopping City's mobile app</a> on iOS and Android. With over 25k active users in less than 1 year after launch, the CITY iLOVE app showed results right away and won numerous prizes in the fields of digital, emerging technology and innovation in retail like "2016 ICSC Solal Marketing Awards: Silver Award for EMERGING TECHNOLOGY, Berlin, Germany".</p>
+                        <p>CITY iLOVE app transforms a regular shopping mall session into a smart digital experience. From rewarding clients for their purchases with personalized benefits to promoting brands' discounts and updates, the app is a must-have for every heavy-shopper.</p>
+                        <p><b>Highlights</b></p>
+                        <ul>
+                            <li>Scan purchase receipts and barcodes to earn user points</li>
+                            <li>Personalized benefits</li>
+                            <li>In-Store discounts via barcodes</li>
+                            <li>Newsfeed with latest news, promotions and events</li>
+                        </ul>
+                        <p>
+                            <span class="btn-group">
+                                <a class="btn btn--badge" href="https://itunes.apple.com/bt/app/city-ilove-by-baneasa/id1058864869?mt=8" target="_blank"><img src="dist/images/badges/appstore.svg" alt="Download from Appstore"></a>
+                                <a class="btn btn--badge" href="https://play.google.com/store/apps/details?id=ro.baneasashoppingcity.bsc" target="_blank"><img src="dist/images/badges/playstore.svg" alt="Get it on Google Play"></a>
+                            </span>
+                        </p>
+                    </div>
+                    <!-- Project -->
+                    <div class="portfolio__entry project">
+                        <header class="project__header media">
+                            <figure class="media-figure figure-icon-app">
+                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/icons/icon-baneasa.jpg" alt="Baneasa.ro">
+                            </figure>
+                            <div class="media-body">
+                                <h4 class="project__title title">Baneasa.ro</h4>
+                                <p class="project__role">My role: UI design &amp; frontend</p>
+                                <p class="project__owner">Company: eAD Interactive</p>
+                            </div>
+                        </header>
+                        <!-- Description -->
+                        <p></p>
+                        <!-- screenshots -->
+                        <div class="project__gallery screenshots">
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/baneasa-1.jpg" data-size="750x1344">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/baneasa-1.jpg" alt="baneasa.ro">
+                                </a>
+                            </figure>
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/baneasa-2.jpg" data-size="750x1344">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/baneasa-2.jpg" alt="baneasa.ro">
+                                </a>
+                            </figure>
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/baneasa-3.jpg" data-size="750x1344">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/baneasa-3.jpg" alt="baneasa.ro">
+                                </a>
+                            </figure>
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/baneasa-4.jpg" data-size="1624x750">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/baneasa-4.jpg" alt="baneasa.ro">
+                                </a>
+                            </figure>
+                        </div>
+                        <p>
+                            <a class="btn" href="http://www.baneasa.ro" target="_blank"><b>Visit website</b></a>
+                        </p>
+                    </div>
+                    <!-- Project -->
+                    <div class="portfolio__entry project">
+                        <header class="project__header media">
+                            <figure class="media-figure figure-icon-app">
+                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/icons/icon-bmw.jpg" alt="BMW">
+                            </figure>
+                            <div class="media-body">
+                                <h4 class="project__title title">BMW brand campaign</h4>
+                                <p class="project__role">My role: UI design &amp; frontend</p>
+                                <p class="project__owner">Company: eAD Interactive</p>
+                            </div>
+                        </header>
+                        <!-- screenshots -->
+                        <div class="project__gallery screenshots">
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/bmw-life-1.jpg" data-size="2400x1068">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/bmw-life-1.jpg" alt="BMW">
+                                </a>
+                            </figure>
+                        </div>
+                        <p>BMW partenered with Life.ro for a special brand campaign: 100 years of lifestyle innovation.</p>
+                        <p>
+                            <a class="btn" href="http://work.1616.ro/life.ro/html/bmw.php" target="_blank"><b>Visit campaign</b></a>
+                        </p>
+                    </div>
+                    <!-- Project -->
+                    <div class="portfolio__entry project">
+                        <header class="project__header media">
+                            <figure class="media-figure figure-icon-app">
+                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/icons/icon-verdict.jpg" alt="Verdict">
+                            </figure>
+                            <div class="media-body">
+                                <h4 class="project__title title">Verdict.ro</h4>
+                                <p class="project__role">My role: UI design &amp; frontend</p>
+                                <p class="project__owner">Company: eAD Interactive</p>
+                            </div>
+                        </header>
+                        <!-- screenshots -->
+                        <div class="project__gallery screenshots">
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/verdict-2.jpg" data-size="750x1344">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/verdict-2.jpg" alt="verdict.ro">
+                                </a>
+                            </figure>
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/verdict-3.jpg" data-size="750x1344">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/verdict-3.jpg" alt="verdict.ro">
+                                </a>
+                            </figure>
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/verdict-4.jpg" data-size="750x1344">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/verdict-4.jpg" alt="verdict.ro">
+                                </a>
+                            </figure>
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/verdict-1.jpg" data-size="2388x996">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/verdict-1.jpg" alt="verdict.ro">
+                                </a>
+                            </figure>
+                        </div>
+                        <p>Verdict is a popular Romanian fashion publication. With 70% mobile traffic, they needed a mobile-first approach for the web presence. The layout is optimized for big images and easy sharing of content.</p>
+                        <p>
+                            <a class="btn" href="http://verdict.ro" target="_blank"><b>Visit website</b></a>
+                        </p>
+                    </div>
+                    <!-- Project -->
+                    <div class="portfolio__entry project">
+                        <header class="project__header media">
+                            <figure class="media-figure figure-icon-app">
+                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/icons/icon-cbasilescu.jpg" alt="cramabasilescu.ro">
+                            </figure>
+                            <div class="media-body">
+                                <h4 class="project__title title">CramaBasilescu.ro</h4>
+                                <p class="project__role">My role: UX &amp; UI design &amp; frontend &amp; Wordpress development</p>
+                                <p class="project__owner">Company: Zoom-Studios</p>
+                            </div>
+                        </header>
+                        <!-- Description -->
+                        <p></p>
+                        <!-- screenshots -->
+                        <div class="project__gallery screenshots">
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cbasilescu-4.jpg" data-size="1662x1432">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cbasilescu-4.jpg" alt="cramabasilescu.ro">
+                                </a>
+                            </figure>
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cbasilescu-1.jpg" data-size="1080x1920">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cbasilescu-1.jpg" alt="cramabasilescu.ro">
+                                </a>
+                            </figure>
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cbasilescu-2.jpg" data-size="1080x1920">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cbasilescu-2.jpg" alt="cramabasilescu.ro">
+                                </a>
+                            </figure>
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cbasilescu-3.jpg" data-size="1080x1920">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cbasilescu-3.jpg" alt="cramabasilescu.ro">
+                                </a>
+                            </figure>
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cbasilescu-5.jpg" data-size="1662x1230">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cbasilescu-5.jpg" alt="cramabasilescu.ro">
+                                </a>
+                            </figure>
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cbasilescu-6.jpg" data-size="2420x1008">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cbasilescu-6.jpg" alt="cramabasilescu.ro">
+                                </a>
+                            </figure>
+                        </div>
+                        <p>
+                            <a class="btn" href="https://cramabasilescu.ro/" target="_blank"><b>Visit website</b></a>
+                        </p>
+                    </div>
+                    <!-- Project -->
+                    <div class="portfolio__entry project">
+                        <header class="project__header media">
+                            <figure class="media-figure figure-icon-app">
+                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/icons/icon-cancan.jpg" alt="Cancan">
+                            </figure>
+                            <div class="media-body">
+                                <h4 class="project__title title">Cancan.ro</h4>
+                                <p class="project__role">My role: UX/UI design &amp; frontend</p>
+                                <p class="project__owner">Company: eAD Interactive</p>
+                            </div>
+                        </header>
+                        <!-- screenshots -->
+                        <div class="project__gallery screenshots">
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cancan-3.jpg" data-size="750x1344">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cancan-3.jpg" alt="cancan.ro">
+                                </a>
+                            </figure>
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cancan-4.jpg" data-size="750x1344">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cancan-4.jpg" alt="cancan.ro">
+                                </a>
+                            </figure>
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cancan-5.jpg" data-size="750x1344">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cancan-5.jpg" alt="cancan.ro">
+                                </a>
+                            </figure>
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cancan-1.jpg" data-size="1471x1185">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cancan-1.jpg" alt="cancan.ro">
+                                </a>
+                            </figure>
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cancan-2.jpg" data-size="1471x1185">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cancan-2.jpg" alt="cancan.ro">
+                                </a>
+                            </figure>
+                        </div>
+                        <p>Cancan is the romanian TMZ, the biggest gossip publication. With over 6M unique visitors every month, the challenge was to keep the bounce-rate low and grow the pageviews.</p>
+                        <p><b>Highlights</b></p>
+                        <ul>
+                            <li>6M+ unique visitors every month</li>
+                            <li>Optimized for fast loading and pageviews</li>
+                            <li>70% mobile traffic</li>
+                        </ul>
+                        <p>
+                            <a class="btn" href="http://cancan.ro" target="_blank"><b>Visit website</b></a>
+                        </p>
+                    </div>
+                    <!-- Project -->
+                    <div class="portfolio__entry project">
+                        <header class="project__header media">
+                            <figure class="media-figure figure-icon-app">
+                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/icons/icon-life.jpg" alt="Life">
+                            </figure>
+                            <div class="media-body">
+                                <h4 class="project__title title">Life.ro</h4>
+                                <p class="project__role">My role: UI design &amp; frontend</p>
+                                <p class="project__owner">Company: eAD Interactive</p>
+                            </div>
+                        </header>
+                        <!-- screenshots -->
+                        <div class="project__gallery screenshots">
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/life-2.jpg" data-size="750x1344">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/life-2.jpg" alt="life.ro">
+                                </a>
+                            </figure>
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/life-3.jpg" data-size="750x1344">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/life-3.jpg" alt="life.ro">
+                                </a>
+                            </figure>
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/life-4.jpg" data-size="750x1344">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/life-4.jpg" alt="life.ro">
+                                </a>
+                            </figure>
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/life-1.jpg" data-size="2388x996">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/life-1.jpg" alt="life.ro">
+                                </a>
+                            </figure>
+                        </div>
+                        <p>
+                            <a class="btn" href="http://life.ro" target="_blank"><b>Visit website</b></a>
+                        </p>
+                    </div>
+                    <!-- Project -->
+                    <div class="portfolio__entry project">
+                        <header class="project__header media">
+                            <figure class="media-figure figure-icon-app">
+                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/icons/icon-cofffre.jpg" alt="Cofffre">
+                            </figure>
+                            <div class="media-body">
+                                <h4 class="project__title title">Cofffre.com</h4>
+                                <p class="project__role">My role: UX/UI design &amp; frontend</p>
+                                <p class="project__owner">Founder</p>
+                            </div>
+                        </header>
+                        <figure class="figure-video">
+                            <div class="figure-video-player">
+                                <iframe src="https://www.youtube.com/embed/M22lznnocHM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <figcaption class="figure-video-title meta">Demo at <a href="http://www.protv.ro/" target="_blank">PRO TV</a></figcaption>
+                        </figure>
+                        <!-- Description -->
+                        <p>Together with Orlando Nicoara, Cristian Manafu and Andrei Petcu, built and <a href="http://start-up.ro/cofffre-te-anunta-in-timp-real-cand-ai-pretul-optim-la-produsul-dorit-investitie-de-zeci-de-mii-de-euro-in-plugin/" target="_blank">launched</a> Cofffre, a shopping assistant app.</p>
+                        <p>Cofffre is a personal shopping assistant app, it helps users make better purchase decisions from more than 30 Romanian online stores. When integrated with Cofffre, the stores grow the retention and conversion rate by 10%.</p>
+                        <p><b>Highlights</b></p>
+                        <ul>
+                            <li>Crawling 2M products real-time</li>
+                            <li>3000 active users in 2 months after launch</li>
+                            <li>Sending over 500 price alerts every day</li>
+                            <li>Chrome extension: the best shopping experience on big screens</li>
+                        </ul>
+                        <p>
+                            <span class="btn-group">
+                                <a class="btn btn--badge" href="https://chrome.google.com/webstore/detail/cofffre/ikepgbcegfohlhldfnpegfocaffdnmne?ref=razvan" target="_blank"><img src="dist/images/badges/chromestore.svg" alt="Install from Chrome Store"></a>
+                                <a class="btn" href="https://cofffre.com?ref=razvan" target="_blank"><b>Visit website</b></a>
+                                <a class="btn" href="https://www.youtube.com/watch?v=VHK1futXsTw" target="_blank"><b>Watch video</b></a>
+                            </span>
+                        </p>
+                    </div>
+                    <!-- Project -->
+                    <div class="portfolio__entry project">
+                        <header class="project__header media">
+                            <figure class="media-figure figure-icon-app">
+                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/icons/icon-citroen.jpg" alt="Citroen">
+                            </figure>
+                            <div class="media-body">
+                                <h4 class="project__title title">Citroën lead campaigns</h4>
+                                <p class="project__role">My role: UI design &amp; frontend</p>
+                                <p class="project__owner">Company: eAD Interactive</p>
+                            </div>
+                        </header>
+                        <!-- screenshots -->
+                        <div class="project__gallery screenshots">
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/citroen-1.jpg" data-size="2388x996">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/citroen-1.jpg" alt="Citroën">
+                                </a>
+                            </figure>
+                        </div>
+                        <p>Improved Citroën lead campaigns by developing a flexible responsive template aligned with the brand guidelines in order to grow the conversion rate.</p>
+                        <p>
+                            <a class="btn" href="http://zoom-studios.ro/work/citroen/" target="_blank"><b>Visit landing page</b></a>
+                        </p>
+                    </div>
+                    <!-- Project -->
+                    <div class="portfolio__entry project">
+                        <header class="project__header media">
+                            <figure class="media-figure figure-icon-app">
+                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/icons/icon-peugeot.jpg" alt="Peugeot">
+                            </figure>
+                            <div class="media-body">
+                                <h4 class="project__title title">Peugeot lead campaigns</h4>
+                                <p class="project__role">My role: UI design &amp; frontend</p>
+                                <p class="project__owner">Company: eAD Interactive</p>
+                            </div>
+                        </header>
+                        <!-- screenshots -->
+                        <div class="project__gallery screenshots">
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/peugeot-1.jpg" data-size="2388x996">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/peugeot-1.jpg" alt="Peugeot">
+                                </a>
+                            </figure>
+                        </div>
+                        <p>Improved Peugeot lead campaigns by developing a flexible responsive template aligned with the brand guidelines in order to grow the conversion rate.</p>
+                        <p>
+                            <a class="btn" href="http://zoom-studios.ro/work/peugeot/" target="_blank"><b>Visit landing page</b></a>
+                        </p>
+                    </div>
+                    <!-- Project -->
+                    <div class="portfolio__entry project">
+                        <header class="project__header media">
+                            <figure class="media-figure figure-icon-app">
+                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/icons/icon-flaps.jpg" alt="Flaps">
+                            </figure>
+                            <div class="media-body">
+                                <h4 class="project__title title">FLAPS.ro</h4>
+                                <p class="project__role">My role: product manager, UX/UI design</p>
+                                <p class="project__owner">Company: Mediafax Group</p>
+                            </div>
+                        </header>
+                        <!-- screenshots -->
+                        <div class="project__gallery screenshots">
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/flaps-1.jpg" data-size="1364x1277">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/flaps-1.jpg" alt="flaps.ro">
+                                </a>
+                            </figure>
+                        </div>
+                        <p>FLAPS was a travel deals website, the concept was simple: 3 new travel deals everyday, similar to the early <a href="http://www.jetsetter.com/" target="_blank">JetSetter</a>. We built the platform from scratch and partnered with Aerotravel Lufthansa and TUI Travel Center.</p>
+                        <p>Even if the concept was simple, the integration part had a lot of challenges because we had to get real-time the offer availability and pay in order to book. Travel is a complex business!</p>
+                        <p><b>Highlights</b></p>
+                        <ul>
+                            <li>Real-time booking engine</li>
+                            <li>Material design</li>
+                        </ul>
+                        <p>
+                            <a class="btn" href="http://flaps:hazBUNNIES2007@beta.flaps.ro" target="_blank"><b>Visit website</b></a>
+                        </p>
+                    </div>
+                    <!-- Project -->
+                    <div class="portfolio__entry project">
+                        <header class="project__header media">
+                            <figure class="media-figure figure-icon-app">
+                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/icons/icon-preboo.jpg" alt="Preboo">
+                            </figure>
+                            <div class="media-body">
+                                <h4 class="project__title title">Preboo.com</h4>
+                                <p class="project__role">My role: UX/UI design, frontend</p>
+                                <p class="project__owner">Co/Founder, Sold</p>
+                            </div>
+                        </header>
+                        <!-- screenshots -->
+                        <div class="project__gallery screenshots">
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/preboo-1.jpg" data-size="1298x1193">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/preboo-1.jpg" alt="preboo.com">
+                                </a>
+                            </figure>
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/preboo-2.jpg" data-size="1298x1193">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/preboo-2.jpg" alt="preboo.com">
+                                </a>
+                            </figure>
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/preboo-3.jpg" data-size="1298x1193">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/preboo-3.jpg" alt="preboo.com">
+                                </a>
+                            </figure>
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/preboo-4.jpg" data-size="1298x1193">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/preboo-4.jpg" alt="preboo.com">
+                                </a>
+                            </figure>
+                        </div>
+                        <p><b>Highlights</b></p>
+                        <ul>
+                            <li>2M cities &amp; villages in the database</li>
+                            <li>11M points of interest</li>
+                            <li>Personalized travel search experience filtered by account history, social profiles and friends' activity</li>
+                            <li>Integration with Booking.com, Expedia.com and Venere.com for hotels offering</li>
+                            <li>Integration with Viator.com for activities offering</li>
+                        </ul>
+                        <p>
+                            <a class="btn" href="http://preboo.com/barcelona-spain/sights" target="_blank"><b>Visit website</b></a>
+                        </p>
+                    </div>
+                    <!-- Company -->
+                    <div class="portfolio__entry project">
+                        <header class="project__header media">
+                            <div class="media-body">
+                                <h4 class="project__title title">Adcaptcher.com</h4>
+                                <p class="project__role">My role: UX/UI design, frontend</p>
+                                <p class="project__owner">Founder</p>
+                            </div>
+                        </header>
+                        <figure class="figure-logo">
+                            <img src="//res.cloudinary.com/dpwaip1pp/image/upload/logos/logo-seedcamp.jpg" alt="seedcamp">
+                        </figure>
+                        <p><b>Finalist at <a href="http://seedcamp.com" target="_blank">Seedcamp</a> Zagreb 2010</b></p>
+                        <p>Adcaptcher was an innovative advertising platform at that time, we built the technology to embed ads in captchas. The ideea came to me when I was designing a sign-up form. This was before Facebook Login and other profile ID solutions. You can <a href="http://dragosroua.com/brand-your-captcha-introducing-adcaptcher/" target="_blank">read a full review here</a>.</p>
+                    </div>
+                    <!-- Event -->
+                    <div class="portfolio__entry event">
+                    </div>
+                    <!-- Project -->
+                    <div class="portfolio__entry project">
+                        <header class="project__header media">
+                            <figure class="media-figure figure-icon-app">
+                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/icons/icon-vodafone.jpg" alt="Vodafone">
+                            </figure>
+                            <div class="media-body">
+                                <h4 class="project__title title">Vodafone Newsroom</h4>
+                                <p class="project__role">My role: UI design &amp; frontend</p>
+                                <p class="project__owner">Company: Zoom-Studios</p>
+                            </div>
+                        </header>
+                        <!-- screenshots -->
+                        <div class="project__gallery screenshots">
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/vodafone-newsroom-1.jpg" data-size="576x379">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/vodafone-newsroom-1.jpg" alt="Vodafone Newsroom">
+                                </a>
+                            </figure>
+                        </div>
+                        <p>
+                            <a class="btn" href="http://vodafonenewsroom.ro" target="_blank"><b>Visit website</b></a>
+                        </p>
+                    </div>
+                    <!-- Project -->
+                    <div class="portfolio__entry project">
+                        <header class="project__header media">
+                            <figure class="media-figure figure-icon-app">
+                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/icons/icon-cicloteque.jpg" alt="Cicloteque">
+                            </figure>
+                            <div class="media-body">
+                                <h4 class="project__title title">Cicloteque</h4>
+                                <p class="project__role">My role: UX/UI design &amp; frontend</p>
+                                <p class="project__owner">Company: Zoom-Studios</p>
+                            </div>
+                        </header>
+                        <!-- screenshots -->
+                        <div class="project__gallery screenshots">
+                            <figure class="figure-screenshot">
+                                <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cicloteque-1.jpg" data-size="880x379">
+                                    <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cicloteque-1.jpg" alt="cicloteque.ro">
+                                </a>
+                            </figure>
+                        </div>
+                        <p>Cicloteque was a bike-sharing network for Bucharest and other romanian cities. <a href="http://maimultverde.ro/project/cicloteque" target="_blank">MaiMultVerde</a> hired us to develop their rent-a-bike platform and back-end in order to scale the pick-points faster.</p>
+                        <p>
+                            <a class="btn" href="http://www.cicloteque.ro/" target="_blank"><b>Visit website</b></a>
+                        </p>
+                    </div>
+                </div>
+            </section>
         </article>
-        <!-- Work -->
-        <section class="section portfolio">
-            <header class="section__title text-center">
-                <h2 class="headline">Work</h2>
-                <h3 class="title color-text-secondary">Selected projects</h3>
-            </header>
-            <article class="portfolio__group">
-                <!-- Year -->
-                <header class="portfolio__year">
-                    <h4 class="meta color-text-secondary"><b>2017</b></h4>
-                </header>
-                <!-- Project -->
-                <div class="portfolio__entry project">
-                    <header class="project__header media">
-                        <figure class="media-figure figure-icon-app">
-                            <img src="//res.cloudinary.com/dpwaip1pp/image/upload/icons/icon-cityilove.jpg" alt="CITY iLOVE">
-                        </figure>
-                        <div class="media-body">
-                            <h2 class="project__title title">CITY iLOVE</h2>
-                            <p class="project__role color-text-secondary">My role: UX/UI design, frontend, project manager</p>
-                            <p class="project__owner color-text-secondary">Company: eAD Interactive</p>
-                        </div>
-                    </header>
-                    <!-- screenshots -->
-                    <div class="project__gallery screenshots">
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cityilove-5.jpg" data-size="750x1344">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cityilove-5.jpg" alt="CITY iLOVE">
-                            </a>
-                        </figure>
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cityilove-2.jpg" data-size="750x1344">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cityilove-2.jpg" alt="CITY iLOVE">
-                            </a>
-                        </figure>
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cityilove-3.jpg" data-size="750x1344">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cityilove-3.jpg" alt="CITY iLOVE">
-                            </a>
-                        </figure>
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cityilove-4.jpg" data-size="750x1344">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cityilove-4.jpg" alt="CITY iLOVE">
-                            </a>
-                        </figure>
-                    </div>
-                    <!-- Description -->
-                    <p>Lead the UX/UI design and development teams and launched <a href="https://www.baneasa.ro/cityilove" target="_blank">Baneasa Shopping City's mobile app</a> on iOS and Android. With over 25k active users in less than 1 year after launch, the CITY iLOVE app showed results right away and won numerous prizes in the fields of digital, emerging technology and innovation in retail like "2016 ICSC Solal Marketing Awards: Silver Award for EMERGING TECHNOLOGY, Berlin, Germany".</p>
-                    <p>CITY iLOVE app transforms a regular shopping mall session into a smart digital experience. From rewarding clients for their purchases with personalized benefits to promoting brands' discounts and updates, the app is a must-have for every heavy-shopper.</p>
-                    <p><b>Highlights</b></p>
-                    <ul>
-                        <li>Scan purchase receipts and barcodes to earn user points</li>
-                        <li>Personalized benefits</li>
-                        <li>In-Store discounts via barcodes</li>
-                        <li>Newsfeed with latest news, promotions and events</li>
-                    </ul>
-                    <p>
-                        <span class="btn-group">
-                            <a class="btn btn--badge" href="https://itunes.apple.com/bt/app/city-ilove-by-baneasa/id1058864869?mt=8" target="_blank"><img src="dist/images/badges/appstore.svg" alt="Download from Appstore"></a>
-                            <a class="btn btn--badge" href="https://play.google.com/store/apps/details?id=ro.baneasashoppingcity.bsc" target="_blank"><img src="dist/images/badges/playstore.svg" alt="Get it on Google Play"></a>
-                        </span>
-                    </p>
-                </div>
-                <!-- Project -->
-                <div class="portfolio__entry project">
-                    <header class="project__header media">
-                        <figure class="media-figure figure-icon-app">
-                            <img src="//res.cloudinary.com/dpwaip1pp/image/upload/icons/icon-baneasa.jpg" alt="Baneasa.ro">
-                        </figure>
-                        <div class="media-body">
-                            <h2 class="project__title title">Baneasa.ro</h2>
-                            <p class="project__role color-text-secondary">My role: UI design &amp; frontend</p>
-                            <p class="project__owner color-text-secondary">Company: eAD Interactive</p>
-                        </div>
-                    </header>
-                    <!-- Description -->
-                    <p></p>
-                    <!-- screenshots -->
-                    <div class="project__gallery screenshots">
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/baneasa-1.jpg" data-size="750x1344">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/baneasa-1.jpg" alt="baneasa.ro">
-                            </a>
-                        </figure>
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/baneasa-2.jpg" data-size="750x1344">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/baneasa-2.jpg" alt="baneasa.ro">
-                            </a>
-                        </figure>
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/baneasa-3.jpg" data-size="750x1344">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/baneasa-3.jpg" alt="baneasa.ro">
-                            </a>
-                        </figure>
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/baneasa-4.jpg" data-size="1624x750">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/baneasa-4.jpg" alt="baneasa.ro">
-                            </a>
-                        </figure>
-                    </div>
-                    <p>
-                        <a class="btn" href="http://www.baneasa.ro" target="_blank"><b>Visit website</b></a>
-                    </p>
-                </div>
-                <!-- Project -->
-                <div class="portfolio__entry project">
-                    <header class="project__header media">
-                        <figure class="media-figure figure-icon-app">
-                            <img src="//res.cloudinary.com/dpwaip1pp/image/upload/icons/icon-bmw.jpg" alt="BMW">
-                        </figure>
-                        <div class="media-body">
-                            <h2 class="project__title title">BMW brand campaign</h2>
-                            <p class="project__role color-text-secondary">My role: UI design &amp; frontend</p>
-                            <p class="project__owner color-text-secondary">Company: eAD Interactive</p>
-                        </div>
-                    </header>
-                    <!-- screenshots -->
-                    <div class="project__gallery screenshots">
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/bmw-life-1.jpg" data-size="2400x1068">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/bmw-life-1.jpg" alt="BMW">
-                            </a>
-                        </figure>
-                    </div>
-                    <p>BMW partenered with Life.ro for a special brand campaign: 100 years of lifestyle innovation.</p>
-                    <p>
-                        <a class="btn" href="http://work.1616.ro/life.ro/html/bmw.php" target="_blank"><b>Visit campaign</b></a>
-                    </p>
-                </div>
-            </article>
-            <article class="portfolio__group">
-                <!-- Year -->
-                <header class="portfolio__year">
-                    <h4 class="meta color-text-secondary"><b>2016</b></h4>
-                </header>
-                <!-- Project -->
-                <div class="portfolio__entry project">
-                    <header class="project__header media">
-                        <figure class="media-figure figure-icon-app">
-                            <img src="//res.cloudinary.com/dpwaip1pp/image/upload/icons/icon-verdict.jpg" alt="Verdict">
-                        </figure>
-                        <div class="media-body">
-                            <h2 class="project__title title">Verdict.ro</h2>
-                            <p class="project__role color-text-secondary">My role: UI design &amp; frontend</p>
-                            <p class="project__owner color-text-secondary">Company: eAD Interactive</p>
-                        </div>
-                    </header>
-                    <!-- screenshots -->
-                    <div class="project__gallery screenshots">
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/verdict-2.jpg" data-size="750x1344">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/verdict-2.jpg" alt="verdict.ro">
-                            </a>
-                        </figure>
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/verdict-3.jpg" data-size="750x1344">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/verdict-3.jpg" alt="verdict.ro">
-                            </a>
-                        </figure>
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/verdict-4.jpg" data-size="750x1344">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/verdict-4.jpg" alt="verdict.ro">
-                            </a>
-                        </figure>
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/verdict-1.jpg" data-size="2388x996">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/verdict-1.jpg" alt="verdict.ro">
-                            </a>
-                        </figure>
-                    </div>
-                    <p>Verdict is a popular Romanian fashion publication. With 70% mobile traffic, they needed a mobile-first approach for the web presence. The layout is optimized for big images and easy sharing of content.</p>
-                    <p>
-                        <a class="btn" href="http://verdict.ro" target="_blank"><b>Visit website</b></a>
-                    </p>
-                </div>
-                <!-- Project -->
-                <div class="portfolio__entry project">
-                    <header class="project__header media">
-                        <figure class="media-figure figure-icon-app">
-                            <img src="//res.cloudinary.com/dpwaip1pp/image/upload/icons/icon-cbasilescu.jpg" alt="cramabasilescu.ro">
-                        </figure>
-                        <div class="media-body">
-                            <h2 class="project__title title">CramaBasilescu.ro</h2>
-                            <p class="project__role color-text-secondary">My role: UX &amp; UI design &amp; frontend &amp; Wordpress development</p>
-                            <p class="project__owner color-text-secondary">Company: Zoom-Studios</p>
-                        </div>
-                    </header>
-                    <!-- Description -->
-                    <p></p>
-                    <!-- screenshots -->
-                    <div class="project__gallery screenshots">
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cbasilescu-4.jpg" data-size="1662x1432">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cbasilescu-4.jpg" alt="cramabasilescu.ro">
-                            </a>
-                        </figure>
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cbasilescu-1.jpg" data-size="1080x1920">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cbasilescu-1.jpg" alt="cramabasilescu.ro">
-                            </a>
-                        </figure>
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cbasilescu-2.jpg" data-size="1080x1920">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cbasilescu-2.jpg" alt="cramabasilescu.ro">
-                            </a>
-                        </figure>
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cbasilescu-3.jpg" data-size="1080x1920">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cbasilescu-3.jpg" alt="cramabasilescu.ro">
-                            </a>
-                        </figure>
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cbasilescu-5.jpg" data-size="1662x1230">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cbasilescu-5.jpg" alt="cramabasilescu.ro">
-                            </a>
-                        </figure>
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cbasilescu-6.jpg" data-size="2420x1008">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cbasilescu-6.jpg" alt="cramabasilescu.ro">
-                            </a>
-                        </figure>
-                    </div>
-                    <p>
-                        <a class="btn" href="https://cramabasilescu.ro/" target="_blank"><b>Visit website</b></a>
-                    </p>
-                </div>
-                <!-- Project -->
-                <div class="portfolio__entry project">
-                    <header class="project__header media">
-                        <figure class="media-figure figure-icon-app">
-                            <img src="//res.cloudinary.com/dpwaip1pp/image/upload/icons/icon-cancan.jpg" alt="Cancan">
-                        </figure>
-                        <div class="media-body">
-                            <h2 class="project__title title">Cancan.ro</h2>
-                            <p class="project__role color-text-secondary">My role: UX/UI design &amp; frontend</p>
-                            <p class="project__owner color-text-secondary">Company: eAD Interactive</p>
-                        </div>
-                    </header>
-                    <!-- screenshots -->
-                    <div class="project__gallery screenshots">
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cancan-3.jpg" data-size="750x1344">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cancan-3.jpg" alt="cancan.ro">
-                            </a>
-                        </figure>
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cancan-4.jpg" data-size="750x1344">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cancan-4.jpg" alt="cancan.ro">
-                            </a>
-                        </figure>
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cancan-5.jpg" data-size="750x1344">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cancan-5.jpg" alt="cancan.ro">
-                            </a>
-                        </figure>
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cancan-1.jpg" data-size="1471x1185">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cancan-1.jpg" alt="cancan.ro">
-                            </a>
-                        </figure>
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cancan-2.jpg" data-size="1471x1185">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cancan-2.jpg" alt="cancan.ro">
-                            </a>
-                        </figure>
-                    </div>
-                    <p>Cancan is the romanian TMZ, the biggest gossip publication. With over 6M unique visitors every month, the challenge was to keep the bounce-rate low and grow the pageviews.</p>
-                    <p><b>Highlights</b></p>
-                    <ul>
-                        <li>6M+ unique visitors every month</li>
-                        <li>Optimized for fast loading and pageviews</li>
-                        <li>70% mobile traffic</li>
-                    </ul>
-                    <p>
-                        <a class="btn" href="http://cancan.ro" target="_blank"><b>Visit website</b></a>
-                    </p>
-                </div>
-                <!-- Project -->
-                <div class="portfolio__entry project">
-                    <header class="project__header media">
-                        <figure class="media-figure figure-icon-app">
-                            <img src="//res.cloudinary.com/dpwaip1pp/image/upload/icons/icon-life.jpg" alt="Life">
-                        </figure>
-                        <div class="media-body">
-                            <h2 class="project__title title">Life.ro</h2>
-                            <p class="project__role color-text-secondary">My role: UI design &amp; frontend</p>
-                            <p class="project__owner color-text-secondary">Company: eAD Interactive</p>
-                        </div>
-                    </header>
-                    <!-- screenshots -->
-                    <div class="project__gallery screenshots">
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/life-2.jpg" data-size="750x1344">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/life-2.jpg" alt="life.ro">
-                            </a>
-                        </figure>
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/life-3.jpg" data-size="750x1344">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/life-3.jpg" alt="life.ro">
-                            </a>
-                        </figure>
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/life-4.jpg" data-size="750x1344">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/life-4.jpg" alt="life.ro">
-                            </a>
-                        </figure>
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/life-1.jpg" data-size="2388x996">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/life-1.jpg" alt="life.ro">
-                            </a>
-                        </figure>
-                    </div>
-                    <p>
-                        <a class="btn" href="http://life.ro" target="_blank"><b>Visit website</b></a>
-                    </p>
-                </div>
-            </article>
-            <article class="portfolio__group">
-                <!-- Year -->
-                <header class="portfolio__year">
-                    <h4 class="meta color-text-secondary"><b>2015</b></h4>
-                </header>
-                <!-- Project -->
-                <div class="portfolio__entry project">
-                    <header class="project__header media">
-                        <figure class="media-figure figure-icon-app">
-                            <img src="//res.cloudinary.com/dpwaip1pp/image/upload/icons/icon-cofffre.jpg" alt="Cofffre">
-                        </figure>
-                        <div class="media-body">
-                            <h2 class="project__title title">Cofffre.com</h2>
-                            <p class="project__role color-text-secondary">My role: UX/UI design &amp; frontend</p>
-                            <p class="project__owner color-text-secondary">Founder</p>
-                        </div>
-                    </header>
-                    <figure class="figure-video">
-                        <div class="figure-video-player">
-                            <iframe src="https://www.youtube.com/embed/M22lznnocHM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <figcaption class="figure-video-title meta">Demo at <a href="http://www.protv.ro/" target="_blank">PRO TV</a></figcaption>
-                    </figure>
-                    <!-- Description -->
-                    <p>Together with Orlando Nicoara, Cristian Manafu and Andrei Petcu, built and <a href="http://start-up.ro/cofffre-te-anunta-in-timp-real-cand-ai-pretul-optim-la-produsul-dorit-investitie-de-zeci-de-mii-de-euro-in-plugin/" target="_blank">launched</a> Cofffre, a shopping assistant app.</p>
-                    <p>Cofffre is a personal shopping assistant app, it helps users make better purchase decisions from more than 30 Romanian online stores. When integrated with Cofffre, the stores grow the retention and conversion rate by 10%.</p>
-                    <p><b>Highlights</b></p>
-                    <ul>
-                        <li>Crawling 2M products real-time</li>
-                        <li>3000 active users in 2 months after launch</li>
-                        <li>Sending over 500 price alerts every day</li>
-                        <li>Chrome extension: the best shopping experience on big screens</li>
-                    </ul>
-                    <p>
-                        <span class="btn-group">
-                            <a class="btn btn--badge" href="https://chrome.google.com/webstore/detail/cofffre/ikepgbcegfohlhldfnpegfocaffdnmne?ref=razvan" target="_blank"><img src="dist/images/badges/chromestore.svg" alt="Install from Chrome Store"></a>
-                            <a class="btn" href="https://cofffre.com?ref=razvan" target="_blank"><b>Visit website</b></a>
-                            <a class="btn" href="https://www.youtube.com/watch?v=VHK1futXsTw" target="_blank"><b>Watch video</b></a>
-                        </span>
-                    </p>
-                </div>
-                <!-- Project -->
-                <div class="portfolio__entry project">
-                    <header class="project__header media">
-                        <figure class="media-figure figure-icon-app">
-                            <img src="//res.cloudinary.com/dpwaip1pp/image/upload/icons/icon-citroen.jpg" alt="Citroen">
-                        </figure>
-                        <div class="media-body">
-                            <h2 class="project__title title">Citroën lead campaigns</h2>
-                            <p class="project__role color-text-secondary">My role: UI design &amp; frontend</p>
-                            <p class="project__owner color-text-secondary">Company: eAD Interactive</p>
-                        </div>
-                    </header>
-                    <!-- screenshots -->
-                    <div class="project__gallery screenshots">
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/citroen-1.jpg" data-size="2388x996">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/citroen-1.jpg" alt="Citroën">
-                            </a>
-                        </figure>
-                    </div>
-                    <p>Improved Citroën lead campaigns by developing a flexible responsive template aligned with the brand guidelines in order to grow the conversion rate.</p>
-                    <p>
-                        <a class="btn" href="http://zoom-studios.ro/work/citroen/" target="_blank"><b>Visit landing page</b></a>
-                    </p>
-                </div>
-                <!-- Project -->
-                <div class="portfolio__entry project">
-                    <header class="project__header media">
-                        <figure class="media-figure figure-icon-app">
-                            <img src="//res.cloudinary.com/dpwaip1pp/image/upload/icons/icon-peugeot.jpg" alt="Peugeot">
-                        </figure>
-                        <div class="media-body">
-                            <h2 class="project__title title">Peugeot lead campaigns</h2>
-                            <p class="project__role color-text-secondary">My role: UI design &amp; frontend</p>
-                            <p class="project__owner color-text-secondary">Company: eAD Interactive</p>
-                        </div>
-                    </header>
-                    <!-- screenshots -->
-                    <div class="project__gallery screenshots">
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/peugeot-1.jpg" data-size="2388x996">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/peugeot-1.jpg" alt="Peugeot">
-                            </a>
-                        </figure>
-                    </div>
-                    <p>Improved Peugeot lead campaigns by developing a flexible responsive template aligned with the brand guidelines in order to grow the conversion rate.</p>
-                    <p>
-                        <a class="btn" href="http://zoom-studios.ro/work/peugeot/" target="_blank"><b>Visit landing page</b></a>
-                    </p>
-                </div>
-            </article>
-            <article class="portfolio__group">
-                <!-- Year -->
-                <header class="portfolio__year">
-                    <h4 class="meta color-text-secondary"><b>2014</b></h4>
-                </header>
-                <!-- Project -->
-                <div class="portfolio__entry project">
-                    <header class="project__header media">
-                        <figure class="media-figure figure-icon-app">
-                            <img src="//res.cloudinary.com/dpwaip1pp/image/upload/icons/icon-flaps.jpg" alt="Flaps">
-                        </figure>
-                        <div class="media-body">
-                            <h2 class="project__title title">FLAPS.ro</h2>
-                            <p class="project__role color-text-secondary">My role: product manager, UX/UI design</p>
-                            <p class="project__owner color-text-secondary">Company: Mediafax Group</p>
-                        </div>
-                    </header>
-                    <!-- screenshots -->
-                    <div class="project__gallery screenshots">
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/flaps-1.jpg" data-size="1364x1277">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/flaps-1.jpg" alt="flaps.ro">
-                            </a>
-                        </figure>
-                    </div>
-                    <p>FLAPS was a travel deals website, the concept was simple: 3 new travel deals everyday, similar to the early <a href="http://www.jetsetter.com/" target="_blank">JetSetter</a>. We built the platform from scratch and partnered with Aerotravel Lufthansa and TUI Travel Center.</p>
-                    <p>Even if the concept was simple, the integration part had a lot of challenges because we had to get real-time the offer availability and pay in order to book. Travel is a complex business!</p>
-                    <p><b>Highlights</b></p>
-                    <ul>
-                        <li>Real-time booking engine</li>
-                        <li>Material design</li>
-                    </ul>
-                    <p>
-                        <a class="btn" href="http://flaps:hazBUNNIES2007@beta.flaps.ro" target="_blank"><b>Visit website</b></a>
-                    </p>
-                </div>
-            </article>
-            <article class="portfolio__group">
-                <!-- Year -->
-                <header class="portfolio__year">
-                    <h4 class="meta color-text-secondary"><b>2010 - 2013</b></h4>
-                </header>
-                <!-- Project -->
-                <div class="portfolio__entry project">
-                    <header class="project__header media">
-                        <figure class="media-figure figure-icon-app">
-                            <img src="//res.cloudinary.com/dpwaip1pp/image/upload/icons/icon-preboo.jpg" alt="Preboo">
-                        </figure>
-                        <div class="media-body">
-                            <h2 class="project__title title">Preboo.com</h2>
-                            <p class="project__role color-text-secondary">My role: UX/UI design, frontend</p>
-                            <p class="project__owner color-text-secondary">Co/Founder, Sold</p>
-                        </div>
-                    </header>
-                    <!-- screenshots -->
-                    <div class="project__gallery screenshots">
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/preboo-1.jpg" data-size="1298x1193">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/preboo-1.jpg" alt="preboo.com">
-                            </a>
-                        </figure>
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/preboo-2.jpg" data-size="1298x1193">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/preboo-2.jpg" alt="preboo.com">
-                            </a>
-                        </figure>
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/preboo-3.jpg" data-size="1298x1193">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/preboo-3.jpg" alt="preboo.com">
-                            </a>
-                        </figure>
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/preboo-4.jpg" data-size="1298x1193">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/preboo-4.jpg" alt="preboo.com">
-                            </a>
-                        </figure>
-                    </div>
-                    <p><b>Highlights</b></p>
-                    <ul>
-                        <li>2M cities &amp; villages in the database</li>
-                        <li>11M points of interest</li>
-                        <li>Personalized travel search experience filtered by account history, social profiles and friends' activity</li>
-                        <li>Integration with Booking.com, Expedia.com and Venere.com for hotels offering</li>
-                        <li>Integration with Viator.com for activities offering</li>
-                    </ul>
-                    <p>
-                        <a class="btn" href="http://preboo.com/barcelona-spain/sights" target="_blank"><b>Visit website</b></a>
-                    </p>
-                </div>
-            </article>
-            <article class="portfolio__group">
-                <!-- Year -->
-                <header class="portfolio__year">
-                    <h4 class="meta color-text-secondary"><b>2009</b></h4>
-                </header>
-                <!-- Company -->
-                <div class="portfolio__entry project">
-                    <header class="project__header media">
-                        <div class="media-body">
-                            <h2 class="project__title title">Adcaptcher.com</h2>
-                            <p class="project__role color-text-secondary">My role: UX/UI design, frontend</p>
-                            <p class="project__owner color-text-secondary">Founder</p>
-                        </div>
-                    </header>
-                    <figure class="figure-logo">
-                        <img src="//res.cloudinary.com/dpwaip1pp/image/upload/logos/logo-seedcamp.jpg" alt="seedcamp">
-                    </figure>
-                    <p><b>Finalist at <a href="http://seedcamp.com" target="_blank">Seedcamp</a> Zagreb 2010</b></p>
-                    <p>Adcaptcher was an innovative advertising platform at that time, we built the technology to embed ads in captchas. The ideea came to me when I was designing a sign-up form. This was before Facebook Login and other profile ID solutions. You can <a href="http://dragosroua.com/brand-your-captcha-introducing-adcaptcher/" target="_blank">read a full review here</a>.</p>
-                </div>
-                <!-- Event -->
-                <div class="portfolio__entry event">
-                </div>
-            </article>
-            <article class="portfolio__group">
-                <!-- Year -->
-                <header class="portfolio__year">
-                    <h4 class="meta color-text-secondary"><b>2006-2008</b></h4>
-                </header>
-                <!-- Project -->
-                <div class="portfolio__entry project">
-                    <header class="project__header media">
-                        <figure class="media-figure figure-icon-app">
-                            <img src="//res.cloudinary.com/dpwaip1pp/image/upload/icons/icon-vodafone.jpg" alt="Vodafone">
-                        </figure>
-                        <div class="media-body">
-                            <h2 class="project__title title">Vodafone Newsroom</h2>
-                            <p class="project__role color-text-secondary">My role: UI design &amp; frontend</p>
-                            <p class="project__owner color-text-secondary">Company: Zoom-Studios</p>
-                        </div>
-                    </header>
-                    <!-- screenshots -->
-                    <div class="project__gallery screenshots">
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/vodafone-newsroom-1.jpg" data-size="576x379">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/vodafone-newsroom-1.jpg" alt="Vodafone Newsroom">
-                            </a>
-                        </figure>
-                    </div>
-                    <p>
-                        <a class="btn" href="http://vodafonenewsroom.ro" target="_blank"><b>Visit website</b></a>
-                    </p>
-                </div>
-                <!-- Project -->
-                <div class="portfolio__entry project">
-                    <header class="project__header media">
-                        <figure class="media-figure figure-icon-app">
-                            <img src="//res.cloudinary.com/dpwaip1pp/image/upload/icons/icon-cicloteque.jpg" alt="Cicloteque">
-                        </figure>
-                        <div class="media-body">
-                            <h2 class="project__title title">Cicloteque</h2>
-                            <p class="project__role color-text-secondary">My role: UX/UI design &amp; frontend</p>
-                            <p class="project__owner color-text-secondary">Company: Zoom-Studios</p>
-                        </div>
-                    </header>
-                    <!-- screenshots -->
-                    <div class="project__gallery screenshots">
-                        <figure class="figure-screenshot">
-                            <a target="_blank" href="//res.cloudinary.com/dpwaip1pp/image/upload/screens/cicloteque-1.jpg" data-size="880x379">
-                                <img src="//res.cloudinary.com/dpwaip1pp/image/upload/h_525/screens/cicloteque-1.jpg" alt="cicloteque.ro">
-                            </a>
-                        </figure>
-                    </div>
-                    <p>Cicloteque was a bike-sharing network for Bucharest and other romanian cities. <a href="http://maimultverde.ro/project/cicloteque" target="_blank">MaiMultVerde</a> hired us to develop their rent-a-bike platform and back-end in order to scale the pick-points faster.</p>
-                    <p>
-                        <a class="btn" href="http://www.cicloteque.ro/" target="_blank"><b>Visit website</b></a>
-                    </p>
-                </div>
-            </article>
-        </section>
     </main>
     <!-- Footer -->
     <footer class="appfooter">

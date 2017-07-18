@@ -62,7 +62,7 @@
     overflow: auto;
 
     figure {
-        margin-right: 16px;
+        margin-right: 14px;
         display: inline-block;
 
         > a > img {
@@ -111,9 +111,11 @@
 }
 
 .figure-screenshot {
-    padding: 8px;
+    padding: 4px;
     background: white;
     border: 1px solid $color-border;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(50,50,93,.1);
 
     img {
         margin: 0 auto;
@@ -125,7 +127,7 @@
     padding: 8px;
     background: white;
     border: 1px solid $color-border;
-    border-radius: 3px;
+    border-radius: 6px;
 
     .figure-video-player {
         position: relative;
@@ -152,8 +154,4 @@
         text-align: center;
         color: $color-text-hint;
     }
-}
-
-.screenshot {
-    box-shadow: 0 2px 4px rgba(50,50,93, .1);
 }
