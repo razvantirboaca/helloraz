@@ -12,17 +12,16 @@
         justify-content: center;
         max-width: $container-width;
         min-height: 50vw;
-        padding: 10vw 24px;
+        padding: 10vw 16px;
         @media all and (min-width: $size-sm) {
             min-height: 40vw;
         }
         @media all and (min-width: $size-lg) {
             min-height: 30vw;
-            padding: 10vw 8vw;
+            padding: 10vw 32px;
         }
         @media all and (min-width: $size-xl) {
             min-height: 20vw;
-            padding: 10vw 2vw;
         }
         text-shadow: 0 2px 1px rgba(black, .07);
     }
