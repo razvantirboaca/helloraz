@@ -35,7 +35,7 @@
     font-size: 2.4rem;
     line-height: 1;
     font-weight: 600;
-    color: rgba(black, .88);
+    color: $color-text-title;
     border: none;
 
     &:before,
@@ -66,6 +66,16 @@
             width: 18px;
             height: 18px;
             background: rgba($color-primary, .3);
+            transition: all .4s cubic-bezier(.28, 1.9, .61, 1);
+            will-change: transform;
         }
     }
+
+    &:hover {
+        color: inherit;
+        
+        span:before {
+            transform: scale(2);
+        }
+    } 
 }
