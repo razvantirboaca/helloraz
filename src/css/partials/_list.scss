@@ -1,37 +1,10 @@
 ul:not([class]),
 ol:not([class]) {
+    margin-left: 36px;
 
     li:not(:last-child) {
         margin-bottom: .4em;
     }
-}
-
-ul:not([class]) {
-    list-style: none;
-
-    li {
-        position: relative;
-        padding-left: 16px;
-
-        &:before {
-            content: '';
-            display: block;
-            position: absolute;
-            left: 0;
-            top: 8px;
-            width: 6px;
-            height: 6px;
-            background: $color-secondary;
-            border-radius: 50%;
-            @media all and (min-width: $size-lg) {
-                top: 9px;
-            }
-        }
-    }
-}
-
-ol:not([class]) {
-    margin-left: 72px;
 }
 
 .list {
