@@ -1,9 +1,9 @@
 .case {
     position: relative;
     display: block;
-    margin: 0 -32px 16px;
+    margin: 32px -32px 0;
     @media all and (min-width: $size-md) {
-        margin: 0 auto 64px;
+        margin: 64px auto 0;
     }
     border: none;
 
