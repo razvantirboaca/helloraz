@@ -1,3 +1,27 @@
+.case {
+    position: relative;
+    display: block;
+    margin: 0 -32px 16px;
+    @media all and (min-width: $size-md) {
+        margin: 0 auto 64px;
+    }
+    border: none;
+
+    &__body {
+        padding: 32px;
+
+        .case__title {
+            color: inherit;
+            margin-bottom: .4em;
+        }
+    }
+
+    &__figure {
+        z-index: 0;
+        position: absolute;
+    }
+}
+
 .giftcard {
 
     .hero {
@@ -34,6 +58,32 @@
         }
     }
 
+    &.case {
+        color: white;
+
+        a {
+            color: white;
+        }
+
+        .case__body {
+            padding-right: 30%;
+            @media all and (min-width: $size-md) {
+                padding-right: 40%;
+            }
+        }
+
+        .case__figure {
+            right: -20vw;
+            bottom: 0;
+            width: 70%;
+            max-width: 360px;
+            @media all and (min-width: $size-md) {
+                right: 0;
+            }
+        }
+    }
+
+    .case__body,
     .insight {
         position: relative;
         color: white;
