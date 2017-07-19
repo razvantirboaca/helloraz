@@ -54,4 +54,18 @@
         width: 1px;
         height: 10px;
     }
+
+    span {
+        display: block;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 3px;
+            top: 3px;
+            width: 18px;
+            height: 18px;
+            background: rgba($color-primary, .3);
+        }
+    }
 }
