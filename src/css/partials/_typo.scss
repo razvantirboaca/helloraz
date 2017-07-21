@@ -190,9 +190,10 @@ figcaption {
     p,
     ol,
     ul {
+        margin-bottom: 1.5em;
 
-        &:not(:last-child) {
-            margin-bottom: 1.4em;
+        &:last-child {
+            margin-bottom: 0;
         }
     }
 }
