@@ -14,6 +14,10 @@
             color: inherit;
             margin-bottom: .4em;
         }
+
+        .case__action {
+            margin-bottom: 0;
+        }
     }
 
     &__figure {
@@ -43,12 +47,14 @@
         &__body {
             padding-right: 18vw;
             @media all and (min-width: $size-lg) {
-                padding-right: 10%;
+                padding-right: 20%;
+            }
+            @media all and (min-width: $size-xxl) {
+                padding-right: 5%;
             }
         }
 
         &__image {
-            opacity: .86;
             position: absolute;
             bottom: 0;
             right: -25vw;
@@ -66,21 +72,24 @@
             color: white;
         }
 
-        .case__body {
-            padding-right: 30%;
-            @media all and (min-width: $size-md) {
-                padding-right: 40%;
-            }
-        }
-
         .case__figure {
-            opacity: .86;
             right: -20vw;
             bottom: 0;
             width: 70%;
             max-width: 360px;
             @media all and (min-width: $size-md) {
-                right: 0;
+                right: -10%;
+            }
+            @media all and (min-width: $size-lg) {
+                right: -3%;
+            }
+        }
+
+        .case__description,
+        .case__action {
+            padding-right: 30%;
+            @media all and (min-width: $size-md) {
+                padding-right: 40%;
             }
         }
     }

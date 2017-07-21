@@ -16,17 +16,23 @@
         min-height: 50vw;
         padding: 10vw 16px;
         @media all and (min-width: $size-sm) {
-            min-height: 40vw;
-            padding: 10vw 30px;
+            min-height: 30vw;
+            padding: 8vw 30px;
         }
         @media all and (min-width: $container-width) {
             overflow: visible;
         }
         @media all and (min-width: $size-lg) {
             min-height: 30vw;
+            padding: 4vw 30px;
         }
         @media all and (min-width: $size-xl) {
             min-height: 20vw;
+            padding: 6vw 30px;
+        }
+        @media all and (min-width: $size-xxl) {
+            min-height: 10vw;
+            padding: 4vw 30px;
         }
     }
 
