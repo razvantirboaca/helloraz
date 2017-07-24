@@ -1,11 +1,15 @@
 .btn-group {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: -4px;
 
     .btn {
-        margin: 4px;
+        margin-right: 4px;
+        margin-bottom: 4px;
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }
 
@@ -71,6 +75,19 @@
         }
     }
 
+    &--link {
+        color: inherit;
+        background: transparent;
+        border-color: transparent;
+        @media all and (min-width: $size-lg) {
+            &:hover {
+                color: inherit;
+                background: transparent;
+                border-color: transparent;
+            }
+        }
+    }
+
     &--sm {
         padding: .4em .6em;
         @media all and (min-width: $size-lg) {
@@ -101,4 +118,18 @@
             }
         }
     }
+}
+
+.social-icons {
+
+    .btn--link {
+        margin: 0;
+        color: $color-text-hint;
+        @media all and (min-width: $size-lg) {
+            &:hover {
+                color: $color-text-secondary;
+            }
+        }
+    }
+
 }
