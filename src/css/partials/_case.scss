@@ -126,12 +126,14 @@
         &__image {
             position: absolute;
             bottom: 0;
-            right: -20vw;
-            width: 60%;
+            right: -10vw;
+            width: 50%;
             @media all and (min-width: $size-lg) {
-                right: -18vw;
+                right: -15vw;
+                width: 54%;
             }
             @media all and (min-width: $size-xxl) {
+                right: -20vw;
                 width: 70%;
             }
         }

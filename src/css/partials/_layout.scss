@@ -56,11 +56,7 @@ body {
         }
 
         &--fill {
-            width: calc(100% - 32px);
-            
-            @media all and (min-width: $size-md) {
-                width: calc(100% - 72px);
-            }
+            width: 100%;
         }
 
         figcaption {

@@ -111,11 +111,7 @@
 }
 
 .figure-screenshot {
-    padding: 4px;
-    background: white;
-    border: 1px solid $color-border;
-    border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(50,50,93,.1);
+    box-shadow: 0 0 0 1px rgba($color-border, .75);
 
     img {
         margin: 0 auto;

@@ -5,6 +5,11 @@
         margin-left: -12px;
         margin-right: -12px;
 
+        &--outside {
+            margin-left: 12px;
+            margin-right: 12px;
+        }
+
         > .grid__tile {
             padding-left: 12px;
             padding-right: 12px;
