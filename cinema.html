@@ -79,19 +79,49 @@
                     <h4>Background</h4>
                     <p>Baneasa Shopping City is the premium shopping destination in Romania having 1.4M monthly foot-traffic. In 2015 we built and launched CITY iLOVE, Baneasa's loyalty app for iOS and Android.</p>
                     <p>With over 25k active users in less than 1 year, CITY iLOVE won numerous prizes in the fields of digital, emerging technology and innovation in retail like "2016 ICSC Solal Marketing Awards: Silver Award for EMERGING TECHNOLOGY, Berlin, Germany".</p>
+                    <h4>Introducing CITY iLOVE</h4>
+                    <p>CITY iLOVE app is a digital assistant that enhance the shopping experience in Baneasa Shopping City, Romania's favorite shopping and entertainment destination.</p>
+                    <p>The app features 5 sections:</p>
+                    <ol>
+                        <li><b>Newsfeed:</b> An engaging feed focused on news, events and promotions.</li>
+                        <li><b>Brands:</b> The place for finding mall's brands and stores.</li>
+                        <li><b>Profile:</b> User's info, benefits, purchase history and Inbox.</li>
+                        <li><b>Cinema:</b> The movies and shows running in the cinema.</li>
+                        <li><b>Scan:</b> A dedicated section for scanning receipts and parking tickets.</li>
+                    </ol>
+                    <p>The focus of this case study is on the Cinema section for iOS.</p>
                 </div>
-            </section>
-            <section class="section">
+                <figure class="article__figure article__figure--fill">
+                    <img src="dist/images/cases/cinema-1.jpg" alt="cinema screenshots ios">
+                </figure>
                 <div class="restrict-width centered">
                     <h2 class="text-center text-caps">The challenge</h2>
                     <h3 class="text-center">Create deeper relationships with customers</h3>
                     <hr class="centered">
-                    <h4>Project Cinema: Redesign and build in native code the Cinema section.</h4>
-                    <p>Our goal for the project was to make the checkout process fast and easy. More so, our ambitions were to provide a 360&deg; user experience by offering a smart way of checking transactions after each use.</p>
+                    <h4>Design and develop the Cinema section as native iOS experience.</h4>
+                    <p>When we launched the app one year earlier, we decided to focus on building the loyalty features first. The Cinema section was postponed to be upgraded in the versions to come, for v1 we went with just a webview loading the responsive website.</p>
+                    <p>We knew that customers love going to the movies and we had the exact number of how many tickets were sold on each channel. The app channel performed very poorly, so an upgrade to a native experience had to be done asap.</p>
+                    <p>Our goal for the project was to replace the webview loading the Cinema website with a native experience. More so, our ambitions were to improve the Discovery phase and Post-Booking offline experience.</p>
+                    <div class="article__figure">
+                        <div class="grid centered">
+                            <div class="grid__tile col-xs-5">
+                                <figure>
+                                    <img class="figure-screenshot" src="dist/images/cases/cinema-2.jpg" alt="before">
+                                    <figcaption><b>Before</b> (responsive website)</figcaption>
+                                </figure>
+                            </div>
+                            <div class="grid__tile col-xs-5 off-xs-1">
+                                <figure>
+                                    <img class="figure-screenshot" src="dist/images/cases/cinema-3.jpg" alt="after">
+                                    <figcaption><b>After</b> (native experience)</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
                     <p>Our high-level goals were to:</p>
                     <ol>
-                        <li>Make the checkout fast and easy for everyone, everywhere.</li>
-                        <li>Give customers full control over their spendings.</li>
+                        <li>Grow usage within the app and ticket sales.</li>
+                        <li>Help customers to find and book movies without hustle.</li>
                         <li>Create a new benefit to driving new app installs.</li>
                     </ol>
                     <p>Deadline: 3 months from 0 to launch.</p>
@@ -99,52 +129,37 @@
                     <p>I led the UX/UI design &amp; UI development. This was a team effort between Kinecto Isobar and eAD Interactive. In addition, I worked alongside a Product Manager, Project Manager, iOS developer, Android developer, and 2 backend developers.</p>
                     <p><i class="meta color-text-secondary is-block">To comply with my non-disclosure agreement, I have omitted and obfuscated confidential information in this case study. All information is my own and does not necessarily reflect the views of Baneasa Shopping City, Kinecto Isobar or eAD Interactive.</i></p>
                 </div>
-                <figure class="article__figure article__figure--fill">
-                    <img src="dist/images/cases/cinema-1.jpg" alt="cinema screenshots ios">
-                </figure>
             </section>
-            <section class="section">
+            <section class="section bg-gray-lighter">
                 <div class="restrict-width centered">
-                    <h2 class="text-center text-caps">User research</h2>
-                    <h3 class="text-center">The difference between assumptions and reality.</h3>
+                    <h2 class="text-center text-caps">User experience</h2>
+                    <h3 class="text-center">Use cases, not screens.</h3>
                     <hr class="centered">
-                    <p>We began with 3 stakeholders interviews to understand the business requirements, prioritise features and define key performance indicators (KPIs).</p>
-                    <p>We started to research <b>who</b> are the customers, <b>why</b> do they buy gift cards. We conducted customer and market research to drive our planning phase.</p>
-                    <p>First, I used all the quantitative data available to define customer profiles and calculate the average value of an order.</p>
-                    <p><i class="meta color-text-secondary is-block"><span class="color-text-danger">TIP 1:</span> the output is as accurate as the input</i></p>
-                    <p>However, we couldn't move forward without having one key insight, the user's online shopping behavior, so we conducted 2 qualitative research sessions inside the shopping mall.</p>
-                    <p><i class="meta color-text-secondary is-block"><span class="color-text-danger">TIP 2:</span> avoid asking questions that can be answered with YES/NO</i></p>
+                    <p>I began with 3 stakeholders interviews to understand the business requirements and define key performance indicators (KPIs).</p>
+                    <p>The Cinema team already knew <b>who</b> the customers were and <b>why</b> they enjoyed coming at the cinema. I didn't need to conduct customer and market research.</p>
+                    <p>Instead, I started to develop user stories and use-cases with a clear focus on user goals and finding pain points. The findings were used to evaluate design decisions.</p>
+                    <h4>User stories</h4>
+                    <p>I believe that the current model of defining user stories is broken. Something like "As a user, I want to buy a ticket, so I can access the cinema" doesn’t tell me anything about how the person chooses the movie (knows the title from the start or needs help to discover what's playing), if the hour is a filtering criteria, whether they need 1 or more tickets, and so on.</p>
+                    <p>To inform design, user stories have to tell a story about the person using the product. The person becomes central, not the product. The product exists only to create the tools for her to achieve her goals. Real life goals.</p>
+                    <p>These are the user stories that I've created:</p>
+                    <div class="insight">
+                        <p><b>As a single mom, I want to take the kids out to the movies. My kids want to see Spider-Man tonight.</b></p>
+                    </div>
+                    <div class="insight">
+                        <p><b>As a high school guy that just escaped the friendzone, I want to take my new gf to a date. It should be a Romantic Comedy sometime Saturday.</b></p>
+                    </div>
+                    <div class="insight">
+                        <p><b>As a hard working, always busy husband and father of three kids, I want to spend some quiet time with my wife. I scheduled 3 hours next Tuesday evening, the title doesn't matter much.</b></p>
+                    </div>
+                    <div class="insight">
+                        <p><b>My friends and I as movie lovers, don't want to miss an Opening. I have a Membership Card and I value all the offers and discounts.</b></p>
+                    </div>
                     <figure class="article__figure">
                         <img src="dist/images/cases/giftcard-19.png" alt="Baneasa Shopping City">
                         <figcaption>User interview</figcaption>
                     </figure>
                     <blockquote>Interesting finding: 1 of 8 people has a cracked screen. Make those buttons bigger on phones!</blockquote>
                     <p>From this research, I developed several use-cases that we used to evaluate design decisions throughout the wireframing process, to map the user journey and initial user acquisition channels.</p>
-                    <p>These are the key insights that defined our customer profiles:</p>
-                            <div class="insight">
-                                <h4>The Corporate</h4>
-                                <ul>
-                                    <li>+450€ order value, buys for company’s employees.</li>
-                                    <li>Multiple legal documents required.</li>
-                                    <li>Recommended channel: offline assisted by the Sales Dept.</li>
-                                </ul>
-                            </div>
-                            <div class="insight">
-                                <h4>The Gifter</h4>
-                                <ul>
-                                    <li>100€ order value, buys for gifting a family member or a friend.</li>
-                                    <li>Standard checkout process.</li>
-                                    <li>Recommended channel: online, mostly desktop, via SEO, AdWords and FB ads</li>
-                                </ul>
-                            </div>
-                            <div class="insight">
-                                <h4>The Loyalist</h4>
-                                <ul>
-                                    <li>~300€ order value, loyal shopper, buys for personal use or for her kids.</li>
-                                    <li>Standard checkout process.</li>
-                                    <li>Recommended channel: online, mobile user, via social media and the native app</li>
-                                </ul>
-                            </div>
                 </div>
             </section>
             <section class="section bg-gray-lighter">
