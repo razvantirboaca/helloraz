@@ -59,6 +59,18 @@ body {
             width: 100%;
         }
 
+        &--gray {
+            margin-left: -16px;
+            margin-right: -16px;
+            padding: 48px;
+            background: $color-gray-light;
+            @media all and (min-width: $size-lg) {
+                margin-left: -4em;
+                margin-right: -4em;
+                padding: 4em;
+            }
+        }
+
         figcaption {
             margin-top: 12px;
             text-align: center;
@@ -67,6 +79,6 @@ body {
     }
 
     .insights {
-        margin-top: 3em;
+        margin-bottom: 3em;
     }
 }

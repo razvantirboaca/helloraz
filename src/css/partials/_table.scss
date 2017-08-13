@@ -1,0 +1,40 @@
+table {
+    width: 100%;
+    margin: 3em auto;
+    font-size: 1.4rem;
+    background: white;
+    border: 1px solid $color-divider;
+    box-shadow: 0 2px 4px rgba(50, 50, 93, .1);
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    vertical-align: top;
+}
+
+thead {
+
+    tr {
+        background-color: $color-gray-light;
+        border-bottom: 2px solid $color-divider;
+    }
+}
+
+tbody {
+
+    th {
+        color: $color-text-secondary;
+        border: 1px solid $color-divider;
+    }
+
+    tr:nth-child(even) {
+        background-color: $color-gray-lighter;
+    }
+}
+
+th,
+td {
+    padding: 6px 12px;
+}

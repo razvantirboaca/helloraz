@@ -111,7 +111,7 @@
 }
 
 .figure-screenshot {
-    box-shadow: 0 0 0 1px rgba($color-border, .75);
+    border: 1px solid rgba($color-border, .75);
 
     img {
         margin: 0 auto;
