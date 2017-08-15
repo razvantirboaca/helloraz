@@ -1,10 +1,12 @@
 table {
     width: 100%;
     margin: 3em auto;
-    font-size: 1.4rem;
     background: white;
-    border: 1px solid $color-divider;
-    box-shadow: 0 2px 4px rgba(50, 50, 93, .1);
+    border: 1px solid $color-gray-light;
+    font-size: 1.2rem;
+    @media all and (min-width: $size-sm) {
+        font-size: 1.4rem;
+    }
 }
 
 table,
@@ -18,20 +20,21 @@ thead {
 
     tr {
         background-color: $color-gray-light;
-        border-bottom: 2px solid $color-divider;
     }
 }
 
-tbody {
+th {
+    border: 1px solid $color-gray-light;
 
-    th {
+    tbody &,
+    tfoot & {
         color: $color-text-secondary;
-        border: 1px solid $color-divider;
+        background-color: white;
     }
+}
 
-    tr:nth-child(even) {
-        background-color: $color-gray-lighter;
-    }
+tr:nth-child(even) {
+    background-color: $color-gray-lighter;
 }
 
 th,

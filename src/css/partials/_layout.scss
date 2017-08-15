@@ -62,7 +62,7 @@ body {
         &--gray {
             margin-left: -16px;
             margin-right: -16px;
-            padding: 48px;
+            padding: 32px;
             background: $color-gray-light;
             @media all and (min-width: $size-lg) {
                 margin-left: -4em;
@@ -74,7 +74,6 @@ body {
         figcaption {
             margin-top: 12px;
             text-align: center;
-            color: $color-text-secondary;
         }
     }
 
