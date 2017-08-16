@@ -55,14 +55,22 @@ return gulp.src(paths.src.css)
 });
 
 gulp.task('js', function () {
+var onError = function(err) {
+notify.onError({
+    title: 'JS error',
+    message: 'Error: <%= error.message %>'
+})(err);
+this.emit('end');
+};
 return gulp.src([
         paths.src.node + 'photoswipe/dist/photoswipe.min.js',
         paths.src.node + 'photoswipe/dist/photoswipe-ui-default.min.js',
-        //paths.src.node + 'sticky-state/dist/sticky-state.min.js',
+        paths.src.js + 'lazy-load.js',
         paths.src.js + 'app.js'
     ])
+    .pipe(plumber({errorHandler: onError}))
     .pipe(concat('app.js'))
-    .pipe(uglify())
+    //.pipe(uglify())
     .pipe(gulp.dest(paths.dist + 'js'))
     .pipe(notify({ message: 'JS task complete' }))
     .pipe(bs.stream())
