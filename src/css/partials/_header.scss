@@ -31,51 +31,68 @@
 .logo {
     position: relative;
     display: inline-block;
-    padding: 4px;
-    font-size: 2.4rem;
+    padding: 8px 8px 8px 2px;
+    font-size: 2rem;
     line-height: 1;
-    font-weight: 600;
     color: $color-text-title;
     border: none;
-
-    &:before,
-    &:after {
+    
+    &:before {
+        z-index: -1;
         content: '';
         position: absolute;
+        top: 6px;
         left: 0;
-        top: 0;
-        width: 10px;
-        height: 1px;
-        background: rgba(black, .88);
+        width: 18px;
+        height: 18px;
+        background: rgba($color-primary, .3);
     }
 
-    &:after {
-        left: -1px;
-        width: 1px;
-        height: 10px;
-    }
-
-    span {
+    b {
         display: block;
 
-        &:before {
-            content: '';
-            position: absolute;
-            left: 3px;
-            top: 3px;
-            width: 18px;
-            height: 18px;
-            background: rgba($color-primary, .3);
-            transition: all .4s cubic-bezier(.28, 1.9, .61, 1);
-            will-change: transform;
+        span {
+            display: inline-block;
+            font-weight: 300;
         }
     }
 
-    &:hover {
-        color: inherit;
-        
-        span:before {
-            transform: scale(2);
+    @media all and (min-width: $size-lg) {
+        font-size: 2.4rem;
+
+        &:before {
+            transform: scale(1);
+            transition: all .4s cubic-bezier(.28, 1.9, .61, 1) .4s;
+            will-change: transform;
         }
-    } 
+
+        b {
+
+            span {
+                opacity: .01;
+                transform: translateX(-100%);
+                transition: transform .1s ease-in .3s, opacity .1s ease-in;
+            }
+        }
+        
+        &:hover {
+            color: $color-text-title;
+            
+            &:before {
+                z-index: -1;
+                transform: scale(2);
+                transition: all .4s cubic-bezier(.28, 1.9, .61, 1);
+            }
+            
+            b {
+                
+                span {
+                    opacity: 1;
+                    transform: translateX(0);
+                    transition: transform .3s cubic-bezier(.28, 1.9, .61, 1) .3s, opacity .3s ease-in .3s;
+                }
+            }
+        } 
+
+    }
 }
