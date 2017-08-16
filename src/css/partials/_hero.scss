@@ -1,9 +1,11 @@
 .hero {
     position: relative;
-    margin: 0 16px;
+    width: calc(100% - 32px);
+    max-width: $size-xxl;
+    margin: 0 auto;
 
-    @media all and (min-width:$size-md) {
-        margin: 0 36px;
+    @media all and (min-width: $size-md) {
+        width: calc(100% - 72px);
     }
 
     &:before {
@@ -36,15 +38,10 @@
         }
         @media all and (min-width: $size-lg) {
             min-height: 30vw;
-            padding: 4vw 30px;
-        }
-        @media all and (min-width: $size-xl) {
-            min-height: 20vw;
             padding: 6vw 30px;
         }
         @media all and (min-width: $size-xxl) {
-            min-height: 10vw;
-            padding: 4vw 30px;
+            min-height: 20vw;
         }
     }
 
