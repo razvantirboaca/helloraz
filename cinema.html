@@ -67,8 +67,8 @@
             <!-- Hero -->
             <section class="hero">
                 <div class="hero__body centered">
-                    <h1 class="hero__title">Cinema iOS</h1>
-                    <p class="hero__description">The UX and UI design behind a digital adventure into the depth of retail innovation.</p>
+                    <h1 class="hero__title">iOS Cinema app</h1>
+                    <p class="hero__description">Designing and launching CITY iLOVE's cinema native experience.</p>
                 </div>
                 <figure class="hero__figure">
                     <img class="js-lazy-image" data-src="dist/images/cases/cinema-hero.png">
@@ -120,8 +120,8 @@
                     </div>
                     <p>Our high-level goals were to:</p>
                     <ol>
-                        <li>Increase usage within the app and ticket sales.</li>
-                        <li>Help customers to find and book movies without hustle.</li>
+                        <li>Increase usage and ticket sales.</li>
+                        <li>Increase new users retention rate.</li>
                         <li>Create a new benefit to driving new app installs.</li>
                     </ol>
                     <p>Deadline: 3 months from 0 to launch.</p>
@@ -135,9 +135,9 @@
                     <h2 class="text-center text-caps">User experience</h2>
                     <h3 class="text-center">Use cases, not screens.</h3>
                     <hr class="centered">
-                    <p>I began with 3 stakeholders interviews to understand the business requirements and define key performance indicators (KPIs).</p>
-                    <p>The Cinema team gave me access to customers stats. I didn't need to conduct a full customer and market research.</p>
-                    <p>Instead, I conducted 2 qualitative research sessions and I spent a full day in the Cinema lobby observing customers and taking notes.</p>
+                    <p>I began with 3 stakeholders interviews to understand the business requirements and define key performance indicators (KPIs). A full market research wasn't needed in order to move forward.</p>
+                    <p>Instead, I started the user research process by conducting 1 individual interview session, 1 online survey, and 1 full day spent in the Cinema lobby observing customers and taking notes.</p>
+                    <p>The goal of this exercise was to gather data about customer's behaviour, goals, and pain points.</p>
                     <figure class="article__figure">
                         <img class="js-lazy-image" data-src="//res.cloudinary.com/dpwaip1pp/image/upload/cases/user-interview.png" alt="Baneasa Shopping City">
                         <figcaption>User interview</figcaption>
@@ -200,7 +200,7 @@
                             </tr>
                             <tr>
                                 <td>Book/Buy</td>
-                                <td>Select schedule</td>
+                                <td>Select showtime</td>
                             </tr>
                             <tr>
                                 <th colspan="2">Checkout</th>
@@ -217,16 +217,16 @@
                                 <th colspan="2">Use</th>
                             </tr>
                             <tr>
+                                <td>Enter cinema</td>
+                                <td>Show barcode</td>
+                            </tr>
+                            <tr>
                                 <td>Set reminder</td>
                                 <td>Add to calendar</td>
                             </tr>
                             <tr>
                                 <td>Add guests</td>
-                                <td>Share booking</td>
-                            </tr>
-                            <tr>
-                                <td>Enter cinema</td>
-                                <td>Show barcode</td>
+                                <td>Share ticket</td>
                             </tr>
                         </tbody>
                     </table>
@@ -242,7 +242,7 @@
                             <p><b>Checkout:</b> "Hustle-free" process to book or buy tickets. Checkout view.</p>
                         </li>
                         <li>
-                            <p><b>Use:</b> Optimized experience for offline use. My Tickets view.</p>
+                            <p><b>Use:</b> Optimised experience for offline use. My Tickets view.</p>
                         </li>
                     </ol>
                 </div>
@@ -259,7 +259,6 @@
                     <p>In the meantime, the development team started to build the API endpoints and backend integration.</p>
                     <p>Things to keep in mind: our product development approach is to build an MVP, measure it against the KPIs and improve with each new iteration. For measuring specific screens and components we do A/B testing. As a design limitation, the Cinema is just one section of a full-featured app, not the whole app.</p>
                     <p>Let's dive in into each Cinema section.</p>
-                    <hr>
                     <h4>1. Discover/Home view</h4>
                     <p>Dedicated section to quickly find the desired movie.</p>
                     <table>
@@ -305,26 +304,26 @@
                                     <p>Segmented Control for toggling between Movies and Tickets views.</p>
                                     <p>Prominent Search Bar for searching a movie.</p>
                                     <p>List of movies displayed in grid layout.</p>
-                                    <p><b>Pros:</b> Visual exciting, iOS native components.</p>
+                                    <p><b>Pros:</b> Visual appealing, native components.</p>
                                     <p><b>Cons:</b> No way to filter movies, hard access to My Tickets.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <p>Testing this version against the use cases failed. Having no room to display a Filter option and hiding it behind Search was a clear NO-NO.</p>
-                    <p><b>After more sketching, I decided to remove the Segmented Control and Search Bar to designe a custom Action Bar.</b></p>
+                    <p>After more sketching, I decided to remove the Segmented Control and Search Bar to designe a custom Action Bar.</p>
                     <div class="article__figure">
                         <div class="grid has-gutter has-gutter-bottom centered">
                             <div class="grid__tile col-xs-11 col-sm-8 col-md-6">
                                 <figure>
-                                    <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/dpwaip1pp/image/upload/cases/cinema-7.jpg" alt="v1">
-                                    <figcaption class="color-text-danger">v1</figcaption>
+                                    <img class="js-lazy-image" data-src="//res.cloudinary.com/dpwaip1pp/image/upload/cases/cinema-7.jpg" alt="first version">
+                                    <figcaption>First version</figcaption>
                                 </figure>
                             </div>
                             <div class="grid__tile col-xs-11 col-sm-8 col-md-6">
                                 <figure>
-                                    <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/dpwaip1pp/image/upload/cases/cinema-8.jpg" alt="v2">
-                                    <figcaption class="color-text-success">v2</figcaption>
+                                    <img class="js-lazy-image" data-src="//res.cloudinary.com/dpwaip1pp/image/upload/cases/cinema-8.jpg" alt="final version">
+                                    <figcaption>Final version</figcaption>
                                 </figure>
                             </div>
                         </div>
@@ -345,14 +344,14 @@
                                     <p class="text-caps"><b>View breakdown:</b></p>
                                     <p>Action Bar for filtering and searching movies.</p>
                                     <p>List of movies displayed in grid layout.</p>
-                                    <p><b>Pros:</b> Visual exciting, easy access to Filters and My Tickets.</p>
-                                    <p><b>Cons:</b> Search Bar behind a button, custom components.</p>
+                                    <p><b>Pros:</b> Visual appealing, easy access to Filters, Search, and My Tickets.</p>
+                                    <p><b>Cons:</b> Custom components.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <blockquote>I do prototyping and usability testing not to find what I've got right, but to learn where I've failed.</blockquote>
-                    <p>I built a quick HTML prototype for usability testing. The outcome of analyzing results is deeply influenced by researcher's goal. If one's goal is only to validate her assumptions then that's the outcome she'll look for.</p>
+                    <p>I built a quick HTML/CSS prototype for usability testing. The outcome of analyzing results is deeply influenced by researcher's goal. If one's goal is only to validate her assumptions then that's the outcome she'll look for.</p>
                     <p><b>But, if your goal is to help the customer achieve her goals, then you'll continue asking questions until your solution will offer the best user experience.</b></p>
                     <p>Earlier in the process, I've defined use cases but I've forgotten the most important question: How fast does the user achieve her goals?</p>
                     <p>So I decided to A/B test the Grid layout against a List layout using the same tasks and different testers.</p>
@@ -418,7 +417,7 @@
                     <div class="article__figure article__figure--gray">
                         <div class="grid has-gutter-bottom centered">
                             <div class="grid__tile col-xs-12">
-                                <p class="text-center">Home final version</p>
+                                <p class="text-center">Discover final version</p>
                             </div>
                             <div class="grid__tile col-xs-12 col-sm-8 col-md-5">
                                 <figure>
@@ -432,7 +431,6 @@
                             </div>
                         </div>
                     </div>
-                    <hr>
                     <h4>2. Showcase/Movie view</h4>
                     <p>Informative way to present movie details and schedule.</p>
                     <table>
@@ -449,12 +447,12 @@
                             </tr>
                             <tr>
                                 <td>Book/Buy</td>
-                                <td>Select schedule</td>
+                                <td>Select showtime</td>
                             </tr>
                         </tbody>
                     </table>
                     <p>I began by learning what types of content we'll have access to and what's driving the customer to make a positive decision about watching a movie. Then started diving into the website's historical data, surfacing user behavior on the movie page, pain points and barriers to conversion.</p>
-                    <p>I've found that the most important piece of content for decision-making was the movie Trailer. The second most important factor was the Schedule.</p>
+                    <p>I've found that the most important piece of content for decision-making is the movie Trailer. The second most important argument is the Showtime.</p>
                     <p>Working on the Information Architecture (IA), I decided to emphasize the Trailer by allowing over 30% of the screen real estate.</p>
                     <div class="article__figure article__figure--gray">
                         <div class="grid has-gutter-bottom centered">
@@ -469,16 +467,14 @@
                             <div class="grid__tile col-xs-12 col-sm-8 col-md-5 off-md-1">
                                 <div class="insight insight--paper">
                                     <p class="text-caps"><b>View breakdown:</b></p>
-                                    <p>Action Bar for filtering and searching movies.</p>
-                                    <p>List of movies displayed in grid layout.</p>
-                                    <p><b>Pros:</b> Visual exciting, easy access to Filters and My Tickets.</p>
-                                    <p><b>Cons:</b> Search Bar behind a button, custom components.</p>
+                                    <p>Movie title and details, short description, and video.</p>
+                                    <p><b>Pros:</b> Visual appealing, clear IA, highlighted trailer.</p>
+                                    <p><b>Cons:</b> No ratings and reviews.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <p><b>Schedule explorations</b></p>
-                    <p>I spent the next several days exploring variants for the Schedule component.</p>
+                    <p><b>Schedule component design explorations</b></p>
                     <table>
                         <thead>
                             <tr>
@@ -501,7 +497,7 @@
                             </tr>
                         </tbody>
                     </table>
-                    <p>Things to keep in mind: the design's high-level goal is to reduce customer's cognitive load to 0. The user's main goal is to select the desired showtime, but the Schedule is also the second most important factor in the decision-making process.</p>
+                    <p>I spent the next several days exploring variants for the Schedule component. The design's high-level goal was to reduce customer's cognitive load to 0.</p>
                     <div class="article__figure">
                         <div class="grid has-gutter-bottom centered">
                             <div class="grid__tile col-xs-8 col-sm-5">
@@ -553,7 +549,6 @@
                             </div>
                         </div>
                     </div>
-                    <p>When it comes down to <i>"hard for the customer, easy for us"</i> vs <i>"easy for the customer, hard for us"</i>, I always make the right choice.</p>
                     <div class="article__figure article__figure--gray">
                         <div class="grid has-gutter-bottom centered">
                             <div class="grid__tile col-xs-12">
@@ -583,12 +578,11 @@
                             </div>
                             <div class="grid__tile col-xs-12 col-sm-8 col-md-5 off-md-1">
                                 <div class="insight insight--paper">
-                                    <p><b>Prototyping early is the most effective way to gain meaningful feedback from the team and approval from stakeholders.</b></p>
+                                    <p>Prototyping early is the most effective way to gain meaningful feedback from the team and approval from stakeholders.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <hr>
                     <h4>3. Checkout</h4>
                     <p>"Hustle-free" order process. Select tickets -> Select seats -> Book or Buy.</p>
                     <div class="article__figure article__figure--gray">
@@ -598,7 +592,7 @@
                             </div>
                             <div class="grid__tile col-xs-12 col-sm-8 col-md-5">
                                 <figure>
-                                    <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/dpwaip1pp/image/upload/cases/cinema-11.jpg" alt="schedule">
+                                    <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/dpwaip1pp/image/upload/cases/cinema-12.jpg" alt="schedule">
                                 </figure>
                             </div>
                             <div class="grid__tile col-xs-12 col-sm-8 col-md-5 off-md-1">
@@ -608,60 +602,61 @@
                             </div>
                         </div>
                     </div>
-                    <p> There were 2 main differences between Book and Buy</p>
+                    <blockquote>Designing with real content is the way to go, special thanks go to the Invision team for building Craft for Sketch.</blockquote>
+                    <h4>4. Use/My Tickets view</h4>
+                    <p>Optimized experience for offline use.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>User task</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Enter cinema</td>
+                                <td>Show barcode</td>
+                            </tr>
+                            <tr>
+                                <td>Set reminder</td>
+                                <td>Add to calendar</td>
+                            </tr>
+                            <tr>
+                                <td>Add guests</td>
+                                <td>Share ticket</td>
+                            </tr>
+                        </tbody>
+                    </table>
                     <div class="article__figure article__figure--gray">
                         <div class="grid has-gutter-bottom centered">
                             <div class="grid__tile col-xs-12">
-                                <p class="text-center">Discounts</p>
+                                <p class="text-center">My Tickets</p>
                             </div>
                             <div class="grid__tile col-xs-12 col-sm-8 col-md-5">
                                 <figure>
-                                    <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/dpwaip1pp/image/upload/cases/cinema-12.jpg" alt="schedule">
+                                    <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/dpwaip1pp/image/upload/cases/cinema-16.jpg" alt="my tickets">
                                 </figure>
                             </div>
                             <div class="grid__tile col-xs-12 col-sm-8 col-md-5 off-md-1">
-                                <div class="insight insight--paper">
-                                    <p class="text-caps"><b>View breakdown:</b></p>
-                                    <p>Action Bar for filtering and searching movies.</p>
-                                    <p>List of movies displayed in grid layout.</p>
-                                    <p><b>Pros:</b> Visual exciting, easy access to Filters and My Tickets.</p>
-                                    <p><b>Cons:</b> Search Bar behind a button, custom components.</p>
-                                </div>
+                                <figure>
+                                    <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/dpwaip1pp/image/upload/cases/cinema-barcode.gif" alt="ticket">
+                                </figure>
                             </div>
                         </div>
                     </div>
-                    <hr>
-                    <h4>4. Use/My Tickets view</h4>
-                    <p>Optimized experience for offline use.</p>
-                    <blockquote>Designing with real content is always better, special thanks go to the Invision team for building Craft, the Sketch plugin.</blockquote>
-                </div>
-
-                <figure class="article__figure article__figure--fill">
-                    <img class="js-lazy-image" data-src="//res.cloudinary.com/dpwaip1pp/image/upload/cases/cinema-1.jpg" alt="cinema screenshots ios">
-                </figure>
-                <div class="restrict-width centered">
-                    <h4>Communication and project management</h4>
-                    <p>We've worked from 2 different cities: Barcelona and Bucharest. Being remote and having a tight deadline made us implement an always-on communication channel, doubled by bi-weekly standups. Most importantly, to use flexible project management tools and embrace ownership and accountability.</p>
-                    <p>We used Skype for standups, Slack for public and private chats, Asana for tasks and documentation.</p>
-                    <figure class="article__figure">
-                        <div class="device device-desktop">
-                            <div class="device__body">
-                                <div class="device__screen">
-                                    <img class="js-lazy-image" data-src="//res.cloudinary.com/dpwaip1pp/image/upload/cases/giftcard-17.jpg" alt="screenshot">
-                                </div>
-                            </div>
-                        </div>
-                        <figcaption>We used Asana to keep track of tasks and progress</figcaption>
-                    </figure>
                 </div>
             </section>
             <section class="section bg-gray-lighter">
                 <div class="restrict-width centered">
                     <h2 class="text-center text-caps">Launch</h2>
-                    <h3 class="text-center">Beta stage and much more to do.</h3>
+                    <h3 class="text-center">Positive results and much more to do.</h3>
                     <hr class="centered">
-                    <p>It’s still early days for the product, yet first results have exceeded our expectations. We rolled a Beta launch on 10% of web visitors. We use Hotjar for collecting quantitative data besides what we know already from Google Analytics.</p>
-                    <p>We see an average completion rate of 57%, the checkout process runs smoothly. The development team plans to decrease the loading speed and move to React. That means CSS transitions between the steps, hardly wait!</p>
+                    <ul class="list text-center text-caps">
+                        <li style="margin-bottom:.8em"><b>Increased section usage from 2% to 51%.</b></li>
+                        <li style="margin-bottom:.8em"><b>Increased conversion rate from 3% to 57%.</b></li>
+                        <li style="margin-bottom:.8em"><b>Increased new user retention rate by 31%.</b></li>
+                        <li style="margin-bottom:.8em"><b>Decreased user acquisition cost (UAC) by 34% by increasing the referral rate.</b></li>
+                    </ul>
                 </div>
             </section>
             <aside class="section restrict-width centered">

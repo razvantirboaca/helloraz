@@ -124,7 +124,7 @@
 
     .btn--link {
         margin: 0;
-        color: $color-text-hint;
+        color: $color-text-primary;
         @media all and (min-width: $size-lg) {
             &:hover {
                 color: $color-text-secondary;
