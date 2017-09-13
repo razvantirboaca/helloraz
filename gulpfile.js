@@ -63,9 +63,9 @@ notify.onError({
 this.emit('end');
 };
 return gulp.src([
+        paths.src.js + 'lazy-load.js',
         paths.src.node + 'photoswipe/dist/photoswipe.min.js',
         paths.src.node + 'photoswipe/dist/photoswipe-ui-default.min.js',
-        paths.src.js + 'lazy-load.js',
         paths.src.js + 'app.js'
     ])
     .pipe(plumber({errorHandler: onError}))
