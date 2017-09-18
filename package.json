@@ -1,8 +1,8 @@
 {
-  "name": "Rockstar",
+  "name": "Portfolio",
   "version": "1.0.0",
   "private": true,
-  "description": "Build your CV",
+  "description": "Razvan Tirboaca, product Designer",
   "main": "index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,9 +10,9 @@
   "author": "Razvan Tirboaca",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^7.1.2",
+    "autoprefixer": "^7.1.4",
     "browser-sync": "^2.18.13",
-    "browserslist": "^2.3.3",
+    "browserslist": "^2.4.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.2",
@@ -21,7 +21,7 @@
     "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.0",
+    "gulp-sourcemaps": "^2.6.1",
     "gulp-uglify": "^3.0.0",
     "photoswipe": "^4.1.2",
     "sticky-state": "^2.4.1"

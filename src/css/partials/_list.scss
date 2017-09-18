@@ -19,28 +19,3 @@ ol:not([class]) {
         }
     }
 }
-
-dl {
-    overflow: hidden;
-    border-width: 1px 2px 2px;
-    border-style: solid;
-    border-color: $color-border;
-    border-radius: 4px;
-
-    dt,
-    dd {
-        float: left;
-        padding: 8px 6px 8px 12px;
-        border-top: 1px solid $color-border;
-        white-space: nowrap;
-    }
-
-    dt {
-        width: 30%;
-    }
-
-    dd {
-        width: 70%;
-        background: $color-gray-lighter;
-    }
-}
