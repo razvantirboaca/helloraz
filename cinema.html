@@ -1,731 +1,737 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>iOS Cinema app: UX/UI case study &middot; Razvan Tirboaca, Product Designer</title>
-    <meta name="description" content="Designing and launching CITY iLOVE's cinema native experience.">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <link rel="stylesheet" type="text/css" href="dist/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Cardo|Montserrat:300,400,600" rel="stylesheet">
-    <meta property="og:site_name" content="Razvan Tirboaca">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://razvantirboaca.com/cinema">
-    <meta property="og:title" content="iOS Cinema app: UX/UI case study &middot; Razvan Tirboaca, Product Designer">
-    <meta property="og:description" content="Designing and launching CITY iLOVE's cinema native experience.">
-    <meta property="og:image" content="https://res.cloudinary.com/diuy8b72h/image/upload/cases/cinema-1.jpg">
-    <meta name="p:domain_verify" content="dbf727a5387ae6675d51b57539152a14">
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="dist/favico/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="dist/favico/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="dist/favico/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="dist/favico/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="dist/favico/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="dist/favico/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="dist/favico/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="dist/favico/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="dist/favico/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="dist/favico/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="dist/favico/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="dist/favico/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="dist/favico/favicon-16x16.png">
-    <link rel="manifest" href="dist/favico/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="dist/favico/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <!-- Hotjar Tracking Code for https://razvantirboaca.com -->
-    <script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:548715,hjsv:5};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>iOS Cinema app: UX/UI case study &middot; Razvan Tirboaca, Product Designer</title>
+        <meta name="description" content="Designing and launching CITY iLOVE's cinema native experience.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+        <link rel="stylesheet" type="text/css" href="dist/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Cardo|Montserrat:300,400,600" rel="stylesheet">
+        <meta property="og:site_name" content="Razvan Tirboaca">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://razvantirboaca.com/cinema">
+        <meta property="og:title" content="iOS Cinema app: UX/UI case study &middot; Razvan Tirboaca, Product Designer">
+        <meta property="og:description" content="Designing and launching CITY iLOVE's cinema native experience.">
+        <meta property="og:image" content="https://res.cloudinary.com/diuy8b72h/image/upload/cases/cinema-1.jpg">
+        <meta name="p:domain_verify" content="dbf727a5387ae6675d51b57539152a14">
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="dist/favico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="dist/favico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="dist/favico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="dist/favico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="dist/favico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="dist/favico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="dist/favico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="dist/favico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="dist/favico/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="dist/favico/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="dist/favico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="dist/favico/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="dist/favico/favicon-16x16.png">
+        <link rel="manifest" href="dist/favico/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="dist/favico/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!-- Hotjar Tracking Code for https://razvantirboaca.com -->
+        <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:548715,hjsv:5};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
+    </head>
 
-<body id="up">
-    <header class="appbar">
-        <div class="header">
-            <h1 class="header__title">
-                <a href="https://razvantirboaca.com" class="logo">
-                    <b>R<span>azvan</span></b>
-                </a>
-            </h1>
-            <p class="header__actions">
-                <a class="btn btn--outline btn--sm" href="https://www.linkedin.com/in/razvantirboaca/" target="_blank">
-                    <b>About</b>
-                </a>
-            </p>
-        </div>
-    </header>
-    <main class="appmain">
-        <article class="article cinema">
-            <!-- Hero -->
-            <section class="hero">
-                <div class="hero__body centered">
-                    <h1 class="hero__title">iOS Cinema app</h1>
-                    <p class="hero__description">Designing and launching CITY iLOVE's cinema native experience.</p>
-                </div>
-                <figure class="hero__figure">
-                    <img class="js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-hero.png">
-                </figure>
-            </section>
-            <section class="section">
-                <div class="restrict-width centered">
-                    <h4>Background</h4>
-                    <p>Baneasa Shopping City is the premium shopping destination in Romania having a 1.4M monthly foot-traffic. In 2015, we built and launched CITY iLOVE, Baneasa's loyalty app for iOS and Android.</p>
-                    <p>With over 25k active users in less than 1 year, CITY iLOVE won numerous prizes in the fields of digital, emerging technology and innovation in retail like "2016 ICSC Solal Marketing Awards: Silver Award for EMERGING TECHNOLOGY, Berlin, Germany".</p>
-                    <h4>Introducing CITY iLOVE</h4>
-                    <p>CITY iLOVE app is a digital assistant that enhance the shopping experience in Baneasa Shopping City, Romania's favorite shopping and entertainment destination.</p>
-                    <p>The app features 5 sections:</p>
-                    <ol>
-                        <li><b>Newsfeed:</b> An engaging feed focused on news, events, and promotions.</li>
-                        <li><b>Brands:</b> The place for finding mall's brands and stores.</li>
-                        <li><b>Profile:</b> User's info, benefits, purchase history, and Inbox.</li>
-                        <li><b>Cinema:</b> The movies and shows running in the cinema.</li>
-                        <li><b>Scan:</b> A dedicated section for scanning receipts and parking tickets.</li>
-                    </ol>
-                    <p>The focus of this case study is in the Cinema section for iOS.</p>
-                </div>
-                <figure class="article__figure article__figure--fill">
-                    <img class="js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-1.jpg" alt="cinema screenshots ios">
-                </figure>
-                <div class="restrict-width centered">
-                    <h2 class="text-center text-caps">The challenge</h2>
-                    <h3 class="text-center">Create deeper relationships with customers</h3>
-                    <hr class="centered">
-                    <h4>Design and develop the Cinema section as native iOS experience.</h4>
-                    <p>When we launched the app one year earlier, we decided to focus on building the loyalty features first. The Cinema section was postponed to be upgraded in the versions to come, for v1 we went with a WebView loading the responsive website.</p>
-                    <p>We knew that customers love going to the movies and we had the exact number of how many tickets were sold on each channel. The app channel performed very poorly, so an upgrade to a native experience had to be done asap.</p>
-                    <p>Our goal for the project was to replace the WebView loading the Cinema website with a native experience. More so, our ambitions were to improve the Discovery phase and Post-Booking offline experience.</p>
-                    <div class="article__figure article__figure--gray">
-                        <div class="grid has-gutter-bottom centered">
-                            <div class="grid__tile col-xs-12 col-sm-8 col-md-5">
-                                <figure>
-                                    <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-2.jpg" alt="before">
-                                    <figcaption><b>Before</b> (WebView)</figcaption>
-                                </figure>
-                            </div>
-                            <div class="grid__tile col-xs-12 col-sm-8 col-md-5 off-md-1">
-                                <figure>
-                                    <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-3.jpg" alt="after">
-                                    <figcaption><b>After</b> (native experience)</figcaption>
-                                </figure>
-                            </div>
-                        </div>
+    <body>
+        <header class="appbar">
+            <div class="header">
+                <h1 class="header__title">
+                    <a href="https://razvantirboaca.com" class="logo">
+                        <b>R<span>azvan</span></b>
+                    </a>
+                </h1>
+                <p class="header__actions">
+                    <a class="btn btn--outline btn--sm" href="https://www.linkedin.com/in/razvantirboaca/" target="_blank">
+                        <b>About</b>
+                    </a>
+                </p>
+            </div>
+        </header>
+        <main class="appmain">
+            <article class="article cinema">
+                <!-- Hero -->
+                <section class="hero">
+                    <div class="hero__body centered">
+                        <h1 class="hero__title">iOS Cinema app</h1>
+                        <p class="hero__description">Designing and launching CITY iLOVE's cinema native experience.</p>
                     </div>
-                    <p>Our high-level goals were to:</p>
-                    <ol>
-                        <li>Increase usage and ticket sales.</li>
-                        <li>Increase new users retention rate.</li>
-                        <li>Create a new benefit to driving new app installs.</li>
-                    </ol>
-                    <p>Deadline: 3 months from 0 to launch.</p>
-                    <h4>My role</h4>
-                    <p>I led the UX/UI design &amp; UI development. This was a team effort between Kinecto Isobar and eAD Interactive. In addition, I worked alongside a Product Manager, Project Manager, iOS developer, Android developer, and 2 backend developers.</p>
-                    <p><i class="meta color-text-secondary is-block">To comply with my non-disclosure agreement, I have omitted and obfuscated confidential information in this case study. All information is my own and does not necessarily reflect the views of Baneasa Shopping City, Kinecto Isobar or eAD Interactive.</i></p>
-                </div>
-            </section>
-            <section class="section bg-gray-lighter">
-                <div class="restrict-width centered">
-                    <h2 class="text-center text-caps">User experience</h2>
-                    <h3 class="text-center">Use cases, not screens.</h3>
-                    <hr class="centered">
-                    <p>I began with 3 stakeholders interviews to understand the business requirements and define key performance indicators (KPIs). A full market research wasn't needed to move forward.</p>
-                    <p>Instead, I started the user research process by conducting 1 individual interview session, 1 online survey, and 1 full day spent in the Cinema lobby observing customers and taking notes.</p>
-                    <p>The goal of this exercise was to gather data about customer's behaviour, goals, and pain points.</p>
-                    <figure class="article__figure">
-                        <img class="js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/user-interview.png" alt="Baneasa Shopping City">
-                        <figcaption>User interview</figcaption>
+                    <figure class="hero__figure">
+                        <img class="js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-hero.png">
                     </figure>
-                    <p>I started to develop user stories and use-cases with a clear focus on user goals and finding pain points. The findings were used to evaluate design decisions.</p>
-                    <h4>User stories</h4>
-                    <p>I believe that the current model of defining user stories is broken. Something like "As a user, I want to buy a ticket, so I can access the cinema" doesn’t tell me anything about how the person chooses the movie (knows the title from the start or needs help to discover what's playing), if the hour is a filtering criterion, whether they need 1 or more tickets, and so on.</p>
-                    <p>To inform design, user stories have to tell a story about the person using the product. The person becomes central, not the product. The product exists only to create the tools for her to achieve her goals. Real life goals.</p>
-                    <p>The following are the user stories used into my decision‐making process:</p>
-                    <div class="insights">
-                        <div class="insight">
-                            <p><b>As a single mom, I want to take the kids out to the movies. My kids want to see Spider-Man tonight.</b></p>
-                        </div>
-                        <div class="insight">
-                            <p><b>As a high school guy that just escaped the friend zone, I want to take my new GF to a date. It should be a Romantic Comedy sometime Saturday.</b></p>
-                        </div>
-                        <div class="insight">
-                            <p><b>As a hard-working, always busy husband and father of three kids, I want to spend some quiet time with my wife. I scheduled 3 hours next Tuesday evening, the title doesn't matter much.</b></p>
-                        </div>
-                        <div class="insight">
-                            <p><b>My friends and I as movie lovers, don't want to miss an Opening. I have a Membership Card and I value all the offers and discounts.</b></p>
-                        </div>
+                </section>
+                <section class="section">
+                    <div class="restrict-width centered">
+                        <h4>Background</h4>
+                        <p>Baneasa Shopping City is the premium shopping destination in Romania having a 1.4M monthly foot-traffic. In 2015, we built and launched CITY iLOVE, Baneasa's loyalty app for iOS and Android.</p>
+                        <p>With over 25k active users in less than 1 year, CITY iLOVE won numerous prizes in the fields of digital, emerging technology and innovation in retail like "2016 ICSC Solal Marketing Awards: Silver Award for EMERGING TECHNOLOGY, Berlin, Germany".</p>
+                        <h4>Introducing CITY iLOVE</h4>
+                        <p>CITY iLOVE app is a digital assistant that enhance the shopping experience in Baneasa Shopping City, Romania's favorite shopping and entertainment destination.</p>
+                        <p>The app features 5 sections:</p>
+                        <ol>
+                            <li><b>Newsfeed:</b> An engaging feed focused on news, events, and promotions.</li>
+                            <li><b>Brands:</b> The place for finding mall's brands and stores.</li>
+                            <li><b>Profile:</b> User's info, benefits, purchase history, and Inbox.</li>
+                            <li><b>Cinema:</b> The movies and shows running in the cinema.</li>
+                            <li><b>Scan:</b> A dedicated section for scanning receipts and parking tickets.</li>
+                        </ol>
+                        <p>The focus of this case study is in the Cinema section for iOS.</p>
                     </div>
-                    <p>From this exercise, it became clear that we could help customers derive more value from the product if we offered multiple ways to find a movie. <b>My focus moved from "thinking in steps and screens" to "thinking in goals and functionality",</b> basically to understand and map the product interactions from user's point of view. Furthermore, the findings helped me to create critearia for measuring design success.</p>
-                    <h4>Product features</h4>
-                    <p>The next step was to translate the user stories into use cases.</p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>User Task</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th colspan="2">Discover</th>
-                            </tr>
-                            <tr>
-                                <td>Find movie by Title</td>
-                                <td>Search, Scroll list</td>
-                            </tr>
-                            <tr>
-                                <td>Find movies by Genre</td>
-                                <td>Filter list</td>
-                            </tr>
-                            <tr>
-                                <td>Find movies by Date &amp; Time</td>
-                                <td>Filter list</td>
-                            </tr>
-                            <tr>
-                                <td>Find Openings</td>
-                                <td>Filter, Scroll list</td>
-                            </tr>
-                            <tr>
-                                <th colspan="2">Showcase</th>
-                            </tr>
-                            <tr>
-                                <td>Decide if Yes/No</td>
-                                <td>Explore, Share movie details</td>
-                            </tr>
-                            <tr>
-                                <td>Book/Buy</td>
-                                <td>Select showtime</td>
-                            </tr>
-                            <tr>
-                                <th colspan="2">Checkout</th>
-                            </tr>
-                            <tr>
-                                <td>Choose tickets</td>
-                                <td>Select options</td>
-                            </tr>
-                            <tr>
-                                <td>Choose seats</td>
-                                <td>Select options</td>
-                            </tr>
-                            <tr>
-                                <th colspan="2">Use</th>
-                            </tr>
-                            <tr>
-                                <td>Enter cinema</td>
-                                <td>Show barcode</td>
-                            </tr>
-                            <tr>
-                                <td>Set reminder</td>
-                                <td>Add to calendar</td>
-                            </tr>
-                            <tr>
-                                <td>Add guests</td>
-                                <td>Share ticket</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p>Sections overview</p>
-                    <ol>
-                        <li>
-                            <p><b>Discover:</b> Dedicated section to quickly find the desired movie. Home view.</p>
-                        </li>
-                        <li>
-                            <p><b>Showcase:</b> Informative way to present movie details and schedule. Movie view.</p>
-                        </li>
-                        <li>
-                            <p><b>Checkout:</b> "Hustle-free" process to book or buy tickets. Checkout view.</p>
-                        </li>
-                        <li>
-                            <p><b>Use:</b> Optimised experience for offline use. My Tickets view.</p>
-                        </li>
-                    </ol>
-                </div>
-            </section>
-            <section class="section">
-                <div class="restrict-width centered">
-                    <h2 class="text-center text-caps">UI design</h2>
-                    <h3 class="text-center">Be lean, iterate and measure.</h3>
-                    <hr class="centered">
-                    <p>My process involved sketching and white‐boarding concepts and flows and then translating these directly into high fidelity design comps. Since I was working with many existing design patterns, it was relatively easy to move straight into high fidelity designs.</p>
-                    <figure class="article__figure" style="width:60%;max-width:300px">
-                        <img class="js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-4.png" alt="design process">
+                    <figure class="article__figure article__figure--fill">
+                        <img class="js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-1.jpg" alt="cinema screenshots ios">
                     </figure>
-                    <p>In the meantime, the development team started to build the API endpoints and backend integration.</p>
-                    <p>Things to keep in mind: our product development approach is to build an MVP, measure it against the KPIs and improve with each new iteration. For measuring specific screens and components we do A/B testing. As a design limitation, the Cinema is just one section of a full-featured app, not the whole app.</p>
-                    <p>Let's dive in into each Cinema section.</p>
-                    <h4>1. Discover/Home view</h4>
-                    <p>Dedicated section to quickly find the desired movie.</p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>User Task</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Find movie by Title</td>
-                                <td>Search, Scroll list</td>
-                            </tr>
-                            <tr>
-                                <td>Find movies by Genre</td>
-                                <td>Filter list</td>
-                            </tr>
-                            <tr>
-                                <td>Find movies by Date &amp; Time</td>
-                                <td>Filter list</td>
-                            </tr>
-                            <tr>
-                                <td>Find Openings</td>
-                                <td>Filter, Scroll list</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p>I designed the first version following iOS guidelines using native components.</p>
-                    <div class="article__figure article__figure--gray">
-                        <div class="grid has-gutter-bottom centered">
-                            <div class="grid__tile col-xs-12">
-                                <p class="text-center">v1</p>
+                    <div class="restrict-width centered">
+                        <h2 class="text-center text-caps">The challenge</h2>
+                        <h3 class="text-center">Create deeper relationships with customers</h3>
+                        <hr class="centered">
+                        <h4>Design and develop the Cinema section as native iOS experience.</h4>
+                        <p>When we launched the app one year earlier, we decided to focus on building the loyalty features first. The Cinema section was postponed to be upgraded in the versions to come, for v1 we went with a WebView loading the responsive website.</p>
+                        <p>We knew that customers love going to the movies and we had the exact number of how many tickets were sold on each channel. The app channel performed very poorly, so an upgrade to a native experience had to be done asap.</p>
+                        <p>Our goal for the project was to replace the WebView loading the Cinema website with a native experience. More so, our ambitions were to improve the Discovery phase and Post-Booking offline experience.</p>
+                        <div class="article__figure article__figure--gray">
+                            <div class="grid has-gutter-bottom centered">
+                                <div class="grid__tile col-xs-12 col-sm-8 col-md-5">
+                                    <figure>
+                                        <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-2.jpg" alt="before">
+                                        <figcaption><b>Before</b> (WebView)</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid__tile col-xs-12 col-sm-8 col-md-5 off-md-1">
+                                    <figure>
+                                        <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-3.jpg" alt="after">
+                                        <figcaption><b>After</b> (native experience)</figcaption>
+                                    </figure>
+                                </div>
                             </div>
-                            <div class="grid__tile col-xs-12 col-sm-8 col-md-5">
-                                <figure>
-                                    <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-5.jpg" alt="Home v1">
-                                </figure>
+                        </div>
+                        <p>Our high-level goals were to:</p>
+                        <ol>
+                            <li>Increase usage and ticket sales.</li>
+                            <li>Increase new users retention rate.</li>
+                            <li>Create a new benefit to driving new app installs.</li>
+                        </ol>
+                        <p>Deadline: 3 months from 0 to launch.</p>
+                        <h4>My role</h4>
+                        <p>I led the UX/UI design &amp; UI development. This was a team effort between Kinecto Isobar and eAD Interactive. In addition, I worked alongside a Product Manager, Project Manager, iOS developer, Android developer, and 2 backend developers.</p>
+                        <p><i class="meta color-text-secondary is-block">To comply with my non-disclosure agreement, I have omitted and obfuscated confidential information in this case study. All information is my own and does not necessarily reflect the views of Baneasa Shopping City, Kinecto Isobar or eAD Interactive.</i></p>
+                    </div>
+                </section>
+                <section class="section bg-gray-lighter">
+                    <div class="restrict-width centered">
+                        <h2 class="text-center text-caps">User experience</h2>
+                        <h3 class="text-center">Use cases, not screens.</h3>
+                        <hr class="centered">
+                        <p>I began with 3 stakeholders interviews to understand the business requirements and define key performance indicators (KPIs). A full market research wasn't needed to move forward.</p>
+                        <p>Instead, I started the user research process by conducting 1 individual interview session, 1 online survey, and 1 full day spent in the Cinema lobby observing customers and taking notes.</p>
+                        <p>The goal of this exercise was to gather data about customer's behaviour, goals, and pain points.</p>
+                        <figure class="article__figure">
+                            <img class="js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/user-interview.png" alt="Baneasa Shopping City">
+                            <figcaption>User interview</figcaption>
+                        </figure>
+                        <p>I started to develop user stories and use-cases with a clear focus on user goals and finding pain points. The findings were used to evaluate design decisions.</p>
+                        <h4>User stories</h4>
+                        <p>I believe that the current model of defining user stories is broken. Something like "As a user, I want to buy a ticket, so I can access the cinema" doesn’t tell me anything about how the person chooses the movie (knows the title from the start or needs help to discover what's playing), if the hour is a filtering criterion, whether they need 1 or more tickets, and so on.</p>
+                        <p>To inform design, user stories have to tell a story about the person using the product. The person becomes central, not the product. The product exists only to create the tools for her to achieve her goals. Real life goals.</p>
+                        <p>The following are the user stories used into my decision‐making process:</p>
+                        <div class="insights">
+                            <div class="insight">
+                                <p><b>As a single mom, I want to take the kids out to the movies. My kids want to see Spider-Man tonight.</b></p>
                             </div>
-                            <div class="grid__tile col-xs-12 col-sm-8 col-md-5 off-md-1">
-                                <div class="insight insight--paper">
-                                    <p class="text-caps"><b>View breakdown:</b></p>
-                                    <p>Segmented Control for toggling between Movies and Tickets views.</p>
-                                    <p>Prominent Search Bar for searching a movie.</p>
-                                    <p>List of movies displayed in grid layout.</p>
-                                    <p><b>Pros:</b> Visual appealing, native components.</p>
-                                    <p><b>Cons:</b> No way to filter movies, hard access to My Tickets.</p>
+                            <div class="insight">
+                                <p><b>As a high school guy that just escaped the friend zone, I want to take my new GF to a date. It should be a Romantic Comedy sometime Saturday.</b></p>
+                            </div>
+                            <div class="insight">
+                                <p><b>As a hard-working, always busy husband and father of three kids, I want to spend some quiet time with my wife. I scheduled 3 hours next Tuesday evening, the title doesn't matter much.</b></p>
+                            </div>
+                            <div class="insight">
+                                <p><b>My friends and I as movie lovers, don't want to miss an Opening. I have a Membership Card and I value all the offers and discounts.</b></p>
+                            </div>
+                        </div>
+                        <p>From this exercise, it became clear that we could help customers derive more value from the product if we offered multiple ways to find a movie. <b>My focus moved from "thinking in steps and screens" to "thinking in goals and functionality",</b> basically to understand and map the product interactions from user's point of view. Furthermore, the findings helped me to create critearia for measuring design success.</p>
+                        <h4>Product features</h4>
+                        <p>The next step was to translate the user stories into use cases.</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>User Task</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th colspan="2">Discover</th>
+                                </tr>
+                                <tr>
+                                    <td>Find movie by Title</td>
+                                    <td>Search, Scroll list</td>
+                                </tr>
+                                <tr>
+                                    <td>Find movies by Genre</td>
+                                    <td>Filter list</td>
+                                </tr>
+                                <tr>
+                                    <td>Find movies by Date &amp; Time</td>
+                                    <td>Filter list</td>
+                                </tr>
+                                <tr>
+                                    <td>Find Openings</td>
+                                    <td>Filter, Scroll list</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">Showcase</th>
+                                </tr>
+                                <tr>
+                                    <td>Decide if Yes/No</td>
+                                    <td>Explore, Share movie details</td>
+                                </tr>
+                                <tr>
+                                    <td>Book/Buy</td>
+                                    <td>Select showtime</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">Checkout</th>
+                                </tr>
+                                <tr>
+                                    <td>Choose tickets</td>
+                                    <td>Select options</td>
+                                </tr>
+                                <tr>
+                                    <td>Choose seats</td>
+                                    <td>Select options</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">Use</th>
+                                </tr>
+                                <tr>
+                                    <td>Enter cinema</td>
+                                    <td>Show barcode</td>
+                                </tr>
+                                <tr>
+                                    <td>Set reminder</td>
+                                    <td>Add to calendar</td>
+                                </tr>
+                                <tr>
+                                    <td>Add guests</td>
+                                    <td>Share ticket</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>Sections overview</p>
+                        <ol>
+                            <li>
+                                <p><b>Discover:</b> Dedicated section to quickly find the desired movie. Home view.</p>
+                            </li>
+                            <li>
+                                <p><b>Showcase:</b> Informative way to present movie details and schedule. Movie view.</p>
+                            </li>
+                            <li>
+                                <p><b>Checkout:</b> "Hustle-free" process to book or buy tickets. Checkout view.</p>
+                            </li>
+                            <li>
+                                <p><b>Use:</b> Optimised experience for offline use. My Tickets view.</p>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+                <section class="section">
+                    <div class="restrict-width centered">
+                        <h2 class="text-center text-caps">UI design</h2>
+                        <h3 class="text-center">Be lean, iterate and measure.</h3>
+                        <hr class="centered">
+                        <p>My process involved sketching and white‐boarding concepts and flows and then translating these directly into high fidelity design comps. Since I was working with many existing design patterns, it was relatively easy to move straight into high fidelity designs.</p>
+                        <figure class="article__figure" style="width:60%;max-width:300px">
+                            <img class="js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-4.png" alt="design process">
+                        </figure>
+                        <p>In the meantime, the development team started to build the API endpoints and backend integration.</p>
+                        <p>Things to keep in mind: our product development approach is to build an MVP, measure it against the KPIs and improve with each new iteration. For measuring specific screens and components we do A/B testing. As a design limitation, the Cinema is just one section of a full-featured app, not the whole app.</p>
+                        <p>Let's dive in into each Cinema section.</p>
+                        <h4>1. Discover/Home view</h4>
+                        <p>Dedicated section to quickly find the desired movie.</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>User Task</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Find movie by Title</td>
+                                    <td>Search, Scroll list</td>
+                                </tr>
+                                <tr>
+                                    <td>Find movies by Genre</td>
+                                    <td>Filter list</td>
+                                </tr>
+                                <tr>
+                                    <td>Find movies by Date &amp; Time</td>
+                                    <td>Filter list</td>
+                                </tr>
+                                <tr>
+                                    <td>Find Openings</td>
+                                    <td>Filter, Scroll list</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>I designed the first version following iOS guidelines using native components.</p>
+                        <div class="article__figure article__figure--gray">
+                            <div class="grid has-gutter-bottom centered">
+                                <div class="grid__tile col-xs-12">
+                                    <p class="text-center">v1</p>
+                                </div>
+                                <div class="grid__tile col-xs-12 col-sm-8 col-md-5">
+                                    <figure>
+                                        <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-5.jpg" alt="Home v1">
+                                    </figure>
+                                </div>
+                                <div class="grid__tile col-xs-12 col-sm-8 col-md-5 off-md-1">
+                                    <div class="insight insight--paper">
+                                        <p class="text-caps"><b>View breakdown:</b></p>
+                                        <p>Segmented Control for toggling between Movies and Tickets views.</p>
+                                        <p>Prominent Search Bar for searching a movie.</p>
+                                        <p>List of movies displayed in grid layout.</p>
+                                        <p><b>Pros:</b> Visual appealing, native components.</p>
+                                        <p><b>Cons:</b> No way to filter movies, hard access to My Tickets.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Testing this version against the use cases failed. Having no room to display a Filter option and hiding it behind Search was a clear NO-NO.</p>
+                        <p>After more sketching, I decided to remove the Segmented Control and Search Bar to design a custom Action Bar.</p>
+                        <div class="article__figure">
+                            <div class="grid has-gutter has-gutter-bottom centered">
+                                <div class="grid__tile col-xs-11 col-sm-8 col-md-6">
+                                    <figure>
+                                        <img class="js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-7.jpg" alt="first version">
+                                        <figcaption>First version</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid__tile col-xs-11 col-sm-8 col-md-6">
+                                    <figure>
+                                        <img class="js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-8.jpg" alt="final version">
+                                        <figcaption>Final version</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Following platform's guidelines is the best practice, no doubt, but rules are meant to be broken when necessary.</p>
+                        <div class="article__figure article__figure--gray">
+                            <div class="grid has-gutter-bottom centered">
+                                <div class="grid__tile col-xs-12">
+                                    <p class="text-center">v2</p>
+                                </div>
+                                <div class="grid__tile col-xs-12 col-sm-8 col-md-5">
+                                    <figure>
+                                        <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-6.jpg" alt="Home v2">
+                                    </figure>
+                                </div>
+                                <div class="grid__tile col-xs-12 col-sm-8 col-md-5 off-md-1">
+                                    <div class="insight insight--paper">
+                                        <p class="text-caps"><b>View breakdown:</b></p>
+                                        <p>Action Bar for filtering and searching movies.</p>
+                                        <p>List of movies displayed in grid layout.</p>
+                                        <p><b>Pros:</b> Visual appealing, easy access to Filters, Search, and My Tickets.</p>
+                                        <p><b>Cons:</b> Custom components.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <blockquote>I do prototyping and usability testing not to find what I've got right, but to learn where I've failed.</blockquote>
+                        <p>I built a quick HTML/CSS prototype for usability testing. The outcome of analyzing results is deeply influenced by researcher's goal. If one's goal is only to confirm her assumptions then that's the outcome she'll look for.</p>
+                        <p><b>But, if your goal is to help the customer achieve her goals, then you'll continue asking questions until your solution will offer the best user experience.</b></p>
+                        <p>Earlier in the process, I've defined use cases but I've forgotten the most important question: How fast does the user achieve her goals?</p>
+                        <p>So I decided to A/B test the Grid layout against a List layout using the same tasks and different testers.</p>
+                        <p><i class="meta color-text-secondary is-block"><span class="color-text-danger">TIP 1:</span> <a href="https://www.hotjar.com/r/r5c4e9e" target="_blank">Hotjar is a perfect solution to mix quantitative with qualitative research.</a> Check it out</i></p>
+                        <div class="article__figure article__figure--gray">
+                            <div class="grid has-gutter-bottom centered">
+                                <div class="grid__tile col-xs-12">
+                                    <p class="text-center">Grid vs List</p>
+                                </div>
+                                <div class="grid__tile col-xs-12 col-sm-8 col-md-5">
+                                    <figure>
+                                        <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-6.jpg" alt="grid">
+                                    </figure>
+                                </div>
+                                <div class="grid__tile col-xs-12 col-sm-8 col-md-5 off-md-1">
+                                    <figure>
+                                        <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-3.jpg" alt="list">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <p>The following are the results of the A/B test:</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>User Task</th>
+                                    <th>ATTC Grid</th>
+                                    <th>ATTC List</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Find movie by Title</td>
+                                    <td>46s</td>
+                                    <td>28s</td>
+                                </tr>
+                                <tr>
+                                    <td>Find movies by Genre</td>
+                                    <td>92s</td>
+                                    <td>78s</td>
+                                </tr>
+                                <tr>
+                                    <td>Find movies by Date &amp; Time</td>
+                                    <td>124s</td>
+                                    <td>102s</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th colspan="3">Legend: ATTC = average time to completion</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <p>The List layout clearly performed better with an average decrease of <b  class="color-text-success">20%</b> in time to completion.</p>
+                        <p>Voice of the customer:</p>
+                        <blockquote>
+                            <ul class="list">
+                                <li>&ldquo; I like big pictures but bigger titles are better.</li>
+                                <li>&ldquo; I can scan really quickly through the list.</li>
+                                <li>&ldquo; I love that today's schedule is highlighted, is helping me decide faster.</li>
+                            </ul>
+                        </blockquote>
+                        <div class="article__figure article__figure--gray">
+                            <div class="grid has-gutter-bottom centered">
+                                <div class="grid__tile col-xs-12">
+                                    <p class="text-center">Discover final version</p>
+                                </div>
+                                <div class="grid__tile col-xs-12 col-sm-8 col-md-5">
+                                    <figure>
+                                        <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-3.jpg" alt="static">
+                                    </figure>
+                                </div>
+                                <div class="grid__tile col-xs-12 col-sm-8 col-md-5 off-md-1">
+                                    <figure>
+                                        <video autoplay loop class="figure-screenshot">
+                                            <source type="video/mp4" src="//i.imgur.com/2QZQi7L.mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>2. Showcase/Movie view</h4>
+                        <p>Informative way to present movie details and schedule.</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>User Task</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Decide if Yes/No</td>
+                                    <td>Explore, Share movie details</td>
+                                </tr>
+                                <tr>
+                                    <td>Book/Buy</td>
+                                    <td>Select showtime</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>I began by learning what types of content we'll have access to and what's driving the customer to make a positive decision about watching a movie. Then started diving into the website's historical data, surfacing user behavior on the movie page, pain points and barriers to conversion.</p>
+                        <p>I've found that the most important piece of content for decision-making is the movie Trailer. The second most important argument is the Showtime.</p>
+                        <p>Working on the Information Architecture (IA), I decided to emphasise the Trailer by allowing over 30% of the screen real estate.</p>
+                        <div class="article__figure article__figure--gray">
+                            <div class="grid has-gutter-bottom centered">
+                                <div class="grid__tile col-xs-12">
+                                    <p class="text-center">Movie details</p>
+                                </div>
+                                <div class="grid__tile col-xs-12 col-sm-8 col-md-5">
+                                    <figure>
+                                        <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-9.jpg" alt="movie">
+                                    </figure>
+                                </div>
+                                <div class="grid__tile col-xs-12 col-sm-8 col-md-5 off-md-1">
+                                    <div class="insight insight--paper">
+                                        <p class="text-caps"><b>View breakdown:</b></p>
+                                        <p>Movie title and details, short description, and video.</p>
+                                        <p><b>Pros:</b> Visual appealing, clear IA, highlighted trailer.</p>
+                                        <p><b>Cons:</b> No ratings and reviews.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><b>Schedule component design explorations</b></p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>User task</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Compare showtimes for the same day</td>
+                                    <td>Explore options</td>
+                                </tr>
+                                <tr>
+                                    <td>Compare showtimes between different days</td>
+                                    <td>Change dates and explore options</td>
+                                </tr>
+                                <tr>
+                                    <td>Choose desired showtime</td>
+                                    <td>Select option</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>I spent the next several days exploring variants for the Schedule component. The design's high-level goal was to reduce customer's cognitive load to 0.</p>
+                        <div class="article__figure">
+                            <div class="grid has-gutter-bottom centered">
+                                <div class="grid__tile col-xs-8 col-sm-5">
+                                    <figure>
+                                        <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-13.jpg" alt="dropdown list">
+                                    </figure>
+                                </div>
+                                <div class="grid__tile col-xs-8 col-sm-6 off-sm-1">
+                                    <p class="text-caps"><b>1. Dropdown list</b></p>
+                                    <p>Terrible solution!</p>
+                                    <ul class="list">
+                                        <li><b>Pros:</b> Easy to build.</li>
+                                        <li><b>Cons:</b> Options hidden behind multiple taps, hard to compare showtimes.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article__figure">
+                            <div class="grid has-gutter-bottom centered">
+                                <div class="grid__tile col-xs-8 col-sm-5">
+                                    <figure>
+                                        <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-14.jpg" alt="definition list">
+                                    </figure>
+                                </div>
+                                <div class="grid__tile col-xs-8 col-sm-6 off-sm-1">
+                                    <p class="text-caps"><b>2. Definition list</b></p>
+                                    <p>Could work!</p>
+                                    <ul class="list">
+                                        <li><b>Pros:</b> Options always visible, easy to compare showtimes for the same day.</li>
+                                        <li><b>Cons:</b> Hard to compare showtimes between different days, wasted screen real estate.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article__figure">
+                            <div class="grid has-gutter-bottom centered">
+                                <div class="grid__tile col-xs-8 col-sm-5">
+                                    <figure>
+                                        <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-15.jpg" alt="timeline list">
+                                    </figure>
+                                </div>
+                                <div class="grid__tile col-xs-8 col-sm-6 off-sm-1">
+                                    <p class="text-caps"><b>3. Timeline</b></p>
+                                    <p>Definitely the best!</p>
+                                    <ul class="list">
+                                        <li><b>Pros:</b> Focus on day view, easy to compare showtimes for the same day, easy to compare showtimes between different days.</li>
+                                        <li><b>Cons:</b> Harder to build.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article__figure article__figure--gray">
+                            <div class="grid has-gutter-bottom centered">
+                                <div class="grid__tile col-xs-12">
+                                    <p class="text-center">Schedule final version</p>
+                                </div>
+                                <div class="grid__tile col-xs-12 col-sm-8 col-md-5">
+                                    <figure>
+                                        <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-10.jpg" alt="schedule">
+                                    </figure>
+                                </div>
+                                <div class="grid__tile col-xs-12 col-sm-8 col-md-5 off-md-1">
+                                    <figure>
+                                        <video autoplay loop class="figure-screenshot">
+                                            <source type="video/mp4" src="//i.imgur.com/PhfxZ3u.mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article__figure article__figure--gray">
+                            <div class="grid has-gutter-bottom centered">
+                                <div class="grid__tile col-xs-12">
+                                    <p class="text-center">Select showtime</p>
+                                </div>
+                                <div class="grid__tile col-xs-12 col-sm-8 col-md-5">
+                                    <figure>
+                                        <video autoplay loop class="figure-screenshot">
+                                            <source type="video/mp4" src="//i.imgur.com/nBBqiUc.mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="grid__tile col-xs-12 col-sm-8 col-md-5 off-md-1">
+                                    <div class="insight insight--paper">
+                                        <p>Prototyping early is the most effective way to gain meaningful feedback from the team and approval from stakeholders.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>3. Checkout</h4>
+                        <p>"Hustle-free" order process. Select tickets -> Select seats -> Book or Buy.</p>
+                        <div class="article__figure article__figure--gray">
+                            <div class="grid has-gutter-bottom centered">
+                                <div class="grid__tile col-xs-12">
+                                    <p class="text-center">Select tickets</p>
+                                </div>
+                                <div class="grid__tile col-xs-12 col-sm-8 col-md-5">
+                                    <figure>
+                                        <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-12.jpg" alt="schedule">
+                                    </figure>
+                                </div>
+                                <div class="grid__tile col-xs-12 col-sm-8 col-md-5 off-md-1">
+                                    <figure>
+                                        <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/cases/cinema-tickets.gif" alt="book">
+                                    </figure>
+                                </div>aa
+                            </div>
+                        </div>
+                        <blockquote>Designing with real content is the way to go, special thanks go to the Invision team for building Craft for Sketch.</blockquote>
+                        <h4>4. Use/My Tickets view</h4>
+                        <p>Optimized experience for offline use.</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>User task</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Enter cinema</td>
+                                    <td>Show barcode</td>
+                                </tr>
+                                <tr>
+                                    <td>Set reminder</td>
+                                    <td>Add to calendar</td>
+                                </tr>
+                                <tr>
+                                    <td>Add guests</td>
+                                    <td>Share ticket</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="article__figure article__figure--gray">
+                            <div class="grid has-gutter-bottom centered">
+                                <div class="grid__tile col-xs-12">
+                                    <p class="text-center">My Tickets</p>
+                                </div>
+                                <div class="grid__tile col-xs-12 col-sm-8 col-md-5">
+                                    <figure>
+                                        <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-16.jpg" alt="my tickets">
+                                    </figure>
+                                </div>
+                                <div class="grid__tile col-xs-12 col-sm-8 col-md-5 off-md-1">
+                                    <figure>
+                                        <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/cases/cinema-barcode.gif" alt="ticket">
+                                    </figure>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <p>Testing this version against the use cases failed. Having no room to display a Filter option and hiding it behind Search was a clear NO-NO.</p>
-                    <p>After more sketching, I decided to remove the Segmented Control and Search Bar to design a custom Action Bar.</p>
-                    <div class="article__figure">
-                        <div class="grid has-gutter has-gutter-bottom centered">
-                            <div class="grid__tile col-xs-11 col-sm-8 col-md-6">
-                                <figure>
-                                    <img class="js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-7.jpg" alt="first version">
-                                    <figcaption>First version</figcaption>
-                                </figure>
-                            </div>
-                            <div class="grid__tile col-xs-11 col-sm-8 col-md-6">
-                                <figure>
-                                    <img class="js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-8.jpg" alt="final version">
-                                    <figcaption>Final version</figcaption>
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                    <p>Following platform's guidelines is the best practice, no doubt, but rules are meant to be broken when necessary.</p>
-                    <div class="article__figure article__figure--gray">
-                        <div class="grid has-gutter-bottom centered">
-                            <div class="grid__tile col-xs-12">
-                                <p class="text-center">v2</p>
-                            </div>
-                            <div class="grid__tile col-xs-12 col-sm-8 col-md-5">
-                                <figure>
-                                    <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-6.jpg" alt="Home v2">
-                                </figure>
-                            </div>
-                            <div class="grid__tile col-xs-12 col-sm-8 col-md-5 off-md-1">
-                                <div class="insight insight--paper">
-                                    <p class="text-caps"><b>View breakdown:</b></p>
-                                    <p>Action Bar for filtering and searching movies.</p>
-                                    <p>List of movies displayed in grid layout.</p>
-                                    <p><b>Pros:</b> Visual appealing, easy access to Filters, Search, and My Tickets.</p>
-                                    <p><b>Cons:</b> Custom components.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <blockquote>I do prototyping and usability testing not to find what I've got right, but to learn where I've failed.</blockquote>
-                    <p>I built a quick HTML/CSS prototype for usability testing. The outcome of analyzing results is deeply influenced by researcher's goal. If one's goal is only to confirm her assumptions then that's the outcome she'll look for.</p>
-                    <p><b>But, if your goal is to help the customer achieve her goals, then you'll continue asking questions until your solution will offer the best user experience.</b></p>
-                    <p>Earlier in the process, I've defined use cases but I've forgotten the most important question: How fast does the user achieve her goals?</p>
-                    <p>So I decided to A/B test the Grid layout against a List layout using the same tasks and different testers.</p>
-                    <p><i class="meta color-text-secondary is-block"><span class="color-text-danger">TIP 1:</span> <a href="https://www.hotjar.com/r/r5c4e9e" target="_blank">Hotjar is a perfect solution to mix quantitative with qualitative research.</a> Check it out</i></p>
-                    <div class="article__figure article__figure--gray">
-                        <div class="grid has-gutter-bottom centered">
-                            <div class="grid__tile col-xs-12">
-                                <p class="text-center">Grid vs List</p>
-                            </div>
-                            <div class="grid__tile col-xs-12 col-sm-8 col-md-5">
-                                <figure>
-                                    <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-6.jpg" alt="grid">
-                                </figure>
-                            </div>
-                            <div class="grid__tile col-xs-12 col-sm-8 col-md-5 off-md-1">
-                                <figure>
-                                    <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-3.jpg" alt="list">
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                    <p>The following are the results of the A/B test:</p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>User Task</th>
-                                <th>ATTC Grid</th>
-                                <th>ATTC List</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Find movie by Title</td>
-                                <td>46s</td>
-                                <td>28s</td>
-                            </tr>
-                            <tr>
-                                <td>Find movies by Genre</td>
-                                <td>92s</td>
-                                <td>78s</td>
-                            </tr>
-                            <tr>
-                                <td>Find movies by Date &amp; Time</td>
-                                <td>124s</td>
-                                <td>102s</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <th colspan="3">Legend: ATTC = average time to completion</th>
-                            </tr>
-                        </tfoot>
-                    </table>
-                    <p>The List layout clearly performed better with an average decrease of <b  class="color-text-success">20%</b> in time to completion.</p>
-                    <p>Voice of the customer:</p>
-                    <blockquote>
-                        <ul class="list">
-                            <li>&ldquo; I like big pictures but bigger titles are better.</li>
-                            <li>&ldquo; I can scan really quickly through the list.</li>
-                            <li>&ldquo; I love that today's schedule is highlighted, is helping me decide faster.</li>
+                </section>
+                <section class="section bg-gray-lighter">
+                    <div class="restrict-width centered">
+                        <h2 class="text-center text-caps">Launch</h2>
+                        <h3 class="text-center">Positive results and much more to do.</h3>
+                        <hr class="centered">
+                        <ul class="list text-center text-caps">
+                            <li style="margin-bottom:.8em"><b>Increased section usage from 2% to 51%.</b></li>
+                            <li style="margin-bottom:.8em"><b>Increased conversion rate from 3% to 57%.</b></li>
+                            <li style="margin-bottom:.8em"><b>Increased new user retention rate by 31%.</b></li>
+                            <li style="margin-bottom:.8em"><b>Decreased user acquisition cost (UAC) by 34% by increasing the referral rate.</b></li>
                         </ul>
-                    </blockquote>
-                    <div class="article__figure article__figure--gray">
-                        <div class="grid has-gutter-bottom centered">
-                            <div class="grid__tile col-xs-12">
-                                <p class="text-center">Discover final version</p>
-                            </div>
-                            <div class="grid__tile col-xs-12 col-sm-8 col-md-5">
-                                <figure>
-                                    <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-3.jpg" alt="static">
-                                </figure>
-                            </div>
-                            <div class="grid__tile col-xs-12 col-sm-8 col-md-5 off-md-1">
-                                <figure>
-                                    <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/cases/cinema-list-scroll.gif" alt="animated">
-                                </figure>
-                            </div>
-                        </div>
                     </div>
-                    <h4>2. Showcase/Movie view</h4>
-                    <p>Informative way to present movie details and schedule.</p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>User Task</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Decide if Yes/No</td>
-                                <td>Explore, Share movie details</td>
-                            </tr>
-                            <tr>
-                                <td>Book/Buy</td>
-                                <td>Select showtime</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p>I began by learning what types of content we'll have access to and what's driving the customer to make a positive decision about watching a movie. Then started diving into the website's historical data, surfacing user behavior on the movie page, pain points and barriers to conversion.</p>
-                    <p>I've found that the most important piece of content for decision-making is the movie Trailer. The second most important argument is the Showtime.</p>
-                    <p>Working on the Information Architecture (IA), I decided to emphasise the Trailer by allowing over 30% of the screen real estate.</p>
-                    <div class="article__figure article__figure--gray">
-                        <div class="grid has-gutter-bottom centered">
-                            <div class="grid__tile col-xs-12">
-                                <p class="text-center">Movie details</p>
-                            </div>
-                            <div class="grid__tile col-xs-12 col-sm-8 col-md-5">
-                                <figure>
-                                    <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-9.jpg" alt="movie">
-                                </figure>
-                            </div>
-                            <div class="grid__tile col-xs-12 col-sm-8 col-md-5 off-md-1">
-                                <div class="insight insight--paper">
-                                    <p class="text-caps"><b>View breakdown:</b></p>
-                                    <p>Movie title and details, short description, and video.</p>
-                                    <p><b>Pros:</b> Visual appealing, clear IA, highlighted trailer.</p>
-                                    <p><b>Cons:</b> No ratings and reviews.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <p><b>Schedule component design explorations</b></p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>User task</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Compare showtimes for the same day</td>
-                                <td>Explore options</td>
-                            </tr>
-                            <tr>
-                                <td>Compare showtimes between different days</td>
-                                <td>Change dates and explore options</td>
-                            </tr>
-                            <tr>
-                                <td>Choose desired showtime</td>
-                                <td>Select option</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p>I spent the next several days exploring variants for the Schedule component. The design's high-level goal was to reduce customer's cognitive load to 0.</p>
-                    <div class="article__figure">
-                        <div class="grid has-gutter-bottom centered">
-                            <div class="grid__tile col-xs-8 col-sm-5">
-                                <figure>
-                                    <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-13.jpg" alt="dropdown list">
-                                </figure>
-                            </div>
-                            <div class="grid__tile col-xs-8 col-sm-6 off-sm-1">
-                                <p class="text-caps"><b>1. Dropdown list</b></p>
-                                <p>Terrible solution!</p>
-                                <ul class="list">
-                                    <li><b>Pros:</b> Easy to build.</li>
-                                    <li><b>Cons:</b> Options hidden behind multiple taps, hard to compare showtimes.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="article__figure">
-                        <div class="grid has-gutter-bottom centered">
-                            <div class="grid__tile col-xs-8 col-sm-5">
-                                <figure>
-                                    <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-14.jpg" alt="definition list">
-                                </figure>
-                            </div>
-                            <div class="grid__tile col-xs-8 col-sm-6 off-sm-1">
-                                <p class="text-caps"><b>2. Definition list</b></p>
-                                <p>Could work!</p>
-                                <ul class="list">
-                                    <li><b>Pros:</b> Options always visible, easy to compare showtimes for the same day.</li>
-                                    <li><b>Cons:</b> Hard to compare showtimes between different days, wasted screen real estate.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="article__figure">
-                        <div class="grid has-gutter-bottom centered">
-                            <div class="grid__tile col-xs-8 col-sm-5">
-                                <figure>
-                                    <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-15.jpg" alt="timeline list">
-                                </figure>
-                            </div>
-                            <div class="grid__tile col-xs-8 col-sm-6 off-sm-1">
-                                <p class="text-caps"><b>3. Timeline</b></p>
-                                <p>Definitely the best!</p>
-                                <ul class="list">
-                                    <li><b>Pros:</b> Focus on day view, easy to compare showtimes for the same day, easy to compare showtimes between different days.</li>
-                                    <li><b>Cons:</b> Harder to build.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="article__figure article__figure--gray">
-                        <div class="grid has-gutter-bottom centered">
-                            <div class="grid__tile col-xs-12">
-                                <p class="text-center">Schedule final version</p>
-                            </div>
-                            <div class="grid__tile col-xs-12 col-sm-8 col-md-5">
-                                <figure>
-                                    <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-10.jpg" alt="schedule">
-                                </figure>
-                            </div>
-                            <div class="grid__tile col-xs-12 col-sm-8 col-md-5 off-md-1">
-                                <figure>
-                                    <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/cases/cinema-calendar-scroll.gif" alt="animated">
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="article__figure article__figure--gray">
-                        <div class="grid has-gutter-bottom centered">
-                            <div class="grid__tile col-xs-12">
-                                <p class="text-center">Select showtime</p>
-                            </div>
-                            <div class="grid__tile col-xs-12 col-sm-8 col-md-5">
-                                <figure>
-                                    <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/cases/cinema-calendar-tab.gif" alt="book">
-                                </figure>
-                            </div>
-                            <div class="grid__tile col-xs-12 col-sm-8 col-md-5 off-md-1">
-                                <div class="insight insight--paper">
-                                    <p>Prototyping early is the most effective way to gain meaningful feedback from the team and approval from stakeholders.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <h4>3. Checkout</h4>
-                    <p>"Hustle-free" order process. Select tickets -> Select seats -> Book or Buy.</p>
-                    <div class="article__figure article__figure--gray">
-                        <div class="grid has-gutter-bottom centered">
-                            <div class="grid__tile col-xs-12">
-                                <p class="text-center">Select tickets</p>
-                            </div>
-                            <div class="grid__tile col-xs-12 col-sm-8 col-md-5">
-                                <figure>
-                                    <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-12.jpg" alt="schedule">
-                                </figure>
-                            </div>
-                            <div class="grid__tile col-xs-12 col-sm-8 col-md-5 off-md-1">
-                                <figure>
-                                    <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/cases/cinema-tickets.gif" alt="book">
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                    <blockquote>Designing with real content is the way to go, special thanks go to the Invision team for building Craft for Sketch.</blockquote>
-                    <h4>4. Use/My Tickets view</h4>
-                    <p>Optimized experience for offline use.</p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>User task</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Enter cinema</td>
-                                <td>Show barcode</td>
-                            </tr>
-                            <tr>
-                                <td>Set reminder</td>
-                                <td>Add to calendar</td>
-                            </tr>
-                            <tr>
-                                <td>Add guests</td>
-                                <td>Share ticket</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="article__figure article__figure--gray">
-                        <div class="grid has-gutter-bottom centered">
-                            <div class="grid__tile col-xs-12">
-                                <p class="text-center">My Tickets</p>
-                            </div>
-                            <div class="grid__tile col-xs-12 col-sm-8 col-md-5">
-                                <figure>
-                                    <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/f_auto/cases/cinema-16.jpg" alt="my tickets">
-                                </figure>
-                            </div>
-                            <div class="grid__tile col-xs-12 col-sm-8 col-md-5 off-md-1">
-                                <figure>
-                                    <img class="figure-screenshot js-lazy-image" data-src="//res.cloudinary.com/diuy8b72h/image/upload/cases/cinema-barcode.gif" alt="ticket">
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section bg-gray-lighter">
-                <div class="restrict-width centered">
-                    <h2 class="text-center text-caps">Launch</h2>
-                    <h3 class="text-center">Positive results and much more to do.</h3>
+                </section>
+                <aside class="section restrict-width centered">
+                    <h2 class="text-center text-caps">About me</h2>
+                    <h3 class="text-center">Hi there and thanks for reading.</h3>
                     <hr class="centered">
-                    <ul class="list text-center text-caps">
-                        <li style="margin-bottom:.8em"><b>Increased section usage from 2% to 51%.</b></li>
-                        <li style="margin-bottom:.8em"><b>Increased conversion rate from 3% to 57%.</b></li>
-                        <li style="margin-bottom:.8em"><b>Increased new user retention rate by 31%.</b></li>
-                        <li style="margin-bottom:.8em"><b>Decreased user acquisition cost (UAC) by 34% by increasing the referral rate.</b></li>
+                    <p id="contact">I'm Razvan, a multidisciplinary designer with a background in UX/UI design, UI development, and project management based in Barcelona, Spain.</p>
+                    <p>Currently, I am responsible of designing and delivering mobile and responsive web apps used by over 4 million users for the media and eCommerce space. Previously, I’ve designed products for advertising, travel, classified ads and gaming industries.</p>
+                    <ul class="grid has-gutter--sm has-gutter-bottom">
+                        <li class="grid__tile col-xs-6 col-md-4">
+                            <a class="btn btn--outline btn--block" href="mailto:razvan.tirboaca@gmail.com?subject=Hi" target="_blank">
+                                <svg viewbox="0 0 24 24" height="24" width="24">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path>
+                                </svg>
+                                <b>Email</b>
+                            </a>
+                        </li>
+                        <li class="grid__tile col-xs-6 col-md-4">
+                            <a class="btn btn--outline btn--block" href="https://www.linkedin.com/in/razvantirboaca" target="_blank">
+                                <svg viewbox="0 0 24 24" width="24" height="24">
+                                    <path d="M21.4 1H2.6C1.7 1 1 1.7 1 2.6v18.8c0 .9.7 1.6 1.6 1.6h18.7c.9 0 1.6-.7 1.6-1.6V2.6c.1-.9-.6-1.6-1.5-1.6zM7.5 19.7H4.3V9.2h3.3v10.5zM5.9 7.8C4.8 7.8 4 7 4 5.9 4 4.9 4.8 4 5.9 4c1 0 1.9.8 1.9 1.9 0 1.1-.9 1.9-1.9 1.9zm13.8 11.9h-3.3v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7v5.2H9.6V9.2h3.1v1.4c.5-.7 1.5-1.6 3.1-1.6 3.3 0 3.9 2.2 3.9 5v5.7z" />
+                                </svg>
+                                <b>Linkedin</b>
+                            </a>
+                        </li>
+                        <li class="grid__tile col-xs-12 col-md-4">
+                            <a class="btn btn--block" href="https://drive.google.com/drive/folders/0B20QIiBoJa4QcmVnOFZfQ2RCeGc?usp=sharing" target="_blank">
+                                <b>Download resume</b>
+                            </a>
+                        </li>
                     </ul>
-                </div>
-            </section>
-            <aside class="section restrict-width centered">
-                <h2 class="text-center text-caps">About me</h2>
-                <h3 class="text-center">Hi there and thanks for reading.</h3>
-                <hr class="centered">
-                <p id="contact">I'm Razvan, a multidisciplinary designer with a background in UX/UI design, UI development, and project management based in Barcelona, Spain.</p>
-                <p>Currently, I am responsible of designing and delivering mobile and responsive web apps used by over 4 million users for the media and eCommerce space. Previously, I’ve designed products for advertising, travel, classified ads and gaming industries.</p>
-                <ul class="grid has-gutter--sm has-gutter-bottom">
-                    <li class="grid__tile col-xs-6 col-md-4">
-                        <a class="btn btn--outline btn--block" href="mailto:razvan.tirboaca@gmail.com?subject=Hi" target="_blank">
-                            <svg viewbox="0 0 24 24" height="24" width="24">
-                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path>
-                            </svg>
-                            <b>Email</b>
-                        </a>
-                    </li>
-                    <li class="grid__tile col-xs-6 col-md-4">
-                        <a class="btn btn--outline btn--block" href="https://www.linkedin.com/in/razvantirboaca" target="_blank">
-                            <svg viewbox="0 0 24 24" width="24" height="24">
-                                <path d="M21.4 1H2.6C1.7 1 1 1.7 1 2.6v18.8c0 .9.7 1.6 1.6 1.6h18.7c.9 0 1.6-.7 1.6-1.6V2.6c.1-.9-.6-1.6-1.5-1.6zM7.5 19.7H4.3V9.2h3.3v10.5zM5.9 7.8C4.8 7.8 4 7 4 5.9 4 4.9 4.8 4 5.9 4c1 0 1.9.8 1.9 1.9 0 1.1-.9 1.9-1.9 1.9zm13.8 11.9h-3.3v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7v5.2H9.6V9.2h3.1v1.4c.5-.7 1.5-1.6 3.1-1.6 3.3 0 3.9 2.2 3.9 5v5.7z" />
-                            </svg>
-                            <b>Linkedin</b>
-                        </a>
-                    </li>
-                    <li class="grid__tile col-xs-12 col-md-4">
-                        <a class="btn btn--block" href="https://drive.google.com/drive/folders/0B20QIiBoJa4QcmVnOFZfQ2RCeGc?usp=sharing" target="_blank">
-                            <b>Download resume</b>
-                        </a>
-                    </li>
-                </ul>
-            </aside>
-        </article>
-    </main>
-    <!-- Footer -->
+                </aside>
+            </article>
+        </main>
+        <!-- Footer -->
 
-    <footer class="appfooter">
-        <div class="social-icons btn-group centered">
-            <a class="btn btn--link" href="https://www.linkedin.com/in/razvantirboaca/" target="_blank">
-                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M13.632 13.635h-2.37V9.922c0-.886-.018-2.025-1.234-2.025-1.235 0-1.424.964-1.424 1.96v3.778h-2.37V6H8.51v1.04h.03c.318-.6 1.092-1.233 2.247-1.233 2.4 0 2.845 1.58 2.845 3.637v4.188zM3.558 4.955c-.762 0-1.376-.617-1.376-1.377 0-.758.614-1.375 1.376-1.375.76 0 1.376.617 1.376 1.375 0 .76-.617 1.377-1.376 1.377zm1.188 8.68H2.37V6h2.376v7.635zM14.816 0H1.18C.528 0 0 .516 0 1.153v13.694C0 15.484.528 16 1.18 16h13.635c.652 0 1.185-.516 1.185-1.153V1.153C16 .516 15.467 0 14.815 0z" fill-rule="nonzero"/></svg>
-            </a>
-            <a class="btn btn--link" href="https://facebook.com/razvantirboaca" target="_blank">
-                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M15.117 0H.883C.395 0 0 .395 0 .883v14.234c0 .488.395.883.883.883h7.663V9.804H6.46V7.39h2.086V5.607c0-2.066 1.262-3.19 3.106-3.19.883 0 1.642.064 1.863.094v2.16h-1.28c-1 0-1.195.48-1.195 1.18v1.54h2.39l-.31 2.42h-2.08V16h4.077c.488 0 .883-.395.883-.883V.883C16 .395 15.605 0 15.117 0" fill-rule="nonzero"/></svg>
-            </a>
-            <a class="btn btn--link" href="https://instagram.com/razvantirboaca" target="_blank">
-                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8 0C5.827 0 5.555.01 4.702.048 3.85.088 3.27.222 2.76.42c-.526.204-.973.478-1.417.923-.445.444-.72.89-.923 1.417-.198.51-.333 1.09-.372 1.942C.008 5.555 0 5.827 0 8s.01 2.445.048 3.298c.04.852.174 1.433.372 1.942.204.526.478.973.923 1.417.444.445.89.72 1.417.923.51.198 1.09.333 1.942.372.853.04 1.125.048 3.298.048s2.445-.01 3.298-.048c.852-.04 1.433-.174 1.942-.372.526-.204.973-.478 1.417-.923.445-.444.72-.89.923-1.417.198-.51.333-1.09.372-1.942.04-.853.048-1.125.048-3.298s-.01-2.445-.048-3.298c-.04-.852-.174-1.433-.372-1.942-.204-.526-.478-.973-.923-1.417-.444-.445-.89-.72-1.417-.923-.51-.198-1.09-.333-1.942-.372C10.445.008 10.173 0 8 0zm0 1.44c2.136 0 2.39.01 3.233.048.78.036 1.203.166 1.485.276.374.145.64.318.92.598.28.28.453.546.598.92.11.282.24.705.276 1.485.038.844.047 1.097.047 3.233s-.01 2.39-.05 3.233c-.04.78-.17 1.203-.28 1.485-.15.374-.32.64-.6.92-.28.28-.55.453-.92.598-.28.11-.71.24-1.49.276-.85.038-1.1.047-3.24.047s-2.39-.01-3.24-.05c-.78-.04-1.21-.17-1.49-.28-.38-.15-.64-.32-.92-.6-.28-.28-.46-.55-.6-.92-.11-.28-.24-.71-.28-1.49-.03-.84-.04-1.1-.04-3.23s.01-2.39.04-3.24c.04-.78.17-1.21.28-1.49.14-.38.32-.64.6-.92.28-.28.54-.46.92-.6.28-.11.7-.24 1.48-.28.85-.03 1.1-.04 3.24-.04zm0 2.452c-2.27 0-4.108 1.84-4.108 4.108 0 2.27 1.84 4.108 4.108 4.108 2.27 0 4.108-1.84 4.108-4.108 0-2.27-1.84-4.108-4.108-4.108zm0 6.775c-1.473 0-2.667-1.194-2.667-2.667 0-1.473 1.194-2.667 2.667-2.667 1.473 0 2.667 1.194 2.667 2.667 0 1.473-1.194 2.667-2.667 2.667zm5.23-6.937c0 .53-.43.96-.96.96s-.96-.43-.96-.96.43-.96.96-.96.96.43.96.96z"/></svg>
-            </a>
-            <a class="btn btn--link" href="https://medium.com/@razvantirboaca" target="_blank">
-                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M11.824 12.628l-.276.45.798.398 2.744 1.372c.15.076.294.11.418.11.278 0 .467-.177.467-.492V5.883l-4.15 6.745zm4.096-8.67c-.004-.003 0-.01-.003-.012l-4.825-2.412c-.06-.03-.123-.038-.187-.044-.016 0-.03-.01-.047-.01-.184 0-.368.092-.467.254l-.24.39-.5.814-1.89 3.08 1.89 3.076.5.813.5.812.59.95 4.71-7.64c.02-.03.01-.06-.02-.08zm-6.27 7.045L7.17 6.97l-.295-.477-.294-.477-.25-.416v4.867l3.32 1.663.5.25.5.25-.5-.813-.5-.813zM.737 1.68L.59 1.608c-.085-.042-.166-.062-.24-.062-.206 0-.35.16-.35.427v10.162c0 .272.2.594.442.716l4.145 2.08c.107.06.208.08.3.08.257 0 .438-.2.438-.53V4.01c0-.02-.012-.04-.03-.047L.738 1.68z"/></svg>
-            </a>
-            <a class="btn btn--link" href="https://twitter.com/RazvanTirboaca" target="_blank">
-                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.37-1.337.64-2.085.79-.598-.64-1.45-1.04-2.396-1.04-1.812 0-3.282 1.47-3.282 3.28 0 .26.03.51.085.75-2.728-.13-5.147-1.44-6.766-3.42C.83 2.58.67 3.14.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.41-.02-.61-.058.42 1.304 1.63 2.253 3.07 2.28-1.12.88-2.54 1.404-4.07 1.404-.26 0-.52-.015-.78-.045 1.46.93 3.18 1.474 5.04 1.474 6.04 0 9.34-5 9.34-9.33 0-.14 0-.28-.01-.42.64-.46 1.2-1.04 1.64-1.7z" fill-rule="nonzero"/></svg>
-            </a>
-        </div>
-        <p class="meta">Website design and content &copy; Razvan Tirboaca</p>
-    </footer>
-    <!-- END photoswipe -->
-    <script src="dist/js/app.js" async></script>
-    <!-- Google Analytics -->
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        <footer class="appfooter">
+            <div class="social-icons btn-group centered">
+                <a class="btn btn--link" href="https://www.linkedin.com/in/razvantirboaca/" target="_blank">
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M13.632 13.635h-2.37V9.922c0-.886-.018-2.025-1.234-2.025-1.235 0-1.424.964-1.424 1.96v3.778h-2.37V6H8.51v1.04h.03c.318-.6 1.092-1.233 2.247-1.233 2.4 0 2.845 1.58 2.845 3.637v4.188zM3.558 4.955c-.762 0-1.376-.617-1.376-1.377 0-.758.614-1.375 1.376-1.375.76 0 1.376.617 1.376 1.375 0 .76-.617 1.377-1.376 1.377zm1.188 8.68H2.37V6h2.376v7.635zM14.816 0H1.18C.528 0 0 .516 0 1.153v13.694C0 15.484.528 16 1.18 16h13.635c.652 0 1.185-.516 1.185-1.153V1.153C16 .516 15.467 0 14.815 0z" fill-rule="nonzero"/></svg>
+                </a>
+                <a class="btn btn--link" href="https://facebook.com/razvantirboaca" target="_blank">
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M15.117 0H.883C.395 0 0 .395 0 .883v14.234c0 .488.395.883.883.883h7.663V9.804H6.46V7.39h2.086V5.607c0-2.066 1.262-3.19 3.106-3.19.883 0 1.642.064 1.863.094v2.16h-1.28c-1 0-1.195.48-1.195 1.18v1.54h2.39l-.31 2.42h-2.08V16h4.077c.488 0 .883-.395.883-.883V.883C16 .395 15.605 0 15.117 0" fill-rule="nonzero"/></svg>
+                </a>
+                <a class="btn btn--link" href="https://instagram.com/razvantirboaca" target="_blank">
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8 0C5.827 0 5.555.01 4.702.048 3.85.088 3.27.222 2.76.42c-.526.204-.973.478-1.417.923-.445.444-.72.89-.923 1.417-.198.51-.333 1.09-.372 1.942C.008 5.555 0 5.827 0 8s.01 2.445.048 3.298c.04.852.174 1.433.372 1.942.204.526.478.973.923 1.417.444.445.89.72 1.417.923.51.198 1.09.333 1.942.372.853.04 1.125.048 3.298.048s2.445-.01 3.298-.048c.852-.04 1.433-.174 1.942-.372.526-.204.973-.478 1.417-.923.445-.444.72-.89.923-1.417.198-.51.333-1.09.372-1.942.04-.853.048-1.125.048-3.298s-.01-2.445-.048-3.298c-.04-.852-.174-1.433-.372-1.942-.204-.526-.478-.973-.923-1.417-.444-.445-.89-.72-1.417-.923-.51-.198-1.09-.333-1.942-.372C10.445.008 10.173 0 8 0zm0 1.44c2.136 0 2.39.01 3.233.048.78.036 1.203.166 1.485.276.374.145.64.318.92.598.28.28.453.546.598.92.11.282.24.705.276 1.485.038.844.047 1.097.047 3.233s-.01 2.39-.05 3.233c-.04.78-.17 1.203-.28 1.485-.15.374-.32.64-.6.92-.28.28-.55.453-.92.598-.28.11-.71.24-1.49.276-.85.038-1.1.047-3.24.047s-2.39-.01-3.24-.05c-.78-.04-1.21-.17-1.49-.28-.38-.15-.64-.32-.92-.6-.28-.28-.46-.55-.6-.92-.11-.28-.24-.71-.28-1.49-.03-.84-.04-1.1-.04-3.23s.01-2.39.04-3.24c.04-.78.17-1.21.28-1.49.14-.38.32-.64.6-.92.28-.28.54-.46.92-.6.28-.11.7-.24 1.48-.28.85-.03 1.1-.04 3.24-.04zm0 2.452c-2.27 0-4.108 1.84-4.108 4.108 0 2.27 1.84 4.108 4.108 4.108 2.27 0 4.108-1.84 4.108-4.108 0-2.27-1.84-4.108-4.108-4.108zm0 6.775c-1.473 0-2.667-1.194-2.667-2.667 0-1.473 1.194-2.667 2.667-2.667 1.473 0 2.667 1.194 2.667 2.667 0 1.473-1.194 2.667-2.667 2.667zm5.23-6.937c0 .53-.43.96-.96.96s-.96-.43-.96-.96.43-.96.96-.96.96.43.96.96z"/></svg>
+                </a>
+                <a class="btn btn--link" href="https://medium.com/@razvantirboaca" target="_blank">
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M11.824 12.628l-.276.45.798.398 2.744 1.372c.15.076.294.11.418.11.278 0 .467-.177.467-.492V5.883l-4.15 6.745zm4.096-8.67c-.004-.003 0-.01-.003-.012l-4.825-2.412c-.06-.03-.123-.038-.187-.044-.016 0-.03-.01-.047-.01-.184 0-.368.092-.467.254l-.24.39-.5.814-1.89 3.08 1.89 3.076.5.813.5.812.59.95 4.71-7.64c.02-.03.01-.06-.02-.08zm-6.27 7.045L7.17 6.97l-.295-.477-.294-.477-.25-.416v4.867l3.32 1.663.5.25.5.25-.5-.813-.5-.813zM.737 1.68L.59 1.608c-.085-.042-.166-.062-.24-.062-.206 0-.35.16-.35.427v10.162c0 .272.2.594.442.716l4.145 2.08c.107.06.208.08.3.08.257 0 .438-.2.438-.53V4.01c0-.02-.012-.04-.03-.047L.738 1.68z"/></svg>
+                </a>
+                <a class="btn btn--link" href="https://twitter.com/RazvanTirboaca" target="_blank">
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.37-1.337.64-2.085.79-.598-.64-1.45-1.04-2.396-1.04-1.812 0-3.282 1.47-3.282 3.28 0 .26.03.51.085.75-2.728-.13-5.147-1.44-6.766-3.42C.83 2.58.67 3.14.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.41-.02-.61-.058.42 1.304 1.63 2.253 3.07 2.28-1.12.88-2.54 1.404-4.07 1.404-.26 0-.52-.015-.78-.045 1.46.93 3.18 1.474 5.04 1.474 6.04 0 9.34-5 9.34-9.33 0-.14 0-.28-.01-.42.64-.46 1.2-1.04 1.64-1.7z" fill-rule="nonzero"/></svg>
+                </a>
+            </div>
+            <p class="meta">Website design and content &copy; Razvan Tirboaca</p>
+        </footer>
+        <!-- END photoswipe -->
+        <script src="dist/js/app.js" async></script>
+        <!-- Google Analytics -->
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-1839339-53', 'auto');
-    ga('send', 'pageview');
+        ga('create', 'UA-1839339-53', 'auto');
+        ga('send', 'pageview');
 
-    </script>
-</body>
+        </script>
+    </body>
 
 </html>
