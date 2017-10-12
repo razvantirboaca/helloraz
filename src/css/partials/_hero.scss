@@ -3,6 +3,7 @@
     width: calc(100% - 32px);
     max-width: $size-xxl;
     margin: 0 auto;
+    border-radius: 3px;
 
     @media all and (min-width: $size-md) {
         width: calc(100% - 72px);
@@ -16,6 +17,7 @@
             width: calc(100% - 32px);
             height: calc(100% - 32px);
             border: 1px solid rgba(white, .3);
+            border-radius: 3px;
             pointer-events: none;
         }
     }
@@ -47,5 +49,9 @@
 
     &__figure {
         z-index: 3;
+
+        img {
+            border-radius: 0 0 3px 0;
+        }
     }
 }

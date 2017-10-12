@@ -1,7 +1,8 @@
 .project {
     padding: 24px 32px;
     background: white;
-    box-shadow: 0 2px 4px rgba(50, 50, 93, .1);
+    border: 1px solid rgba($color-border, .7);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .04);
 
     &__header {
         margin-bottom: 24px;
@@ -22,5 +23,6 @@
 
     @media all and (min-width: $size-md) {
         padding: 40px;
+        border-radius: 3px;
     }
 }

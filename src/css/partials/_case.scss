@@ -2,8 +2,11 @@
     position: relative;
     display: block;
     margin: 32px -32px 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .04);
     @media all and (min-width: $size-md) {
+        overflow: hidden;
         margin: 64px auto 0;
+        border-radius: 3px;
     }
     border: none;
 
@@ -49,11 +52,11 @@
         }
         
         .case__figure {
-            right: 0;
+            right: -40px;
             bottom: 0;
-            max-width: 270px;
+            max-width: 260px;
             @media all and (min-width: $size-md) {
-                max-width: 360px;
+                max-width: 340px;
             }
         }
     }
@@ -106,9 +109,12 @@
         .case__figure {
             right: 0;
             bottom: 0;
-            max-width: 360px;
+            max-width: 350px;
             @media all and (min-width: $size-md) {
-                max-width: 470px;
+                max-width: 410px;
+            }
+            @media all and (min-width: $size-xl) {
+                max-width: 430px;
             }
         }
 
