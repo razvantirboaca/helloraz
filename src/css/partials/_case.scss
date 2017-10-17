@@ -2,7 +2,7 @@
     position: relative;
     display: block;
     margin: 32px -32px 0;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, .04);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
     @media all and (min-width: $size-md) {
         overflow: hidden;
         margin: 64px auto 0;
@@ -17,7 +17,7 @@
 
         .case__title {
             color: inherit;
-            margin-bottom: .4em;
+            margin-bottom: 0.4em;
         }
 
         .case__action {
@@ -28,7 +28,7 @@
     &__figure {
         z-index: 0;
         position: absolute;
-        opacity: .2;
+        opacity: 0.2;
         @media all and (min-width: $size-md) {
             opacity: 1;
         }
@@ -36,7 +36,6 @@
 }
 
 .giftcard {
-
     &.case {
         color: white;
 
@@ -50,7 +49,7 @@
                 padding-right: 40%;
             }
         }
-        
+
         .case__figure {
             right: -40px;
             bottom: 0;
@@ -60,7 +59,7 @@
             }
         }
     }
-    
+
     .hero {
         color: white;
 
@@ -98,7 +97,6 @@
 }
 
 .cinema {
-
     &.case {
         color: white;
 
@@ -125,7 +123,7 @@
             }
         }
     }
-    
+
     .hero {
         color: white;
 

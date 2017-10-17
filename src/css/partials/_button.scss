@@ -20,7 +20,7 @@
     min-width: 10px;
     max-width: 100%;
     min-height: 24px;
-    padding: .83em 1.2em;
+    padding: 0.83em 1.2em;
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 2.4rem;
@@ -32,7 +32,7 @@
     background: $color-primary;
     border: 2px solid $color-primary;
     border-radius: 5px;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     @media all and (min-width: $size-lg) {
         padding: 1em 1.3em;
 
@@ -59,7 +59,7 @@
     }
 
     > * + * {
-        margin-left: .5em;
+        margin-left: 0.5em;
     }
 
     &--outline {
@@ -89,9 +89,9 @@
     }
 
     &--sm {
-        padding: .4em .6em;
+        padding: 0.4em 0.6em;
         @media all and (min-width: $size-lg) {
-            padding: .7em 1em;
+            padding: 0.7em 1em;
         }
     }
 
@@ -121,7 +121,6 @@
 }
 
 .social-icons {
-
     .btn--link {
         margin: 0;
         color: $color-text-primary;
@@ -131,5 +130,4 @@
             }
         }
     }
-
 }

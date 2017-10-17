@@ -1,4 +1,3 @@
-
 /**
  * Flex Grid -
  * Version: 0.2.1
@@ -18,8 +17,6 @@
 $fg-columns: 12 !default;
 $fg-gutter: 0 !default;
 
-
-
 /**
  * Break point namespace object
  *
@@ -37,22 +34,20 @@ $fg-gutter: 0 !default;
  *
  */
 $fg-breakpoints: (
-    (xs),
-    (sm, $size-sm),
-    (md, $size-md),
-    (lg, $size-lg),
-    (xl, $size-xl),
-    (xxl, $size-xxl)
-) !default;
-
+         (xs),
+         (sm, $size-sm),
+         (md, $size-md),
+         (lg, $size-lg),
+         (xl, $size-xl),
+         (xxl, $size-xxl)
+    )
+    !default;
 
 /**
  * Calculate column size percentage
  */
 @function get-col-percent($column-num) {
-
     @return $column-num / $fg-columns * 100%;
-
 }
 
 /**
@@ -71,7 +66,7 @@ $fg-breakpoints: (
 /**
  * Row wrapper class, flex box parent.
  */
- 
+
 .grid {
     display: flex;
     flex-direction: row;
@@ -82,7 +77,6 @@ $fg-breakpoints: (
 .col-flex {
     flex: 1;
 }
-
 
 %col {
     @include spacing( ( $fg-gutter ), padding, horizontal );
@@ -114,7 +108,6 @@ $fg-breakpoints: (
 }
 
 @mixin grid-sizes( $namespace ) {
-
     // Run the loop for as many columns as speficied
     @for $i from 1 through $fg-columns {
         .col-#{$namespace}-#{$i} {
@@ -123,18 +116,14 @@ $fg-breakpoints: (
     }
 
     @for $i from 1 through $fg-columns {
-
         // Don't include the .off class for the last column
-        @if ( $i != $fg-columns ) {
+        @if ($i != $fg-columns) {
             .off-#{$namespace}-#{$i} {
                 margin-left: get-col-percent($i);
             }
         }
-
     }
-
 }
-
 
 /**
  * Build the grid in two steps, to help minimize file size
@@ -142,20 +131,15 @@ $fg-breakpoints: (
  * Step 2, for each namespace, wrap the col width/offset measurements in their breakpoint media query
  */
 @each $val in $fg-breakpoints {
-
     $namespace: nth($val, 1);
     @include grid-base( $namespace );
-
 }
 
 @each $val in $fg-breakpoints {
     @if length($val) == 1 {
-
         $namespace: nth($val, 1);
         @include grid-sizes( $namespace );
-
     } @else {
-
         $namespace: nth($val, 1);
         $size: nth($val, 2);
 

@@ -9,14 +9,14 @@
         width: calc(100% - 72px);
 
         &:before {
-            content: '';
+            content: "";
             z-index: 1;
             position: absolute;
             top: 16px;
             left: 16px;
             width: calc(100% - 32px);
             height: calc(100% - 32px);
-            border: 1px solid rgba(white, .3);
+            border: 1px solid rgba(white, 0.3);
             border-radius: 3px;
             pointer-events: none;
         }

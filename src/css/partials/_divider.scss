@@ -19,7 +19,7 @@ hr {
     }
 
     &__title {
-        letter-spacing: .2em;
+        letter-spacing: 0.2em;
         line-height: 1;
         text-transform: uppercase;
         color: $color-primary;
@@ -36,7 +36,7 @@ hr {
             stroke: $color-secondary;
         }
     }
-    
+
     @media all and (min-width: $size-lg) {
         margin-bottom: 24px;
 

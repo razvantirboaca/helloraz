@@ -11,19 +11,19 @@
 
     &--paper {
         position: relative;
-        background: rgba(white, .96) !important;
+        background: rgba(white, 0.96) !important;
         color: $color-text-secondary !important;
 
         &:before {
-            content: '';
+            content: "";
             display: block;
             position: absolute;
             top: 0;
             right: -36px;
             width: 100px;
             height: 24px;
-            background: rgba(255, 255, 200, .8);
-            box-shadow: 0 1px 0 rgba(50, 50, 93, .04);
+            background: rgba(255, 255, 200, 0.8);
+            box-shadow: 0 1px 0 rgba(50, 50, 93, 0.04);
             transform: rotate(45deg);
         }
     }

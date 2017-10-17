@@ -92,12 +92,6 @@ video {
     outline: none;
 }
 
-h1,
-figure {
-    margin: 0;
-    padding: 0;
-}
-
 object,
 embed {
     display: block;
@@ -109,7 +103,7 @@ a {
 
 a,
 button {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, .035);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.035);
 }
 
 em,

@@ -14,7 +14,7 @@ img {
     }
 
     &:before {
-        content: '';
+        content: "";
         top: 0;
         left: 0;
         width: 100%;
@@ -27,8 +27,9 @@ img {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        padding-left: 21px; 
-        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="16" height="16" fill="#9AA3AE"><path style=" " d="M 0 5 L 0 45 L 50 45 L 50 5 Z M 2 7 L 48 7 L 48 33 L 37.320313 33 L 30.320313 28 L 24.414063 28 L 20.328125 23.914063 L 15.460938 24.890625 L 11.15625 18.429688 L 2 27.585938 Z M 37.5 13 C 35.027344 13 33 15.027344 33 17.5 C 33 19.972656 35.027344 22 37.5 22 C 39.972656 22 42 19.972656 42 17.5 C 42 15.027344 39.972656 13 37.5 13 Z M 37.5 15 C 38.890625 15 40 16.109375 40 17.5 C 40 18.890625 38.890625 20 37.5 20 C 36.109375 20 35 18.890625 35 17.5 C 35 16.109375 36.109375 15 37.5 15 Z M 10.84375 21.570313 L 14.539063 27.109375 L 19.671875 26.085938 L 23.585938 30 L 29.679688 30 L 36.679688 35 L 48 35 L 48 43 L 2 43 L 2 30.414063 Z "></path></svg>') left center no-repeat;
+        padding-left: 21px;
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="16" height="16" fill="#9AA3AE"><path style=" " d="M 0 5 L 0 45 L 50 45 L 50 5 Z M 2 7 L 48 7 L 48 33 L 37.320313 33 L 30.320313 28 L 24.414063 28 L 20.328125 23.914063 L 15.460938 24.890625 L 11.15625 18.429688 L 2 27.585938 Z M 37.5 13 C 35.027344 13 33 15.027344 33 17.5 C 33 19.972656 35.027344 22 37.5 22 C 39.972656 22 42 19.972656 42 17.5 C 42 15.027344 39.972656 13 37.5 13 Z M 37.5 15 C 38.890625 15 40 16.109375 40 17.5 C 40 18.890625 38.890625 20 37.5 20 C 36.109375 20 35 18.890625 35 17.5 C 35 16.109375 36.109375 15 37.5 15 Z M 10.84375 21.570313 L 14.539063 27.109375 L 19.671875 26.085938 L 23.585938 30 L 29.679688 30 L 36.679688 35 L 48 35 L 48 43 L 2 43 L 2 30.414063 Z "></path></svg>')
+            left center no-repeat;
     }
 }
 
@@ -45,9 +46,9 @@ figcaption {
     img {
         max-height: 100px;
         margin: 0 auto;
-        opacity: .9;
+        opacity: 0.9;
         filter: grayscale(100%);
-        transition: all .2s ease;
+        transition: all 0.2s ease;
     }
 
     &:hover img {
@@ -71,14 +72,14 @@ figcaption {
 
     &:after {
         z-index: 1;
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         border-radius: 9px;
-        box-shadow: inset 0 0 0 1px rgba(black, .2);
+        box-shadow: inset 0 0 0 1px rgba(black, 0.2);
     }
 
     @media all and (min-width: $size-md) {
@@ -150,7 +151,7 @@ figcaption {
 
 .figure-screenshot {
     border: 1px solid $color-border;
-    box-shadow: 0 1px 6px rgba(50, 50, 93, .1);
+    box-shadow: 0 1px 6px rgba(50, 50, 93, 0.1);
 
     img {
         margin: 0 auto;
@@ -168,7 +169,7 @@ figcaption {
         position: relative;
 
         &:before {
-            content: '';
+            content: "";
             display: block;
             width: 100%;
             padding-top: 56.25%;
