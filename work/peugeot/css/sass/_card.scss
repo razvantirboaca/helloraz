@@ -1,0 +1,71 @@
+.action {
+    max-width: 1028px;
+    margin: 0 auto;
+}
+
+.card {
+    padding: 16px;
+    background: white;
+}
+
+@media (min-width: $sm-size) {
+
+    .action {
+        padding: 0 24px;
+    }
+
+    .card {
+        padding: 30px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+    }
+
+}
+
+.screen-2 .action-form,
+.screen-1 .action-feedback {
+    display: none;
+}
+
+.screen-2 .action-feedback {
+    display: block;
+}
+
+.card form {
+}
+
+.card form .form-group {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+
+.card form button {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (min-width: $sm-size) {
+
+    .card form .form-group {
+        width: 48%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .card form button {
+        width: 50%;
+    }
+}
+
+@media (min-width: $md-size) {
+
+    .card form .form-group {
+        width: 23%;
+    }
+
+    .card form button {
+        width: 30%;
+    }
+}

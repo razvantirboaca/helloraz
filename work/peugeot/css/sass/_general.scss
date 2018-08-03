@@ -1,0 +1,73 @@
+b {
+    font-weight: 700;
+}
+
+a:not(.btn) {
+    color: $link;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:not(.btn):hover,
+a:not(.btn):active {
+    color: $link-hover;
+    text-decoration: none;
+}
+
+svg {
+    width: 24px;
+    height: 24px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-caps {
+    text-transform: uppercase;
+}
+
+.color-primary {
+    color: $primary;
+}
+
+.color-primary-light {
+    color: $primary-light;
+}
+
+.color-secondary {
+    color: $secondary;
+}
+
+.bg-success {
+    background: $green-light;
+    color: $green-dark;
+}
+
+.msg-feedback {
+    padding: 32px;
+    text-align: center;
+    border-radius: 3px;
+    margin: 18px;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0 !important;
+}
+
+hr {
+    border-width: 0 0 2px;
+    border-style: solid;
+    border-color: #ebecef;
+    width: 30%;
+    height: 0;
+    margin: 24px auto;
+}
+
+@media (min-width: $sm-size) {
+
+    hr {
+        margin: 30px auto !important;
+    }
+
+}

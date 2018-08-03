@@ -1,0 +1,21 @@
+html {
+    font-size: 62.5%;
+}
+
+body,
+font {
+    font-family: $font-stack;
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #333;
+    text-align: left;
+    text-rendering: optimizeLegibility;
+    -webkit-backface-visibility: hidden;
+}
+
+p {
+    font-size: 14px;
+    font-size: 1.4rem;
+}

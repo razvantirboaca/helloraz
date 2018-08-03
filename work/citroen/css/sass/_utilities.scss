@@ -1,0 +1,42 @@
+@-ms-viewport {
+ 	width: device-width;
+}
+
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
+	display: none;
+}
+
+@media (max-width: $sm-size - 1px) {
+
+	.visible-xs {
+		display: block;
+	}
+
+}
+
+@media (min-width: $sm-size) and (max-width: $md-size - 1px) {
+
+	.visible-sm {
+		display: block;
+	}
+
+}
+
+@media (min-width: $md-size) and (max-width: $lg-size - 1px) {
+
+	.visible-md {
+		display: block;
+	}
+
+}
+
+@media (min-width: $lg-size) {
+
+	.visible-lg {
+		display: block;
+	}
+
+}

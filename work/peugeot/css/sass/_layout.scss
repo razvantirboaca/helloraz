@@ -1,0 +1,163 @@
+html {
+    min-height: 100%;
+    background-color: $primary-dark;
+}
+
+body {
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+body > .center {
+    padding-top: 112px;
+    background: $primary-dark url("../images/bg.jpg") center 70px no-repeat;
+    background-size: 100%;
+    @media all and (min-width: 870px) {
+        background: $primary-dark url("../images/bg.jpg") center top no-repeat;
+        background-size: 100%;
+    }
+}
+
+a.call {
+    display: inline-block;
+}
+
+@media (min-width: $sm-size) {
+
+    a.call {
+        display: none;
+    }
+
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    -webkit-box-align: start;
+    align-items: flex-start;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    width: 100%;
+    height: 112px;
+    padding: 0 16px;
+    background: url("../images/header.png") -64px bottom no-repeat;
+    @media all and (min-width: 640px) {
+        background: url("../images/header.png") left bottom no-repeat;
+    }
+    @media all and (min-width: 900px) {
+        width: 900px;
+    }
+}
+
+.header .btn {
+    margin-top: 12px;
+}
+
+.title {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+.car {
+    width: 100%;
+}
+
+.car:after {
+    content: '';
+    display: block;
+    padding-top: 74%;
+}
+
+.subtitle {
+    display: block;
+    width: 100%;
+    margin: 2px auto 40px;
+}
+
+.stamps {
+    text-align: right;
+}
+
+.stamps img {
+    display: inline-block;
+    width: 50%;
+    max-width: 271px;
+    margin: 5px 34px 40px;
+}
+
+.form-block {
+    width: 100%;
+    background: rgba(white, .1);
+    overflow: hidden;
+}
+
+.form {
+    padding: 30px 12px 24px;
+    text-align: center;
+}
+
+.form .form-group {
+    display: block;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 24px;
+    vertical-align: top;
+    @media (min-width: 541px) { 
+        display: inline-block;
+        width: 46%;
+    }
+}
+
+.screen-2 .form,
+.msg-feedback {
+    display: none;
+}
+
+.screen-2 .msg-feedback {
+    display: block;
+}
+
+.links {
+    padding: 0 24px;
+    margin: 50px 0 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.links a {
+    margin-bottom: 20px;
+}
+
+.footer {
+    padding: 30px 0;
+}
+
+.footer p {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 24px;
+    color: #6C5B3F;
+    @media (min-width: 830px) {
+        width: 90%;
+    }
+}
+
+/*==========  Blocks  ==========*/
+
+.center {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+}
