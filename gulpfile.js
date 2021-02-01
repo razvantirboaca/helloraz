@@ -9,7 +9,7 @@
     uglify = require('gulp-uglify'),
     notify  = require('gulp-notify'),
     bs = require('browser-sync').create(),
-    proxyUrl = 'localhost/razvantirboaca.com';
+    proxyUrl = 'localhost/razvantirboaca.github.io';
 
 var paths = {
     watch : {
