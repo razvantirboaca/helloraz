@@ -1,6 +1,10 @@
-# Ignore Mac DS_Store files
-.DS_Store
+# Editor: vscode
+.vscode/*
+# Editor: vim
+*.swo
 
-node_modules/
-.idea/
-.ide/
+# OS
+**/.DS_Store
+
+# npm & yarn
+node_modules
