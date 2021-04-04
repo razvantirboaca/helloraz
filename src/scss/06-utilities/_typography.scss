@@ -1,0 +1,37 @@
+// Tokens
+
+.caption {
+    @include fs-variables($caption);
+}
+
+.body {
+    @include fs-variables($body);
+}
+
+.body-large {
+    @include fs-variables($body-large);
+}
+
+%heading {
+    --font-family: var(--font-family-headings);
+    @supports (font-variation-settings: normal) {
+        --font-family: var(--font-family-headings-v);
+    }
+
+    font-feature-settings: 'ordn' on, 'salt' on, 'ss01' on, 'ss02' on, 'ss03' on;
+}
+
+.heading {
+    @extend %heading;
+    @include fs-variables($heading);
+}
+
+.heading-medium {
+    @extend %heading;
+    @include fs-variables($heading-medium);
+}
+
+.heading-large {
+    @extend %heading;
+    @include fs-variables($heading-large);
+}

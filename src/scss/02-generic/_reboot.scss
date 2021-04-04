@@ -1,16 +1,3 @@
-// stylelint-disable at-rule-no-vendor-prefix, declaration-no-important, selector-no-qualifying-type, property-no-vendor-prefix
-
-// Reboot
-//
-// Normalization of HTML elements, manually forked from Normalize.css to remove
-// styles targeting irrelevant browsers while applying new styles.
-//
-// Normalize is licensed MIT. https://github.com/necolas/normalize.css
-
-// Document
-//
-// Change from `box-sizing: content-box` so that `width` is not affected by `padding` or `border`.
-
 *,
 *::before,
 *::after {
@@ -20,12 +7,17 @@
 body {
     --color: var(--color-neutral-light);
     --bg: var(--color-neutral-end);
+    @include fs-variables($body);
+    --font-family: var(--font-family-base);
+    @supports (font-variation-settings: normal) {
+        --font-family: var(--font-family-base-v);
+    }
 
     margin: 0;
     color: var(--color);
     font-weight: $font-weight-base;
-    font-family: $font-family-base;
-    line-height: $line-height-base;
+    font-family: var(--font-family);
+    font-feature-settings: 'salt' on;
     text-align: left;
     background: var(--bg);
     -webkit-text-size-adjust: 100%;
@@ -38,6 +30,9 @@ body {
 }
 
 :focus-visible {
+    --focus-box-shadow: 0 0 0 3px var(--color-neutral-end), 0 0 0 4px var(--color-neutral-lightest);
+
+    border-radius: 2px;
     box-shadow: var(--focus-box-shadow);
 }
 
@@ -58,12 +53,11 @@ hr:not([size]) {
 %heading {
     --margin-b: var(--space-large);
 
-    margin-top: 0; // 1
+    margin-top: 0;
     margin-bottom: var(--margin-b);
     font-weight: $headings-font-weight;
-    font-family: $headings-font-family;
+    font-family: var(--font-family);
     font-style: $headings-font-style;
-    line-height: $headings-line-height;
 }
 
 h1 {
@@ -144,7 +138,7 @@ blockquote {
 
 b,
 strong {
-    font-weight: bold;
+    font-weight: 700;
 }
 
 small {
@@ -171,16 +165,20 @@ sup { top: -.5em; }
 // Links
 
 a {
-    --color: var(--color-primary-base);
+    --color: currentColor;
+    --border-color: var(--color-primary-base);
     --hover-color: var(--color-primary-base);
+    --hover-border-color: var(--color-neutral-base);
 
     color: var(--color);
-    text-decoration: none;
+    text-decoration-color: var(--border-color);
+    text-underline-offset: 2px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 
     &:hover {
-        --color: var(--hover-color);
+        color: var(--hover-color);
 
-        text-decoration: none;
+        text-decoration-color: var(--hover-border-color);
     }
 }
 
@@ -259,7 +257,7 @@ caption {
 }
 
 th {
-    font-weight: bold;
+    font-weight: 700;
     text-align: inherit;
     text-align: -webkit-match-parent;
 }

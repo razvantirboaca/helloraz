@@ -1,0 +1,29 @@
+// Text colors
+@each $name, $color in $ui-colors {
+    .color-#{$name} {
+        color: var(--color-#{$name});
+    }
+}
+
+// Text gradients
+@each $name, $color in $ui-gradients {
+    .color-#{$name} {
+        color: transparent !important;
+        background-image: var(--color-#{$name});
+        background-clip: text;
+    }
+}
+
+// Background colors
+@each $name, $color in $ui-colors {
+    .bg-#{$name} {
+        background-color: var(--color-#{$name});
+    }
+}
+
+// Background gradients
+@each $name, $color in $ui-gradients {
+    .bg-#{$name} {
+        background-image: var(--color-#{$name});
+    }
+}
