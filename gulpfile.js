@@ -38,8 +38,8 @@ Object.assign(config, {
         dest: `${config.dest}/assets/svg`
     },
     img: {
-        src: `${config.src}/assets/img`,
-        dest: `${config.dest}/assets/img`
+        src: `${config.src}/assets/images`,
+        dest: `${config.dest}/assets/images`
     }
 });
 
