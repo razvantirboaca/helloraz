@@ -1,0 +1,70 @@
+@import "../00-settings/index";
+@import "../01-tools/index";
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.nav-link {
+    --padding-y: var(--space-large);
+    --padding-x: var(--space-medium);
+    --color: var(--color-neutral-base);
+    --hover-color: var(--color-neutral-lightest);
+    --selected-color: var(--color-neutral-lightest);
+    --disabled-color: var(--color-neutral-dark);
+
+    display: flex;
+    align-items: center;
+    padding: var(--padding-y) var(--padding-x);
+    color: var(--color);
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        --color: var(--hover-color);
+
+        text-decoration: none;
+    }
+
+    &.selected {
+        --color: var(--selected-color);
+    }
+
+    &.disabled {
+        --color: var(--disabled-color);
+
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+}
+
+.nav-fill {
+
+    .nav-item {
+        flex: 1 1 auto;
+    }
+
+    .nav-link {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.nav-justified {
+    align-items: flex-end;
+
+    .nav-item {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+
+    .nav-link {
+        justify-content: center;
+        text-align: center;
+    }
+}

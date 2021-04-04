@@ -1,0 +1,34 @@
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:    'logo   description'
+                            'nav    nav';
+    align-items: center;
+
+    .logo {
+        grid-area: logo;
+
+        a {
+            --color: var(--color-neutral-base);
+            --hover-color: var(--color-neutral-lightest);
+
+            text-decoration: none;
+        }
+    }
+
+    .nav {
+        grid-area: nav;
+        justify-content: center;
+    }
+
+    .description {
+        grid-area: description;
+        text-align: right;
+    }
+
+    @include media-breakpoint-up(tablet) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:    'logo nav description';
+
+    }
+}
