@@ -40,6 +40,10 @@ Object.assign(config, {
     img: {
         src: `${config.src}/assets/images`,
         dest: `${config.dest}/assets/images`
+    },
+    fonts: {
+        src: `${config.src}/assets/fonts`,
+        dest: `${config.dest}/assets/fonts`
     }
 });
 
@@ -123,10 +127,8 @@ const img = () => gulp.src(`${config.img.src}/**/*.+(png|jpg|jpeg|gif|svg)`)
     .pipe(gulp.dest(config.img.dest));
 
 
-//const copyfiles = () => gulp.src([
-//    './src/robots.txt'
-//])
-//    .pipe(gulp.dest(config.dest));
+const fonts = () => gulp.src(`${config.fonts.src}/**/*`)
+    .pipe(gulp.dest(config.fonts.dest));
 
 const serve = () => browserSync.init({
     server: config.dest,
@@ -152,7 +154,7 @@ const watch = () => {
 
 
 
-const build = gulp.series(clean, html, js, css, svg, img);
+const build = gulp.series(clean, html, js, css, svg, img, fonts);
 
 
 
