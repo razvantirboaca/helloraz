@@ -1,0 +1,408 @@
+// stylelint-disable at-rule-no-vendor-prefix, declaration-no-important, selector-no-qualifying-type, property-no-vendor-prefix
+
+// Reboot
+//
+// Normalization of HTML elements, manually forked from Normalize.css to remove
+// styles targeting irrelevant browsers while applying new styles.
+//
+// Normalize is licensed MIT. https://github.com/necolas/normalize.css
+
+// Document
+//
+// Change from `box-sizing: content-box` so that `width` is not affected by `padding` or `border`.
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    --color: var(--color-neutral-light);
+    --bg: var(--color-neutral-end);
+
+    margin: 0;
+    color: var(--color);
+    font-weight: $font-weight-base;
+    font-family: $font-family-base;
+    line-height: $line-height-base;
+    text-align: left;
+    background: var(--bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+:focus,
+:focus-visible {
+    outline: 0 !important;
+}
+
+:focus-visible {
+    box-shadow: var(--focus-box-shadow);
+}
+
+hr {
+    --color: var(--color-neutral-darkest);
+
+    margin: 0;
+    color: var(--color);
+    background-color: currentColor;
+    border: 0;
+    opacity: 0;
+}
+
+hr:not([size]) {
+    height: 1px; // 2
+}
+
+%heading {
+    --margin-b: var(--space-large);
+
+    margin-top: 0; // 1
+    margin-bottom: var(--margin-b);
+    font-weight: $headings-font-weight;
+    font-family: $headings-font-family;
+    font-style: $headings-font-style;
+    line-height: $headings-line-height;
+}
+
+h1 {
+    @extend %heading;
+}
+
+h2 {
+    @extend %heading;
+}
+
+h3 {
+    @extend %heading;
+}
+
+h4 {
+    @extend %heading;
+}
+
+h5 {
+    @extend %heading;
+}
+
+h6 {
+    @extend %heading;
+}
+
+p {
+    --margin-b: var(--space-large);
+
+    margin-top: 0;
+    margin-bottom: var(--margin-b);
+}
+
+abbr[title],
+abbr[data-bs-original-title] {
+    text-decoration: underline;
+    text-decoration: underline dotted;
+    cursor: help; // 3
+    text-decoration-skip-ink: none;
+}
+
+address {
+    --margin-b: var(--space-large);
+
+    margin-bottom: var(--margin-b);
+    font-style: normal;
+    line-height: inherit;
+}
+
+ol,
+ul {
+    --padding-l: var(--space-gigantic);
+
+    padding-left: var(--padding-l);
+}
+
+ol,
+ul,
+dl {
+    --margin-b: var(--space-large);
+
+    margin-top: 0;
+    margin-bottom: var(--margin-b);
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+    --margin-b: 0;
+}
+
+blockquote {
+    --margin-b: var(--space-large);
+
+    margin: 0 0 var(--margin-b);
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+small {
+    font-size: .75;
+    line-height: 1;
+}
+
+// Sub and Sup
+//
+// Prevent `sub` and `sup` elements from affecting the line height in
+// all browsers.
+
+sub,
+sup {
+    position: relative;
+    font-size: .75;
+    line-height: 0;
+    vertical-align: baseline;
+}
+
+sub { bottom: -.25em; }
+sup { top: -.5em; }
+
+// Links
+
+a {
+    --color: var(--color-primary-base);
+    --hover-color: var(--color-primary-base);
+
+    color: var(--color);
+    text-decoration: none;
+
+    &:hover {
+        --color: var(--hover-color);
+
+        text-decoration: none;
+    }
+}
+
+a:not([href]):not([class]) {
+    &,
+    &:hover {
+        --color: var(--);
+    }
+}
+
+// Code
+
+pre,
+code,
+kbd,
+samp {
+    font-family: $font-family-code;
+    font-size: 1em;
+}
+
+pre {
+    --margin-bottom: var(--space-large);
+    --color: var(--pre-color);
+    --bg: var(--pre-bg);
+
+    display: block;
+    margin-top: 0;
+    margin-bottom: var(--margin-bottom);
+    overflow: auto;
+    font-size: $code-font-size;
+    color: var(--color);
+    background: var(--bg);
+
+    // Account for some code outputs that place code tags in pre tags
+    code {
+        font-size: inherit;
+        color: inherit;
+        word-break: normal;
+    }
+}
+
+code {
+    --color: var(--code-color);
+
+    font-size: $code-font-size;
+    color: var(--color);
+    word-wrap: break-word;
+
+    a > & {
+        color: inherit;
+    }
+}
+
+figure {
+    --margin-bottom: var(--space-large);
+
+    margin: 0 0 var(--margin-bottom);
+}
+
+img,
+svg {
+    vertical-align: middle;
+}
+
+table {
+    font-size: inherit;
+    caption-side: bottom;
+    border-collapse: collapse;
+}
+
+caption {
+    --color: var(--color-neutral-base);
+
+    color: var(--color);
+    text-align: left;
+}
+
+th {
+    font-weight: bold;
+    text-align: inherit;
+    text-align: -webkit-match-parent;
+}
+
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+}
+
+label {
+    display: inline-block;
+}
+
+button {
+    border-radius: 0;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+[role="button"] {
+    cursor: pointer;
+}
+
+select {
+    word-wrap: normal;
+}
+
+[list]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    &:not(:disabled) {
+        cursor: pointer;
+    }
+}
+
+::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+fieldset {
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+legend {
+    --margin-bottom: var(--spacer-large);
+
+    float: left;
+    width: 100%;
+    margin-bottom: var(--margin-bottom);
+    padding: 0;
+    line-height: inherit;
+
+    + * {
+        clear: left;
+    }
+}
+
+::-webkit-datetime-edit-fields-wrapper,
+::-webkit-datetime-edit-text,
+::-webkit-datetime-edit-minute,
+::-webkit-datetime-edit-hour-field,
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-year-field {
+    padding: 0;
+}
+
+::-webkit-inner-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    outline-offset: -2px;
+    -webkit-appearance: textfield;
+}
+
+::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+::file-selector-button {
+    font: inherit;
+}
+
+::-webkit-file-upload-button {
+    font: inherit;
+    -webkit-appearance: button;
+}
+
+output {
+    display: inline-block;
+}
+
+iframe {
+    border: 0;
+}
+
+summary {
+    display: list-item;
+    cursor: pointer;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+[hidden] {
+    display: none !important;
+}

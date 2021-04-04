@@ -1,0 +1,46 @@
+// Typography
+
+$font-size-root:        null;
+$font-weight-base:      400;
+$font-family-base:      -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+$line-height-base:      1.5;
+
+
+$headings-font-weight:  bold;
+$headings-font-family:  -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;;
+$headings-font-style:   normal;
+$headings-line-height:  1;
+
+$font-family-code:      Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+$code-font-size:        1em;
+
+// Colors
+
+$ui-colors: (
+    // Neutrals
+    color-neutral-lightest:     #EDEDED,
+    color-neutral-light:        #BFBFBF,
+    color-neutral-base:         #6B6B6B,
+    color-neutral-dark:         #2E2E2E,
+    color-neutral-darkest:      #1A1A1A,
+    color-neutral-end:          #141414,
+    // Primary
+    color-primary-base:         #FF6E4F,
+    // Gradient
+    color-gradient-primary:     linear-gradient(90deg, #FF4F4F 0%, #BCFF4F 100%),
+    // Transparent
+    color-transparent:          transparent
+) !default;
+
+// Spacing
+
+$spacer:                rem(4px) !default;
+$spacers: (
+    space-none:               0,
+    space-tiny:               $spacer,
+    space-small:              $spacer * 2,
+    space-medium:             $spacer * 3,
+    space-large:              $spacer * 4,
+    space-huge:               $spacer * 6,
+    space-gigantic:           $spacer * 8
+) !default;

@@ -1,0 +1,13 @@
+:root {
+    font-size: $font-size-root;
+
+    // Colors
+    @each $name, $color in $ui-colors {
+        --#{$name}: #{$color};
+    }
+
+    // Spacers
+    @each $name, $value in $spacers {
+        --#{$name}: #{$value};
+    }
+}
