@@ -1,37 +1,3 @@
-// Typography
-
-$font-size-root:        null;
-$font-weight-base:      400;
-$font-family-base:      -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-$line-height-base:      1.5;
-
-
-$headings-font-weight:  bold;
-$headings-font-family:  -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;;
-$headings-font-style:   normal;
-$headings-line-height:  1;
-
-$font-family-code:      Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
-$code-font-size:        1em;
-
-// Colors
-
-$ui-colors: (
-    // Neutrals
-    color-neutral-lightest:     #EDEDED,
-    color-neutral-light:        #BFBFBF,
-    color-neutral-base:         #6B6B6B,
-    color-neutral-dark:         #2E2E2E,
-    color-neutral-darkest:      #1A1A1A,
-    color-neutral-end:          #141414,
-    // Primary
-    color-primary-base:         #FF6E4F,
-    // Gradient
-    color-gradient-primary:     linear-gradient(90deg, #FF4F4F 0%, #BCFF4F 100%),
-    // Transparent
-    color-transparent:          transparent
-) !default;
-
 // Spacing
 
 $spacer:                rem(4px) !default;
@@ -43,4 +9,88 @@ $spacers: (
     space-large:              $spacer * 4,
     space-huge:               $spacer * 6,
     space-gigantic:           $spacer * 8
+) !default;
+
+// Breakpoints
+
+$grid-breakpoints: (
+    mobile:     0,
+    tablet:     600px,
+    laptop:     900px,
+    desktop:    1200px,
+    tv:         1800px
+) !default;
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$row-col:                     12 !default;
+$grid-cols:                   6 !default;
+$gap-default:                 none !default; // use spacer token
+
+$gaps: $spacers !default;
+
+// Typography
+
+$font-size-root:        null;
+$font-weight-base:      400;
+$font-family-base:      'iA Writer Quattro', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+$font-family-base-v:    'iA Writer Quattro Variable', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+
+
+$headings-font-weight:  700;
+$headings-font-family:  'Satoshi', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+$headings-font-family-v:'Satoshi Variable', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+$headings-font-style:   normal;
+
+$font-family-code:      Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+$code-font-size:        1em;
+
+// Tokens
+$caption: (
+    null:           (rem(13px), calc(16/13))
+);
+$body: (
+    null:           (rem(15px), calc(24/15)),
+    tablet:         (rem(15px), calc(24/15))
+);
+$body-large: (
+    null:           (rem(13px), calc(16/13)),
+    tablet:         (rem(12px), calc(16/12))
+);
+$heading: (
+    null:           (rem(17px), calc(24/13)),
+    tablet:         (rem(22px), calc(24/22))
+);
+$heading-medium: (
+    null:           (rem(21px), calc(28/13)),
+    tablet:         (rem(26px), calc(32/13))
+);
+$heading-large: (
+    null:           (rem(24px), calc(28/24)),
+    tablet:         (rem(36px), calc(48/36))
+);
+
+// Colors
+
+$ui-colors: (
+    // Neutrals
+    neutral-lightest:     #EDEDED,
+    neutral-light:        #BFBFBF,
+    neutral-base:         #6B6B6B,
+    neutral-dark:         #2E2E2E,
+    neutral-darkest:      #1A1A1A,
+    neutral-end:          #141414,
+    // Primary
+    primary-base:         #FF6E4F,
+    // Transparent
+    transparent:          transparent
+) !default;
+
+$ui-gradients: (
+    gradient-primary:     linear-gradient(90deg, #FF4F4F 0%, #BCFF4F 100%)
 ) !default;
