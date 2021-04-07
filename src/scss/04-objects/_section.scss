@@ -1,0 +1,21 @@
+.section {
+    --padding-y: #{rem(40px)};
+
+    padding: var(--padding-y) var(--section-padding-x);
+
+    &-title {
+        --margin-b: var(--space-huge);
+    }
+
+    @include media-breakpoint-up(laptop) {
+        &-tall {
+            --padding-y: #{rem(80px)};
+        }
+
+        &-title {
+            --margin-b: var(--space-gigantic);
+
+            max-width: 24ch;
+        }
+    }
+}
