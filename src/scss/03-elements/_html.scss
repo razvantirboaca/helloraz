@@ -1,0 +1,6 @@
+html {
+    // Layout
+    @each $name, $value in $layout {
+        --#{$name}: #{$value};
+    }
+}
