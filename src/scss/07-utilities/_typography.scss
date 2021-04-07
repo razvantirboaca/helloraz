@@ -1,15 +1,15 @@
 // Tokens
 
 .caption {
-    @include fs-variables($caption);
+    @include font-size($caption);
+}
+
+.body-small {
+    @include font-size($body-small);
 }
 
 .body {
-    @include fs-variables($body);
-}
-
-.body-large {
-    @include fs-variables($body-large);
+    @include font-size($body);
 }
 
 %heading {
@@ -23,15 +23,15 @@
 
 .heading {
     @extend %heading;
-    @include fs-variables($heading);
+    @include font-size($heading);
 }
 
 .heading-medium {
     @extend %heading;
-    @include fs-variables($heading-medium);
+    @include font-size($heading-medium);
 }
 
 .heading-large {
     @extend %heading;
-    @include fs-variables($heading-large);
+    @include font-size($heading-large);
 }

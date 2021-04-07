@@ -7,7 +7,7 @@
 }
 
 // Iterate through the breakpoints and output the font-sizes for each one of them
-@mixin fs-variables($token, $breakpoints: $grid-breakpoints) {
+@mixin font-size($token, $breakpoints: $grid-breakpoints) {
     @each $breakpoint, $value in $token {
         @if $breakpoint == null {
             @include make-fs($value);

@@ -2,13 +2,13 @@
 
 $spacer:                rem(4px) !default;
 $spacers: (
-    space-none:               0,
-    space-tiny:               $spacer,
-    space-small:              $spacer * 2,
-    space-medium:             $spacer * 3,
-    space-large:              $spacer * 4,
-    space-huge:               $spacer * 6,
-    space-gigantic:           $spacer * 8
+    space-none:         0,
+    space-tiny:         $spacer,
+    space-small:        $spacer * 2,
+    space-medium:       $spacer * 3,
+    space-large:        $spacer * 4,
+    space-huge:         $spacer * 6,
+    space-gigantic:     $spacer * 8
 ) !default;
 
 // Breakpoints
@@ -23,6 +23,15 @@ $grid-breakpoints: (
 
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
 @include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
+
+// Layout
+//
+// Set the max-width and specify the
+
+$layout: (
+    section-padding-x:      var(--space-gigantic),
+    layout-max-width:       rem(1120px)
+) !default;
 
 // Grid columns
 //
@@ -54,32 +63,32 @@ $code-font-size:        1em;
 $caption: (
     null:           (rem(13px), calc(16/13))
 );
-$body: (
-    null:           (rem(15px), calc(24/15)),
-    tablet:         (rem(15px), calc(24/15))
+$body-small: (
+    null:           (rem(16px), calc(24/16))
 );
-$body-large: (
-    null:           (rem(13px), calc(16/13)),
-    tablet:         (rem(12px), calc(16/12))
+$body: (
+    null:           (rem(16px), calc(24/16)),
+    tablet:         (rem(18px), calc(28/18))
 );
 $heading: (
-    null:           (rem(17px), calc(24/13)),
+    null:           (rem(18px), calc(24/18)),
     tablet:         (rem(22px), calc(24/22))
 );
 $heading-medium: (
-    null:           (rem(21px), calc(28/13)),
-    tablet:         (rem(26px), calc(32/13))
+    null:           (rem(21px), calc(28/21)),
+    tablet:         (rem(30px), calc(32/30))
 );
 $heading-large: (
-    null:           (rem(24px), calc(28/24)),
-    tablet:         (rem(36px), calc(48/36))
+    null:           (rem(24px), calc(32/24)),
+    tablet:         (rem(32px), calc(40/32)),
+    laptop:         (rem(38px), calc(48/38))
 );
 
 // Colors
 
 $ui-colors: (
     // Neutrals
-    neutral-lightest:     #EDEDED,
+    neutral-lightest:     #F7F7F7,
     neutral-light:        #BFBFBF,
     neutral-base:         #6B6B6B,
     neutral-dark:         #2E2E2E,
@@ -94,3 +103,138 @@ $ui-colors: (
 $ui-gradients: (
     gradient-primary:     linear-gradient(90deg, #FF4F4F 0%, #BCFF4F 100%)
 ) !default;
+
+// Utilities
+
+$enable-important-utilities:    false;
+
+$utilities: () !default;
+
+$utilities: map-merge(
+    (
+        "display": (
+            responsive: true,
+            print: true,
+            property: display,
+            class: d,
+            values: flex inline-flex block inline none
+        ),
+        "flex": (
+            responsive: true,
+            property: flex,
+            values: (fill: 1 1 auto)
+        ),
+        "flex-direction": (
+            responsive: true,
+            property: flex-direction,
+            class: flex,
+            values: row column row-reverse column-reverse
+        ),
+        "flex-grow": (
+            responsive: true,
+            property: flex-grow,
+            class: flex,
+            values: (
+                grow-0: 0,
+                grow-1: 1,
+            )
+        ),
+        "flex-shrink": (
+            responsive: true,
+            property: flex-shrink,
+            class: flex,
+            values: (
+                shrink-0: 0,
+                shrink-1: 1,
+            )
+        ),
+        "flex-wrap": (
+            responsive: true,
+            property: flex-wrap,
+            class: flex,
+            values: wrap nowrap wrap-reverse
+        ),
+        "gap": (
+            responsive: true,
+            property: gap,
+            class: gap,
+            values: $spacers
+        ),
+        "justify-content": (
+            responsive: true,
+            property: justify-content,
+            values: (
+                start: flex-start,
+                end: flex-end,
+                center: center,
+                between: space-between,
+                around: space-around,
+                evenly: space-evenly,
+            )
+        ),
+        "align-items": (
+            responsive: true,
+            property: align-items,
+            values: (
+                start: flex-start,
+                end: flex-end,
+                center: center,
+                baseline: baseline,
+                stretch: stretch,
+            )
+        ),
+        "align-content": (
+            responsive: true,
+            property: align-content,
+            values: (
+                start: flex-start,
+                end: flex-end,
+                center: center,
+                between: space-between,
+                around: space-around,
+                stretch: stretch,
+            )
+        ),
+        "align-self": (
+            responsive: true,
+            property: align-self,
+            values: (
+                auto: auto,
+                start: flex-start,
+                end: flex-end,
+                center: center,
+                baseline: baseline,
+                stretch: stretch,
+            )
+        ),
+        "order": (
+            responsive: true,
+            property: order,
+            values: (
+                first: -1,
+                0: 0,
+                1: 1,
+                2: 2,
+                3: 3,
+                4: 4,
+                5: 5,
+                last: 6,
+            ),
+        ),
+        "text-transform": (
+            property: text-transform,
+            class: text,
+            values: lowercase uppercase capitalize
+        ),
+        "visibility": (
+            property: visibility,
+            class: null,
+            values: (
+                visible: visible,
+                invisible: hidden,
+            )
+        )
+    ),
+    $utilities
+);
+

@@ -7,7 +7,7 @@
 body {
     --color: var(--color-neutral-light);
     --bg: var(--color-neutral-end);
-    @include fs-variables($body);
+    @include font-size($body);
     --font-family: var(--font-family-base);
     @supports (font-variation-settings: normal) {
         --font-family: var(--font-family-base-v);
@@ -19,9 +19,12 @@ body {
     font-family: var(--font-family);
     font-feature-settings: 'salt' on;
     text-align: left;
+    text-rendering: optimizeLegibility;
     background: var(--bg);
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 :focus,
@@ -40,18 +43,14 @@ hr {
     --color: var(--color-neutral-darkest);
 
     margin: 0;
+    height: 1px;
     color: var(--color);
     background-color: currentColor;
     border: 0;
-    opacity: 0;
-}
-
-hr:not([size]) {
-    height: 1px; // 2
 }
 
 %heading {
-    --margin-b: var(--space-large);
+    --margin-b: 0;
 
     margin-top: 0;
     margin-bottom: var(--margin-b);
@@ -85,7 +84,7 @@ h6 {
 }
 
 p {
-    --margin-b: var(--space-large);
+    --margin-b: var(--space-huge);
 
     margin-top: 0;
     margin-bottom: var(--margin-b);
@@ -138,7 +137,7 @@ blockquote {
 
 b,
 strong {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 small {
@@ -165,20 +164,17 @@ sup { top: -.5em; }
 // Links
 
 a {
-    --color: currentColor;
-    --border-color: var(--color-primary-base);
-    --hover-color: var(--color-primary-base);
-    --hover-border-color: var(--color-neutral-base);
+    --color: var(--color-primary-base);
+    --border-color: var(--color-neutral-base);
+    --hover-color: var(--color-neutral-lightest);
 
     color: var(--color);
     text-decoration-color: var(--border-color);
     text-underline-offset: 2px;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    transition: color .15s ease-in;
 
     &:hover {
         color: var(--hover-color);
-
-        text-decoration-color: var(--hover-border-color);
     }
 }
 
@@ -233,7 +229,7 @@ code {
 }
 
 figure {
-    --margin-bottom: var(--space-large);
+    --margin-bottom: 0;
 
     margin: 0 0 var(--margin-bottom);
 }
