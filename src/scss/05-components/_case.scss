@@ -1,0 +1,54 @@
+.case {
+    --bg: var(--color-neutral-darkest);
+    --gap: var(--space-gigantic);
+    --border-radius: #{rem(24px)};
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+    background-color: var(--bg);
+    border-radius: var(--border-radius);
+}
+
+.case-body {
+    --padding: calc(var(--space-gigantic) * 2) 0 calc(var(--space-gigantic) * 2) calc(var(--space-gigantic) * 2) ;
+
+    padding: var(--padding);
+}
+
+.case-logo {
+    --margin-b: var(--space-gigantic);
+
+    margin-bottom: var(--margin-b);
+}
+
+.case-role {
+    --margin-b: var(--space-large);
+
+    display: block;
+    margin-bottom: var(--margin-b);
+}
+
+.case-title {
+    --margin-b: var(--space-small);
+
+    margin-bottom: var(--margin-b);
+}
+
+.case-description {
+    --margin-b: var(--space-gigantic);
+
+    margin-bottom: var(--margin-b);
+}
+
+.case-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.case-video {
+    width: 100%;
+    max-width: 90%;
+    border-radius: 12px;
+}

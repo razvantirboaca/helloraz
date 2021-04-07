@@ -1,0 +1,38 @@
+.avatar {
+    $avatar-size: rem(102px);
+    --size: #{$avatar-size};
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: var(--size);
+    min-width: 1px;
+    height: var(--size);
+    padding: 3px;
+    border-radius: 50% 50% 0 50%;
+
+    &:before {
+        z-index: 1;
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        margin: -1px;
+        border-radius: inherit;
+        background-image: var(--color-gradient-primary);
+    }
+
+    &:after {
+        z-index: 2;
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        border-radius: inherit;
+        background-color: var(--color-neutral-end);
+    }
+
+    img {
+        z-index: 3;
+        max-width: 100%;
+        border-radius: inherit;
+    }
+}
