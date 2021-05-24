@@ -12,7 +12,7 @@
   "devDependencies": {
     "autoprefixer": "^10.2.5",
     "browser-sync": "^2.26.14",
-    "browserslist": "^4.16.3",
+    "browserslist": "^4.16.5",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.3",
