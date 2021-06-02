@@ -1,37 +1,23 @@
 // Tokens
 
-.caption {
-    @include font-size($caption);
+// Generate typography classes declared as tokens
+@each $token in map-keys($font-scale) {
+    .#{$token} {
+        @include font-scale($token);
+    }
 }
 
-.body-small {
-    @include font-size($body-small);
-}
-
-.body {
-    @include font-size($body);
-}
-
-%heading {
+[class*="heading"] {
     --font-family: var(--font-family-headings);
+
+    font-family: var(--font-family);
+    font-style: $headings-font-style;
     @supports (font-variation-settings: normal) {
         --font-family: var(--font-family-headings-v);
     }
-
     font-feature-settings: 'ordn' on, 'salt' on, 'ss01' on, 'ss02' on, 'ss03' on;
 }
 
-.heading {
-    @extend %heading;
-    @include font-size($heading);
-}
-
-.heading-medium {
-    @extend %heading;
-    @include font-size($heading-medium);
-}
-
-.heading-large {
-    @extend %heading;
-    @include font-size($heading-large);
+.text-uppercase {
+    letter-spacing: .2em;
 }
