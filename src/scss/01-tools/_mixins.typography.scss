@@ -1,38 +1,25 @@
-@mixin fluid-type($min-vw, $max-vw, $min-value, $max-value) {
-    $factor: 1 / ($max-vw - $min-vw) * ($max-value - $min-value);
-    $calc-value: unquote("#{ $min-value - ($min-vw * $factor) } + #{ 100vw * $factor }");
-
-    font-size: $min-value; // Fallback for older browsers
-    font-size: clamp(#{ if($min-value > $max-value, $max-value, $min-value) }, #{ $calc-value }, #{ if($min-value > $max-value, $min-value, $max-value) });
+// Utility function for mixin font-size
+@mixin make-font-scale($token, $breakpoint) {
+    --font-size: #{rem(font-scale-value($token, $breakpoint, font-size) + 0px)};
+    --line-height: #{font-scale-value($token, $breakpoint, line-height) / font-scale-value($token, $breakpoint, font-size)};
+    font-weight: font-scale-value($token, $breakpoint, font-weight);
+    letter-spacing: font-scale-value($token, $breakpoint, letter-spacing);
 }
 
 // Iterate through the breakpoints and output the font-sizes for each one of them
-@mixin font-size($token, $breakpoints: $grid-breakpoints) {
-    @each $breakpoint, $value in $token {
+@mixin font-scale($token) {
+    $token-breakpoints: map-get($font-scale, $token);
+    $breakpoints: map-keys($token-breakpoints);
+    @each $breakpoint in $breakpoints {
         @if $breakpoint == null {
-            @include make-fs($value);
+            @include make-font-scale($token, $breakpoint);
         }
         @else {
-            // If $values is a key that exists in $breakpoints, use the value
-            @if map-has-key($breakpoints, $breakpoint) {
-                $breakpoint: map-get($breakpoints, $breakpoint);
-
-                @media screen and (min-width: $breakpoint) {
-                    @include make-fs($value);
-                }
+            @include media-breakpoint-up($breakpoint) {
+                @include make-font-scale($token, $breakpoint);
             }
         }
     }
     font-size: var(--font-size);
     line-height: var(--line-height);
-}
-
-// Utility function for mixin font-size
-@mixin make-fs($value) {
-    @if type-of($value) == "list" {
-        --font-size: #{nth($value, 1)};
-        @if (length($value) > 1) {
-            --line-height: #{nth($value, 2)};
-        }
-    }
 }
