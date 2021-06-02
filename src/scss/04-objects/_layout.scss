@@ -2,5 +2,29 @@
     max-width: var(--layout-max-width);
     margin-left: auto;
     margin-right: auto;
+}
 
+.layout-narrow {
+
+    &.centered {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include media-breakpoint-up(tablet) {
+        --narrow-max-width: calc(100% / 12 * 10);
+
+        max-width: var(--narrow-max-width);
+    }
+
+    @include media-breakpoint-up(laptop) {
+        --narrow-max-width: calc(var(--layout-max-width) / 12 * 8);
+    }
+
+    @media (min-width: layout(layout-max-width)) {
+        .gallery-wide {
+            margin-left: calc((var(--layout-max-width) - var(--narrow-max-width)) / 2 * -1);
+            margin-right: calc((var(--layout-max-width) - var(--narrow-max-width)) / 2 * -1);
+        }
+    }
 }
