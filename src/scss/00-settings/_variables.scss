@@ -47,11 +47,10 @@ $gaps: $spacers !default;
 
 $font-size-root:        null;
 $font-weight-base:      400;
-$font-family-base:      'iA Writer Quattro', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-$font-family-base-v:    'iA Writer Quattro Variable', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+$font-family-base:      -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+$font-family-base-v:    'Mulish', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 
 
-$headings-font-weight:  700;
 $headings-font-family:  'Satoshi', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 $headings-font-family-v:'Satoshi Variable', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 $headings-font-style:   normal;
@@ -59,49 +58,103 @@ $headings-font-style:   normal;
 $font-family-code:      Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
 $code-font-size:        1em;
 
-// Tokens
-$caption: (
-    null:           (rem(13px), calc(16/13))
-);
-$body-small: (
-    null:           (rem(16px), calc(24/16))
-);
-$body: (
-    null:           (rem(16px), calc(24/16)),
-    tablet:         (rem(18px), calc(28/18))
-);
-$heading: (
-    null:           (rem(18px), calc(24/18)),
-    tablet:         (rem(22px), calc(24/22))
-);
-$heading-medium: (
-    null:           (rem(21px), calc(28/21)),
-    tablet:         (rem(30px), calc(32/30))
-);
-$heading-large: (
-    null:           (rem(24px), calc(32/24)),
-    tablet:         (rem(32px), calc(40/32)),
-    laptop:         (rem(38px), calc(48/38))
-);
+// Typo tokens
+$font-scale: (
+    caption: (
+        null: (
+            font-size:      13,
+            line-height:    16
+        )
+    ),
+    body-small: (
+        null: (
+            font-size:      15,
+            line-height:    24
+        )
+    ),
+    body: (
+        null: (
+            font-size:      16,
+            line-height:    24
+        ),
+        tablet: (
+            font-size:      18,
+            line-height:    28
+        )
+    ),
+    body-large: (
+        null: (
+            font-size:      18,
+            line-height:    28
+        ),
+        tablet: (
+            font-size:      22,
+            line-height:    32
+        )
+    ),
+    heading: (
+        null: (
+            font-size:      18,
+            line-height:    24,
+            font-weight:    700,
+            letter-spacing: -.01em
+        ),
+        tablet: (
+            font-size:      22,
+            line-height:    24
+        )
+    ),
+    heading-medium: (
+        null: (
+            font-size:      21,
+            line-height:    28,
+            font-weight:    700,
+            letter-spacing: -.01em
+        ),
+        tablet: (
+            font-size:      30,
+            line-height:    32
+        )
+    ),
+    heading-large: (
+        null: (
+            font-size:      24,
+            line-height:    32,
+            font-weight:    900,
+            letter-spacing: -.01em
+        ),
+        tablet: (
+            font-size:      32,
+            line-height:    40
+        ),
+        laptop: (
+            font-size:      48,
+            line-height:    56
+        )
+    )
+) !default;
 
 // Colors
 
 $ui-colors: (
     // Neutrals
-    neutral-lightest:     #F7F7F7,
-    neutral-light:        #BFBFBF,
-    neutral-base:         #6B6B6B,
-    neutral-dark:         #2E2E2E,
-    neutral-darkest:      #1A1A1A,
-    neutral-end:          #141414,
+    neutral-start:        hsl(0, 0%, 100%),
+    neutral-lightest:     hsl(0, 0%, 97%),
+    neutral-light:        hsl(0, 0%, 75%),
+    neutral-base:         hsl(0, 0%, 42%),
+    neutral-dark:         hsl(0, 0%, 20%),
+    neutral-darkest:      hsl(0, 0%, 15%),
+    neutral-end:          hsl(0, 0%, 12%),
     // Primary
-    primary-base:         #FF6E4F,
+    primary-base:         #ffbd2a,
     // Transparent
     transparent:          transparent
 ) !default;
 
 $ui-gradients: (
-    gradient-primary:     linear-gradient(90deg, #FF4F4F 0%, #BCFF4F 100%)
+    gradient-primary:     linear-gradient(90deg, #FF4F4F 0%, #BCFF4F 100%),
+    gradient-neutral:     linear-gradient(180deg, #171717 0%, #141414 100%),
+    gradient-header:      linear-gradient(180deg, hsla(0, 0%, 12%, 1) 0%, hsla(0, 0%, 12%, .8) 30%, hsla(0, 0%, 12%, .6) 45%, hsla(0, 0%, 12%, 0) 100%)
 ) !default;
 
 // Utilities
@@ -212,7 +265,7 @@ $utilities: map-merge(
             property: order,
             values: (
                 first: -1,
-                0: 0,
+                initial: 0,
                 1: 1,
                 2: 2,
                 3: 3,
@@ -220,6 +273,11 @@ $utilities: map-merge(
                 5: 5,
                 last: 6,
             ),
+        ),
+        "text-align": (
+            property: text-align,
+            class: text,
+            values: center right
         ),
         "text-transform": (
             property: text-transform,
