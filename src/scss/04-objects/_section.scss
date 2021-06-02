@@ -1,21 +1,20 @@
 .section {
-    --padding-y: #{rem(40px)};
+    --padding-y: #{rem(80px)};
 
     padding: var(--padding-y) var(--section-padding-x);
+}
 
-    &-title {
-        --margin-b: var(--space-huge);
+.section-title {
+    --margin-b: var(--space-gigantic);
+}
+
+@include media-breakpoint-up(laptop) {
+
+    .section-intro {
+        --padding-y: #{rem(160px)};
     }
 
-    @include media-breakpoint-up(laptop) {
-        &-tall {
-            --padding-y: #{rem(80px)};
-        }
-
-        &-title {
-            --margin-b: var(--space-gigantic);
-
-            max-width: 24ch;
-        }
+    .section-title {
+        --margin-b: #{rem(40px)};
     }
 }
