@@ -1,0 +1,13 @@
+figure {
+
+    img,
+    video {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+figcaption {
+    @include font-scale(caption);
+}
