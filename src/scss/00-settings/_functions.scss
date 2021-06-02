@@ -1,13 +1,24 @@
+@use "sass:map";
+@use "sass:list";
+
 // Get color from our UI color scheme
 @function ui-color($name) {
-    $color: map-get($ui-colors, $name);
-    @return $color;
+    @return map-get($ui-colors, $name);
 }
 
 // Get space unit from our space scheme
 @function spacer($name) {
-    $spacer: map-get($spacers, $name);
-    @return $spacer;
+    @return map-get($spacers, $name);
+}
+
+// Get layout values from our layout scheme
+@function layout($name) {
+    @return map-get($layout, $name);
+}
+
+// Get value from our font scale map
+@function font-scale-value($token, $breakpoint, $property) {
+    @return map-get(map-get(map-get($font-scale, $token), $breakpoint), $property);
 }
 
 @function strip-unit($number) {
