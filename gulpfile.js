@@ -44,6 +44,10 @@ Object.assign(config, {
     fonts: {
         src: `${config.src}/assets/fonts`,
         dest: `${config.dest}/assets/fonts`
+    },
+    video: {
+        src: `${config.src}/assets/video`,
+        dest: `${config.dest}/assets/video`
     }
 });
 
@@ -130,8 +134,24 @@ const img = () => gulp.src(`${config.img.src}/**/*.+(png|jpg|jpeg|gif|svg)`)
 const fonts = () => gulp.src(`${config.fonts.src}/**/*`)
     .pipe(gulp.dest(config.fonts.dest));
 
+const video = () => gulp.src(`${config.video.src}/**/*`)
+.pipe(gulp.dest(config.video.dest));
+
+const copyfiles = () => gulp.src([
+    //'./src/robots.txt',
+    './src/.htaccess'
+])
+    .pipe(gulp.dest(config.dest));
+
 const serve = () => browserSync.init({
-    server: config.dest,
+    server: {
+        baseDir: config.dest,
+        routes: {
+            '/about': 'dist/about.html',
+            '/work': 'dist/work.html',
+            '/cinema': 'dist/cinema.html'
+        }
+    },
     port: 4000,
     notify: false,
     reloadDelay: 500,
@@ -154,7 +174,7 @@ const watch = () => {
 
 
 
-const build = gulp.series(clean, html, js, css, svg, img, fonts);
+const build = gulp.series(clean, html, js, css, svg, img, fonts, video, copyfiles);
 
 
 
