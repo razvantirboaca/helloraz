@@ -1,17 +1,18 @@
 .navbar {
-    --height: #{rem(56)};
-    --padding-y: var(--space-tiny);
+    --padding-t: var(--space-tiny);
 
+    position: fixed;
+    z-index: 100;
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: baseline;
+    width: 100%;
     min-height: var(--height);
-    padding-top: var(--padding-y);
-    padding-bottom: var(--padding-y);
+    padding: var(--padding-t) var(--section-padding-x) 0;
+    background-image: var(--color-gradient-header);
 }
 
 .navbar-logo {
-    --line-height: #{rem(48px)} !important;
 
     a {
         --color: var(--color-neutral-lightest);
@@ -62,9 +63,8 @@
 
 @include media-breakpoint-up(laptop) {
     .navbar{
-        --height: #{rem(64px)};
+        --padding-t: var(--space-small);
 
-        max-width: var(--layout-max-width);
         margin-left: auto;
         margin-right: auto;
     }
