@@ -4,10 +4,10 @@
 
 // Create the .grid object using display:grid
 @mixin make-grid($gap: $gap-default) {
-    --gap-y: var(--none);
-    --gap-x: var(--#{$gap});
+    --gap-y: var(--space-none);
+    --gap-x: var(--space-none);
     display: grid;
-    gap: var(--gap-y, spacer(none)) var(--gap-x, spacer(#{$gap}));
+    gap: var(--gap-y) var(--gap-x);
 }
 
 // Specify .cols-# to generate the number of equal columns.
@@ -39,8 +39,8 @@
 
 // Create the .row object using display:flex
 @mixin make-row($gap: $gap-default) {
-    --gap-y: var(--none);
-    --gap-x: var(--#{$gap});
+    --gap-y: var(--space-none);
+    --gap-x: var(--space-none);
     display: flex;
     flex-wrap: wrap;
     // the negative margins are needed until we can use directly the gap property for flexbox
