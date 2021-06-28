@@ -17,8 +17,7 @@ $grid-breakpoints: (
     mobile:     0,
     tablet:     600px,
     laptop:     900px,
-    desktop:    1200px,
-    tv:         1800px
+    desktop:    1200px
 ) !default;
 
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
@@ -45,17 +44,22 @@ $gaps: $spacers !default;
 
 // Typography
 
+$font-weight-light:     300;
+$font-weight-normal:    400;
+$font-weight-medium:    500;
+$font-weight-bold:      700;
+
 $font-size-root:        null;
-$font-weight-base:      400;
-$font-family-base:      -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-$font-family-base-v:    'Mulish', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+$font-weight-base:      $font-weight-normal;
+$font-family-base:      "Work Sans", -apple-system, blinkmacsystemfont, avenir next, avenir, segoe ui, helvetica neue, helvetica, ubuntu, roboto, noto, arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+$font-family-base-v:    "Amulya Variable", "Work Sans", -apple-system, blinkmacsystemfont, avenir next, avenir, segoe ui, helvetica neue, helvetica, ubuntu, roboto, noto, arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
 
-
-$headings-font-family:  'Satoshi', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-$headings-font-family-v:'Satoshi Variable', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+$headings-font-weight:  $font-weight-medium;
+$headings-font-family:  "Work Sans", -apple-system, blinkmacsystemfont, avenir next, avenir, segoe ui, helvetica neue, helvetica, ubuntu, roboto, noto, arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+$headings-font-family-v: "Amulya Variable", "Work Sans" -apple-system, blinkmacsystemfont, avenir next, avenir, segoe ui, helvetica neue, helvetica, ubuntu, roboto, noto, arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
 $headings-font-style:   normal;
 
-$font-family-code:      Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+$font-family-code:      menlo, consolas, monaco, liberation mono, lucida console, monospace;
 $code-font-size:        1em;
 
 // Typo tokens
@@ -68,93 +72,92 @@ $font-scale: (
     ),
     body-small: (
         null: (
-            font-size:      15,
-            line-height:    24
+            font-size:      14,
+            line-height:    20
         )
     ),
     body: (
         null: (
             font-size:      16,
-            line-height:    24
+            line-height:    26
         ),
         tablet: (
-            font-size:      18,
+            font-size:      17,
             line-height:    28
         )
     ),
     body-large: (
         null: (
-            font-size:      18,
+            font-size:      22,
             line-height:    28
         ),
         tablet: (
-            font-size:      22,
+            font-size:      24,
             line-height:    32
         )
     ),
-    heading: (
+    heading-small: (
         null: (
-            font-size:      18,
-            line-height:    24,
-            font-weight:    700,
-            letter-spacing: -.01em
+            font-size:      20,
+            line-height:    24
         ),
         tablet: (
-            font-size:      22,
-            line-height:    24
+            font-size:      24,
+            line-height:    28
         )
     ),
     heading-medium: (
         null: (
             font-size:      21,
-            line-height:    28,
-            font-weight:    700,
-            letter-spacing: -.01em
+            line-height:    28
         ),
         tablet: (
             font-size:      30,
-            line-height:    32
+            line-height:    36
         )
     ),
     heading-large: (
         null: (
-            font-size:      24,
-            line-height:    32,
-            font-weight:    900,
-            letter-spacing: -.01em
+            font-size:      34,
+            line-height:    34,
+            font-weight:    $font-weight-bold
         ),
         tablet: (
-            font-size:      32,
-            line-height:    40
-        ),
-        laptop: (
             font-size:      48,
-            line-height:    56
+            line-height:    48
         )
     )
 ) !default;
 
 // Colors
 
-$ui-colors: (
+$colors: (
     // Neutrals
     neutral-start:        hsl(0, 0%, 100%),
     neutral-lightest:     hsl(0, 0%, 97%),
-    neutral-light:        hsl(0, 0%, 75%),
+    neutral-light:        hsl(0, 0%, 70%),
     neutral-base:         hsl(0, 0%, 42%),
     neutral-dark:         hsl(0, 0%, 20%),
-    neutral-darkest:      hsl(0, 0%, 15%),
-    neutral-end:          hsl(0, 0%, 12%),
+    neutral-darkest:      hsl(0, 0%, 17%),
+    neutral-end:          hsl(0, 0%, 14%),
     // Primary
-    primary-base:         #ffbd2a,
+    primary-base:         hsl(1, 80%, 53%),
     // Transparent
     transparent:          transparent
 ) !default;
 
-$ui-gradients: (
-    gradient-primary:     linear-gradient(90deg, #FF4F4F 0%, #BCFF4F 100%),
-    gradient-neutral:     linear-gradient(180deg, #171717 0%, #141414 100%),
-    gradient-header:      linear-gradient(180deg, hsla(0, 0%, 12%, 1) 0%, hsla(0, 0%, 12%, .8) 30%, hsla(0, 0%, 12%, .6) 45%, hsla(0, 0%, 12%, 0) 100%)
+$gradients: (
+    primary:        linear-gradient(90deg, #ff4f4f 0%, #bcff4f 100%)
+) !default;
+
+$ui-colors: (
+    body-bg:              var(--color-neutral-end),
+    text-primary:         var(--color-neutral-start),
+    text-subtle:          var(--color-neutral-light),
+    text-muted:           var(--color-neutral-base),
+    text-accent:          var(--color-primary-base),
+    link-color:           var(--color-neutral-start),
+    divider:              var(--color-neutral-dark)
 ) !default;
 
 // Utilities
@@ -295,4 +298,3 @@ $utilities: map-merge(
     ),
     $utilities
 );
-
