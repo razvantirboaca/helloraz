@@ -5,25 +5,24 @@
 }
 
 body {
-    --color: var(--color-neutral-light);
-    --bg: var(--color-neutral-end);
-    @include font-size($body);
+    --color: var(--text-primary);
+    --bg: var(--body-bg);
     --font-family: var(--font-family-base);
     @supports (font-variation-settings: normal) {
         --font-family: var(--font-family-base-v);
     }
 
+    @include font-scale(body);
     margin: 0;
     color: var(--color);
     font-weight: $font-weight-base;
     font-family: var(--font-family);
-    font-feature-settings: 'salt' on;
     text-align: left;
     text-rendering: optimizeLegibility;
     background: var(--bg);
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: subpixel-antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
@@ -40,17 +39,19 @@ body {
 }
 
 hr {
-    --color: var(--color-neutral-darkest);
 
-    margin: 0;
     height: 1px;
-    color: var(--color);
+    margin: 0;
     background-color: currentColor;
     border: 0;
 }
 
 %heading {
     --margin-b: 0;
+    --font-family: var(--font-family-headings);
+    @supports (font-variation-settings: normal) {
+        --font-family: var(--font-family-headings-v);
+    }
 
     margin-top: 0;
     margin-bottom: var(--margin-b);
@@ -61,18 +62,22 @@ hr {
 
 h1 {
     @extend %heading;
+    @include font-scale(heading-large);
 }
 
 h2 {
     @extend %heading;
+    @include font-scale(heading-medium);
 }
 
 h3 {
     @extend %heading;
+    @include font-scale(heading-small);
 }
 
 h4 {
     @extend %heading;
+    @include font-scale(body);
 }
 
 h5 {
@@ -84,7 +89,7 @@ h6 {
 }
 
 p {
-    --margin-b: var(--space-huge);
+    --margin-b: var(--space-gigantic);
 
     margin-top: 0;
     margin-bottom: var(--margin-b);
@@ -137,7 +142,7 @@ blockquote {
 
 b,
 strong {
-    font-weight: 600;
+    font-weight: $font-weight-bold;
 }
 
 small {
@@ -164,17 +169,18 @@ sup { top: -.5em; }
 // Links
 
 a {
-    --color: var(--color-primary-base);
-    --border-color: var(--color-neutral-base);
-    --hover-color: var(--color-neutral-lightest);
+    --color: var(--link-color);
+    --border-color: var(--color-primary-base);
+    --hover-border-color: var(--text-muted);
 
     color: var(--color);
     text-decoration-color: var(--border-color);
     text-underline-offset: 2px;
-    transition: color .15s ease-in;
+    transition: color .15s ease-in, text-decoration-color .15s ease-in;
 
     &:hover {
         color: var(--hover-color);
+        text-decoration-color: var(--hover-border-color);
     }
 }
 
@@ -191,8 +197,8 @@ pre,
 code,
 kbd,
 samp {
-    font-family: $font-family-code;
     font-size: 1em;
+    font-family: $font-family-code;
 }
 
 pre {
@@ -204,14 +210,14 @@ pre {
     margin-top: 0;
     margin-bottom: var(--margin-bottom);
     overflow: auto;
-    font-size: $code-font-size;
     color: var(--color);
+    font-size: $code-font-size;
     background: var(--bg);
 
     // Account for some code outputs that place code tags in pre tags
     code {
-        font-size: inherit;
         color: inherit;
+        font-size: inherit;
         word-break: normal;
     }
 }
@@ -219,8 +225,8 @@ pre {
 code {
     --color: var(--code-color);
 
-    font-size: $code-font-size;
     color: var(--color);
+    font-size: $code-font-size;
     word-wrap: break-word;
 
     a > & {
@@ -253,7 +259,7 @@ caption {
 }
 
 th {
-    font-weight: 700;
+    font-weight: $font-weight-bold;
     text-align: inherit;
     text-align: -webkit-match-parent;
 }
@@ -283,8 +289,8 @@ select,
 optgroup,
 textarea {
     margin: 0;
-    font-family: inherit;
     font-size: inherit;
+    font-family: inherit;
     line-height: inherit;
 }
 
