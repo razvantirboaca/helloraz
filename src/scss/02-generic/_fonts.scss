@@ -1,33 +1,40 @@
-
 @font-face {
-    font-family: 'Satoshi Variable';
-    src: url('../assets/fonts/satoshi/Satoshi-Variable.woff2') format('woff2 supports variations'),
-            url('../assets/fonts/satoshi/Satoshi-Variable.woff2') format('woff2-variations'),
-            url('../assets/fonts/satoshi/Satoshi-Variable.woff') format('woff supports variations'),
-            url('../assets/fonts/satoshi/Satoshi-Variable.woff') format('woff-variations'),
-            url('../assets/fonts/satoshi/Satoshi-Variable.ttf') format('truetype supports variations'),
-            url('../assets/fonts/satoshi/Satoshi-Variable.ttf') format('truetype-variations');
-    font-weight: 300 900;
-    font-display: swap;
+    font-weight: 300 700;
+    font-family: "Amulya Variable";
     font-style: normal;
+    src:
+        url("../assets/fonts/amulya/Amulya-Variable.woff2") format("woff2 supports variations"),
+        url("../assets/fonts/amulya/Amulya-Variable.woff2") format("woff2-variations"),
+        url("../assets/fonts/amulya/Amulya-Variable.woff") format("woff supports variations"),
+        url("../assets/fonts/amulya/Amulya-Variable.woff") format("woff-variations"),
+        url("../assets/fonts/amulya/Amulya-Variable.ttf") format("truetype supports variations"),
+        url("../assets/fonts/amulya/Amulya-Variable.ttf") format("truetype-variations");
+    font-display: swap;
+}
+
+/*
+@font-face {
+    font-weight: 300 700;
+    font-family: "Satoshi Variable";
+    font-style: normal;
+    src:
+        url("../assets/fonts/satoshi/Satoshi-Variable.woff2") format("woff2 supports variations"),
+        url("../assets/fonts/satoshi/Satoshi-Variable.woff2") format("woff2-variations"),
+        url("../assets/fonts/satoshi/Satoshi-Variable.woff") format("woff supports variations"),
+        url("../assets/fonts/satoshi/Satoshi-Variable.woff") format("woff-variations"),
+        url("../assets/fonts/satoshi/Satoshi-Variable.ttf") format("truetype supports variations"),
+        url("../assets/fonts/satoshi/Satoshi-Variable.ttf") format("truetype-variations");
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Satoshi';
-    src: url('../assets/fonts/satoshi/Satoshi-Bold.woff2') format('woff2'),
-         url('../assets/fonts/satoshi/Satoshi-Bold.woff') format('woff'),
-         url('../assets/fonts/satoshi/Satoshi-Bold.ttf') format('truetype');
     font-weight: 700;
-    font-display: swap;
+    font-family: "Satoshi";
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'Satoshi';
-    src: url('../assets/fonts/satoshi/Satoshi-Black.woff2') format('woff2'),
-         url('../assets/fonts/satoshi/Satoshi-Black.woff') format('woff'),
-         url('../assets/fonts/satoshi/Satoshi-Black.ttf') format('truetype');
-    font-weight: 900;
+    src:
+        url("../assets/fonts/satoshi/Satoshi-Bold.woff2") format("woff2"),
+        url("../assets/fonts/satoshi/Satoshi-Bold.woff") format("woff"),
+        url("../assets/fonts/satoshi/Satoshi-Bold.ttf") format("truetype");
     font-display: swap;
-    font-style: normal;
 }
+*/
