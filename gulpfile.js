@@ -1,9 +1,9 @@
 'use strict';
 
 const gulp = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
 const fileinclude = require('gulp-file-include');
 const webpack = require('webpack-stream');
-const sass = require('gulp-sass');
 const sassImporterTilde = require('node-sass-tilde-importer');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
@@ -84,7 +84,7 @@ const js = () => gulp.src(`${config.js.src}/**/*.js`)
 
 const css = () => {
     let stream = gulp.src(`${config.css.src}/**/*.scss`)
-        .pipe(sass({
+        .pipe(sass.sync({
             includePaths: ['./node_modules/'],
             importer: sassImporterTilde
         }).on('error', sass.logError))
