@@ -1,9 +1,0 @@
-.page-header {
-    --height: #{rem(56px)};
-
-    height: var(--height);
-
-    @include media-breakpoint-up(laptop) {
-        --height: #{rem(64px)};
-    }
-}
