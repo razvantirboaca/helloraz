@@ -6,7 +6,7 @@
 
 body {
     --color: var(--text-primary);
-    --bg: var(--body-bg);
+    --bg: var(--bg-primary);
     --font-family: var(--font-family-base);
     @supports (font-variation-settings: normal) {
         --font-family: var(--font-family-base-v);
@@ -20,6 +20,9 @@ body {
     text-align: left;
     text-rendering: optimizeLegibility;
     background: var(--bg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-font-smoothing: subpixel-antialiased;
@@ -47,7 +50,6 @@ hr {
 }
 
 %heading {
-    --margin-b: 0;
     --font-family: var(--font-family-headings);
     @supports (font-variation-settings: normal) {
         --font-family: var(--font-family-headings-v);
@@ -89,8 +91,6 @@ h6 {
 }
 
 p {
-    --margin-b: var(--space-gigantic);
-
     margin-top: 0;
     margin-bottom: var(--margin-b);
 }
@@ -142,7 +142,7 @@ blockquote {
 
 b,
 strong {
-    font-weight: $font-weight-bold;
+    font-weight: $font-weight-bold-base;
 }
 
 small {
@@ -170,7 +170,8 @@ sup { top: -.5em; }
 
 a {
     --color: var(--link-color);
-    --border-color: var(--color-primary-base);
+    --border-color: var(--link-border-color);
+    --hover-color: var(--color);
     --hover-border-color: var(--text-muted);
 
     color: var(--color);

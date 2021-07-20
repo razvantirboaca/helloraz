@@ -1,121 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset=“UTF-8”>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Raz Tirboaca - Designer based in sunny Barcelona</title>
-        <link rel="stylesheet" href="css/main.css">
+        <title>Raz Tirboaca - Designer based in Barcelona</title>
+        @@include('partials/_head.html')
     </head>
     <body>
-        <header class="site-header">
-            <div class="navbar">
-                <div class="navbar-logo heading">
-                    <a href="#">Hello, I'm <span class="name">Raz</span> <span class="wave">&#x1F44B;</span></a>
-                </div>
-                <nav class="navbar-nav nav caption">
-                    <a href="#" class="nav-link selected"><b>Home</b></a>
-                    <a href="#" class="nav-link"><b>About</b></a>
-                    <a href="#" class="nav-link"><b>Work</b></a>
-                </nav>
-                <div class="navbar-description caption">
-                    <span class="color-gradient-primary">Designer in &#x2600; Barcelona</span>
-                </div>
-            </div>
-        </header>
-        <section class="intro section section-tall">
-            <div class="layout">
-                <div class="hero">
-                    <figure class="avatar">
-                        <img src="assets/images/razvan.jpg" alt="Raz Tirboaca">
-                    </figure>
-                    <div class="hero-body">
-                        <h1 class="section-title heading-large color-neutral-lightest">
-                            Product designer focused on UX, Systems, Code, and SaaS<span class="color-primary-base">.</span>
-                        </h1>
-                        <p>I currently lead DesignOps at <a href="https://wefox.com" target="_blank">wefox</a>, Europe’s insurtech unicorn, where I do hands-on work and mentor designers responsible for shipping web and mobile apps in cross-functional teams.</p>
-                        <p>Before insurtech, I worked in e-commerce, travel, BI, media, advertising, classified ads, and gaming.
-                            <a href="about" class="d-none d-laptop-inline">
-                                More about me
-                                <span class="icon icon-arrow-right">
-                                    <svg><use xlink:href="#icon-arrow-right" xmlns:xlink="http://www.w3.org/1999/xlink" /></svg>
-                                </span>
-                            </a>
-                        </p>
-                        <div class="hero-social d-laptop-none">
-                            <a class="button button-subtle" href="about">
-                                <span class="button-text">About me</span>
-                            </a>
-                            <a class="button button-social" href="https://www.linkedin.com/in/razvantirboaca/" target="_blank">
-                                <svg class="icon-bg"><circle cx="30" cy="30" r="30"></circle></svg>
-                                <span class="icon icon-social-linkedin">
-                                    <svg><use xlink:href="#icon-social-linkedin" xmlns:xlink="http://www.w3.org/1999/xlink" /></svg>
-                                </span>
-                            </a>
-                            <a class="button button-social" href="https://twitter.com/razvantirboaca" target="_blank">
-                                <svg class="icon-bg"><circle cx="30" cy="30" r="30"></circle></svg>
-                                <span class="icon icon-social-twitter">
-                                    <svg><use xlink:href="#icon-social-twitter" xmlns:xlink="http://www.w3.org/1999/xlink" /></svg>
-                                </span>
-                            </a>
-                            <a class="button button-social" href="https://www.instagram.com/raz___van/" target="_blank">
-                                <svg class="icon-bg"><circle cx="30" cy="30" r="30"></circle></svg>
-                                <span class="icon icon-social-instagram">
-                                    <svg><use xlink:href="#icon-social-instagram" xmlns:xlink="http://www.w3.org/1999/xlink" /></svg>
-                                </span>
-                            </a>
+        <div class="page">
+            @@include('partials/_page-header.html', {page: 'home'})
+            <div class="page-content">
+                <section class="section">
+                    <div class="layout">
+                        <div class="article layout-narrow centered">
+                            <h1 class="hero text-accent">
+                                <span class="hero-line-1">Design is</span>
+                                <span class="hero-line-2">magic</span>
+                                <figure class="hero-image">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+                                        <defs>
+                                            <mask id="mask">
+                                                <path class="hero-image-photo" d="M282.45463842 76.41383404c20.2 20.9 36.3 39.7 46.1 60.8 9.8 21 13.4 44.4 11.3 66.5-2.2 22-10.1 42.9-20.5 63.1-10.3 20.2-23 39.8-41.1 58.5-18 18.8-41.4 36.7-67.2 41-25.8 4.3-54.2-4.9-83-17.4-28.9-12.5-58.3-28.3-66.1-52.8-7.9-24.5 5.9-57.9 11.2-88.1 5.3-30.3 2.3-57.4 12-78.7 9.8-21.2 32.3-36.4 55.9-55.4 23.5-18.9 48-41.4 72.4-41.3 24.4.2 48.8 23 69 43.8"/>
+                                            </mask>
+                                        </defs>
+                                        <path class="hero-image-bg" d="M290.93958128 69.2368195c18.1 13.4 26.8 39.9 34 63.6 7.1 23.6 12.7 44.5 20.2 69.6 7.5 25.2 17 54.7 12.8 83.6-4.2 28.8-21.9 57.1-47.5 65.2-25.5 8-58.9-4-88.6-10.2-29.8-6.2-55.9-6.6-82.1-14.3-26.1-7.8-52.2-22.9-70.8-45.6-18.5-22.7-29.6-52.8-27.7-81.9 1.8-29.1 16.7-57.1 32.6-84.4 15.9-27.3 32.9-53.8 57.2-63.7 24.2-9.8 55.7-2.9 85.1.7 29.4 3.6 56.8 3.9 74.8 17.4"/>
+                                        <image mask="url(#mask)" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/razvan.jpg" width="100%" height="100%"></image>
+                                        </svg>
+                                    </svg>
+                                </figure>
+                            </h1>
+                            <div class="text-center">
+                                <p>I'm <strong>Raz</strong>, head of DesignOps at <a href="https://wefox.com" target="_blank">wefox</a>.</p>
+                                <p>I spend the majority of the time on bridging design and code.</p>
+                                <p>I do it like it's 19<span class="text-accent">99!</span></p>
+                                <p>
+                                    <a class="button button-social" href="https://www.linkedin.com/in/razvantirboaca/" target="_blank">
+                                        <svg class="icon-bg" width="60" height="60"><circle cx="30" cy="30" r="30"></circle></svg>
+                                        <span class="icon icon-social-linkedin">
+                                            <svg width="20" height="20"><use xlink:href="#icon-social-linkedin" xmlns:xlink="http://www.w3.org/1999/xlink" /></svg>
+                                        </span>
+                                    </a>
+                                    <a class="button button-social" href="https://twitter.com/razvantirboaca" target="_blank">
+                                        <svg class="icon-bg" width="60" height="60"><circle cx="30" cy="30" r="30"></circle></svg>
+                                        <span class="icon icon-social-twitter">
+                                            <svg width="20" height="20"><use xlink:href="#icon-social-twitter" xmlns:xlink="http://www.w3.org/1999/xlink" /></svg>
+                                        </span>
+                                    </a>
+                                    <a class="button button-social" href="https://www.instagram.com/raz___van/" target="_blank">
+                                        <svg class="icon-bg" width="60" height="60"><circle cx="30" cy="30" r="30"></circle></svg>
+                                        <span class="icon icon-social-instagram">
+                                            <svg width="20" height="20"><use xlink:href="#icon-social-instagram" xmlns:xlink="http://www.w3.org/1999/xlink" /></svg>
+                                        </span>
+                                    </a>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="hero-social d-none d-laptop-flex">
-                        <a class="button button-social" href="https://www.linkedin.com/in/razvantirboaca/" target="_blank">
-                            <svg class="icon-bg"><circle cx="30" cy="30" r="30"></circle></svg>
-                            <span class="icon icon-social-linkedin">
-                                <svg><use xlink:href="#icon-social-linkedin" xmlns:xlink="http://www.w3.org/1999/xlink" /></svg>
-                            </span>
-                        </a>
-                        <a class="button button-social" href="https://twitter.com/razvantirboaca" target="_blank">
-                            <svg class="icon-bg"><circle cx="30" cy="30" r="30"></circle></svg>
-                            <span class="icon icon-social-twitter">
-                                <svg><use xlink:href="#icon-social-twitter" xmlns:xlink="http://www.w3.org/1999/xlink" /></svg>
-                            </span>
-                        </a>
-                        <a class="button button-social" href="https://www.instagram.com/raz___van/" target="_blank">
-                            <svg class="icon-bg"><circle cx="30" cy="30" r="30"></circle></svg>
-                            <span class="icon icon-social-instagram">
-                                <svg><use xlink:href="#icon-social-instagram" xmlns:xlink="http://www.w3.org/1999/xlink" /></svg>
-                            </span>
-                        </a>
-                    </div>
-                </div>
+                </section>
+               
             </div>
-        </section>
-        <hr class="layout">
-        <section class="section">
-            <div class="layout">
-                <h2 class="section-title heading-medium color-neutral-dark">Highlights<span class="color-primary-base">.</span></h2>
-                <div class="case">
-                    <div class="case-body">
-                        <svg class="case-logo" xmlns="http://www.w3.org/2000/svg" width="74" height="20" viewBox="0 0 75 20">
-                            <path d="M45.8 3.61c-.51-.35-1.14-.63-1.68-.63-.61 0-2.05.26-2.05 2.3v.51h3.18v2.88h-3.18v11.18h-3.24V8.68h-2.45V5.79h2.45v-.91c0-3.17 2.49-4.88 4.84-4.88 1.2 0 2.4.35 3.5 1.03L45.8 3.61z"/>
-                            <path fill-rule="evenodd" d="M28.8 5.62c-3.96 0-6.83 3.07-6.83 7.18 0 4.11 3.05 7.2 7.08 7.2 2.17 0 4.27-.87 5.65-2.5l-2.13-2.21c-.95 1.14-2.15 1.75-3.51 1.75-1.94 0-3.45-1.34-3.78-3.3h10.28v-.93c-.18-4.38-2.84-7.19-6.76-7.19zm-3.44 5.57c.5-1.55 1.86-2.6 3.42-2.6 1.77 0 2.93.91 3.3 2.6h-6.72z" clip-rule="evenodd"/>
-                            <path d="M15.08 15.68l-2.34-7.58001c-.52-1.68-1.11-2.1-2.23-2.1-1.12 0-1.71.42-2.23 2.1L5.94 15.68 3.5 5.78999H0L3.61 18.21C3.97 19.43 4.86 20 5.92 20c1.11 0 1.94-.72 2.29-1.8l2.29-7.13 2.29 7.13c.35 1.08 1.18 1.8 2.29 1.8 1.06 0 1.96-.57 2.31-1.79L21 5.78999h-3.5L15.08 15.68zM70.29 12.44c1.38-.83 3.44-3.71 3.77-6.66H70.7c-.04 2.25-1.99 4.39-3.07 5.07-1.08-.68-3.02-2.81-3.07-5.07H61.2c.33 2.94 2.39 5.83 3.77 6.66-1.38.78-3.82 4.13-4.03 7.4h3.27c.24-2.52 2.49-5.28 3.43-5.8.94.52 3.19 3.28 3.43 5.8h3.27c-.23-3.27-2.67-6.62-4.05-7.4z"/>
-                            <path fill-rule="evenodd" d="M45.95 12.81c0-4.03 3.14-7.19 7.14-7.19 4 0 7.14 3.16 7.14 7.19S57.09 20 53.09 20c-4.01 0-7.14-3.16-7.14-7.19zm3.18 0c0 2.45 1.67 4.22 3.96 4.22 2.28 0 3.93-1.78 3.93-4.22 0-2.45-1.65-4.22-3.93-4.22-2.3 0-3.96 1.78-3.96 4.22z" clip-rule="evenodd"/>
-                        </svg>
-                        <span class="case-role caption">
-                            <span class="color-gradient-primary">2021</span> &middot;
-                            HEAD OF DESIGNOPS
-                        </span>
-                        <h3 class="case-title heading-medium color-neutral-lightest">wefox IPO rebrand</h3>
-                        <p class="case-description">Refreshing our Design System with a new face.</p>
-                        <a class="button disabled" href="#">Read case study</a>
-                    </div>
-                    <div class="case-media">
-                        <video class="case-video" preload="auto" muted loop>
-                            <source src="assets/video/wefox.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <script src="js/main.js"></script>
+            @@include('partials/_foot.html')
+        </div>
     </body>
 </html>

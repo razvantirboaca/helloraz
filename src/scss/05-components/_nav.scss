@@ -1,18 +1,19 @@
 .nav {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     margin-bottom: 0;
     padding-left: 0;
     list-style: none;
 }
 
 .nav-link {
-    --padding-y: var(--space-large);
+    --padding-y: var(--space-medium);
     --padding-x: var(--space-medium);
-    --color: var(--color-neutral-base);
-    --hover-color: var(--color-neutral-lightest);
-    --selected-color: var(--color-neutral-lightest);
-    --disabled-color: var(--color-neutral-dark);
+    --color: var(--text-muted);
+    --hover-color: var(--color);
+    --selected-color: var(--text-primary);
+    --disabled-color: var(--text-muted);
 
     display: flex;
     align-items: center;

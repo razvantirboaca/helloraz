@@ -12,6 +12,20 @@
     font-display: swap;
 }
 
+@font-face {
+    font-weight: 300 700;
+    font-family: "Amulya Variable";
+    font-style: italic;
+    src:
+        url("../assets/fonts/amulya/Amulya-VariableItalic.woff2") format("woff2 supports variations"),
+        url("../assets/fonts/amulya/Amulya-VariableItalic.woff2") format("woff2-variations"),
+        url("../assets/fonts/amulya/Amulya-VariableItalic.woff") format("woff supports variations"),
+        url("../assets/fonts/amulya/Amulya-VariableItalic.woff") format("woff-variations"),
+        url("../assets/fonts/amulya/Amulya-VariableItalic.ttf") format("truetype supports variations"),
+        url("../assets/fonts/amulya/Amulya-VariableItalic.ttf") format("truetype-variations");
+    font-display: swap;
+}
+
 /*
 @font-face {
     font-weight: 300 700;

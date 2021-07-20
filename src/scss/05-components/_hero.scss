@@ -1,24 +1,56 @@
 .hero {
-    @include media-breakpoint-down(tablet) {
-        --padding-y: #{rem(48px)};
+    --margin-b: #{rem(120px)} !important;
+    --margin-t: #{rem(64px)};
+    --bg: var(--bg-subtle);
+
+    position: relative;
+    margin-top: var(--margin-t);
+    margin-bottom: var(--margin-b);
+    @include font-scale(heading-large);
+    text-align: center;
+}
+
+.hero span {
+    display: block;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, .15);
+    //transform: rotate(-3deg);
+    opacity: 1;
+    mix-blend-mode: color-dodge;
+}
+
+.hero-line-1 {
+    font-size: .66em;
+}
+
+.hero-image {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    z-index: -1;
+    width: 80%;
+    max-width: 280px;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+
+    svg {
+        width: 100%;
+        aspect-ratio: 1/1;
     }
-}
 
-.hero-title {
-    --margin-t: var(--space-gigantic);
-    --margin-b: var(--space-huge);
+    &-photo {
+        fill: rgba(255, 255, 255, .7);
+    }
 
-    margin-top: var(--margin-t);
-}
+    &-bg {
+        fill: var(--bg);
+    }
 
-.hero-subtitle {
-    --margin-t: 0;
-    --margin-b: var(--space-gigantic);
+    @include media-breakpoint-up(tablet) {
+        max-width: 320px;
+    }
 
-    margin-top: var(--margin-t);
-}
-
-.hero-image svg {
-    width: 100%;
-    height: auto;
+    @include media-breakpoint-up(laptop) {
+        max-width: 360px;
+    }
 }

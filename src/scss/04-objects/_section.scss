@@ -4,17 +4,9 @@
     padding: var(--padding-y) var(--section-padding-x);
 }
 
-.section-title {
-    --margin-b: var(--space-gigantic);
-}
-
 @include media-breakpoint-up(laptop) {
 
-    .section-intro {
-        --padding-y: #{rem(160px)};
-    }
-
-    .section-title {
-        --margin-b: #{rem(40px)};
+    .section {
+        --padding-y: #{rem(120px)};
     }
 }

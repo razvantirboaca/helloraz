@@ -1,44 +1,26 @@
-.case {
-    --bg: var(--color-neutral-darkest);
-    --gap: var(--space-gigantic);
-    --border-radius: #{rem(24px)};
+.case + .case {
+    --margin-t: #{rem(80px)};
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--gap);
-    background-color: var(--bg);
-    border-radius: var(--border-radius);
-}
-
-.case-body {
-    --padding: calc(var(--space-gigantic) * 2) 0 calc(var(--space-gigantic) * 2) calc(var(--space-gigantic) * 2) ;
-
-    padding: var(--padding);
-}
-
-.case-logo {
-    --margin-b: var(--space-gigantic);
-
-    margin-bottom: var(--margin-b);
-}
-
-.case-role {
-    --margin-b: var(--space-large);
-
-    display: block;
-    margin-bottom: var(--margin-b);
+    margin-top: var(--margin-t);
 }
 
 .case-title {
-    --margin-b: var(--space-small);
-
+    --margin-b: var(--space-large);
     margin-bottom: var(--margin-b);
 }
 
-.case-description {
-    --margin-b: var(--space-gigantic);
-
+.case-team {
+    --margin-b: var(--space-huge);
     margin-bottom: var(--margin-b);
+
+    > * {
+        display: block;
+    }
+
+    > * + * {
+        --margin-t: var(--space-small);
+        margin-top: var(--margin-t);
+    }
 }
 
 .case-media {
@@ -47,8 +29,16 @@
     justify-content: center;
 }
 
-.case-video {
-    width: 100%;
-    max-width: 90%;
-    border-radius: 12px;
+.case-figure {
+    max-width: 100%;
+}
+
+@include media-breakpoint-up(tablet) {
+    .case-body {
+        --padding: 0 var(--space-gigantic) 0 0;
+        padding: var(--padding);
+    }
+    .case-title {
+        --margin-b: var(--space-huge);
+    }
 }

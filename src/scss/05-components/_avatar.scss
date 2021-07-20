@@ -1,5 +1,6 @@
 .avatar {
-    $avatar-size: rem(80px);
+    $avatar-size: rem(48px);
+
     --size: #{$avatar-size};
 
     position: relative;
@@ -9,30 +10,29 @@
     min-width: 1px;
     height: var(--size);
     padding: 3px;
-    border-radius: 50% 50% 0 50%;
+    border-radius: 50%;
 
-    &:before {
-        z-index: 1;
-        content: '';
+    &::before,
+    &::after {
         position: absolute;
-        top: 0; right: 0; bottom: 0; left: 0;
-        margin: -1px;
+        inset: 0;
         border-radius: inherit;
-        background-image: var(--color-gradient-primary);
+    }
+    &::before {
+        z-index: 1;
+        margin: -1px;
+        background-image: var(--gradient-primary);
+        content: "";
     }
 
-    &:after {
+    &::after {
         z-index: 2;
-        content: '';
-        position: absolute;
-        top: 0; right: 0; bottom: 0; left: 0;
-        border-radius: inherit;
         background-color: var(--color-neutral-end);
+        content: "";
     }
 
     img {
         z-index: 3;
-        max-width: 100%;
         border-radius: inherit;
     }
 }

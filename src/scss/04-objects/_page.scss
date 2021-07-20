@@ -1,0 +1,21 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.page-header {
+    position: relative;
+    z-index: 2;
+    padding-right: var(--section-padding-x);
+    padding-left: var(--section-padding-x);
+}
+
+.page-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}

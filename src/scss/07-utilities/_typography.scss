@@ -7,17 +7,6 @@
     }
 }
 
-[class*="heading"] {
-    --font-family: var(--font-family-headings);
-
-    font-family: var(--font-family);
-    font-style: $headings-font-style;
-    @supports (font-variation-settings: normal) {
-        --font-family: var(--font-family-headings-v);
-    }
-    font-feature-settings: 'ordn' on, 'salt' on, 'ss01' on, 'ss02' on, 'ss03' on;
-}
-
-.text-uppercase {
-    letter-spacing: .2em;
+[class*="heading-"] {
+    @extend %heading;
 }

@@ -1,0 +1,42 @@
+.company {
+    --margin-b: var(--flow-b);
+
+    margin-bottom: var(--margin-b);
+}
+
+.company-name {
+    --margin-t: 0 !important;
+    --margin-b: var(--space-large) !important;
+}
+
+.company-date {
+    margin-left: var(--space-large);
+    color: var(--text-muted);
+}
+
+.role {
+    padding: var(--space-large) var(--space-huge);
+    border: 1px solid var(--color-neutral-dark);
+    border-radius: rem(16px);
+    transition: background .3s ease-in;
+
+    &:hover {
+        background: var(--color-neutral-darkest);
+    }
+
+    & + & {
+        --margin-t: var(--space-small);
+
+        margin-top: var(--margin-t);
+    }
+
+    .role-title {
+        --margin-b: var(--space-tiny);
+    }
+
+    .role-description {
+        --margin-b: 0;
+
+        color: var(--text-subtle);
+    }
+}

@@ -3,4 +3,7 @@ html {
     @each $name, $value in $layout {
         --#{$name}: #{$value};
     }
+
+    display: flex;
+    height: 100%;
 }
