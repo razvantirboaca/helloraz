@@ -13,10 +13,10 @@
 .hero span {
     display: block;
     text-transform: uppercase;
-    text-shadow: 4px 4px 0 rgba(0, 0, 0, .15);
-    //transform: rotate(-3deg);
+    text-shadow: 3px 3px 0 var(--text-muted);
+    transform: rotate(-3deg);
     opacity: 1;
-    mix-blend-mode: color-dodge;
+    mix-blend-mode: hard-light;
 }
 
 .hero-line-1 {
@@ -25,7 +25,7 @@
 
 .hero-image {
     position: absolute;
-    top: 30%;
+    top: 14%;
     left: 50%;
     z-index: -1;
     width: 80%;
@@ -47,10 +47,7 @@
     }
 
     @include media-breakpoint-up(tablet) {
-        max-width: 320px;
-    }
-
-    @include media-breakpoint-up(laptop) {
+        top: 20%;
         max-width: 360px;
     }
 }
