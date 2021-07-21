@@ -139,7 +139,8 @@ const video = () => gulp.src(`${config.video.src}/**/*`)
 
 const copyfiles = () => gulp.src([
     //'./src/robots.txt',
-    './src/.htaccess'
+    './src/.htaccess',
+    './CNAME'
 ])
     .pipe(gulp.dest(config.dest));
 
