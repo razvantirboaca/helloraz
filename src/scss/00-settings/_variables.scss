@@ -28,7 +28,7 @@ $grid-breakpoints: (
 // Set the max-width and specify the
 
 $layout: (
-    section-padding-x:      var(--space-gigantic),
+    section-padding-x:      $spacer * 6,
     layout-max-width:       rem(1120px)
 ) !default;
 
@@ -79,7 +79,7 @@ $font-scale: (
     ),
     body: (
         null: (
-            font-size:      22,
+            font-size:      18,
             line-height:    28
         ),
         tablet: (
@@ -116,8 +116,8 @@ $font-scale: (
             font-weight:    $font-weight-bold
         ),
         tablet: (
-            font-size:      120,
-            line-height:    104
+            font-size:      152,
+            line-height:    144
         )
     )
 ) !default;
@@ -131,11 +131,11 @@ $colors: (
     // Primary
     primary-100:    hsl(249, 100%, 96%),
     primary-200:    hsl(249, 90%, 93%),
-    primary-300:    hsl(249, 70%, 90%),
-    primary-400:    hsl(249, 74%, 64%),
+    primary-300:    hsl(249, 90%, 90%),
+    primary-400:    hsl(249, 90%, 68%),
     primary-500:    hsl(249, 70%, 55%),
-    primary-600:    hsl(249, 74%, 64%),
-    primary-700:    hsl(249, 73%, 59%),
+    primary-600:    hsl(249, 74%, 44%),
+    primary-700:    hsl(249, 73%, 34%),
     primary-800:    hsl(249, 76%, 22%),
     primary-900:    hsl(249, 73%, 17%),
     // Accent
@@ -156,7 +156,7 @@ $ui-colors: (
     bg-accent:            var(--color-accent-600),
     text-primary:         var(--color-primary-100),
     text-subtle:          var(--color-primary-400),
-    text-muted:           var(--color-primary-base),
+    text-muted:           var(--color-primary-600),
     text-accent:          var(--color-accent-600),
     link-color:           var(--text-primary),
     link-border-color:    var(--text-accent),
