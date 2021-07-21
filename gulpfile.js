@@ -172,11 +172,7 @@ const watch = () => {
         .on('change', gulp.series(browserSync.reload));
 };
 
-
-
 const build = gulp.series(clean, html, js, css, svg, img, fonts, video, copyfiles);
-
-
 
 exports.build = build;
 exports.serve = serve;
