@@ -111,13 +111,13 @@ $font-scale: (
     ),
     heading-large: (
         null: (
-            font-size:      80,
-            line-height:    72,
+            font-size:      66,
+            line-height:    64,
             font-weight:    $font-weight-bold
         ),
         tablet: (
-            font-size:      152,
-            line-height:    144
+            font-size:      144,
+            line-height:    136
         )
     )
 ) !default;
