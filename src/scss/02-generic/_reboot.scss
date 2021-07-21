@@ -176,12 +176,16 @@ a {
 
     color: var(--color);
     text-decoration-color: var(--border-color);
-    text-underline-offset: 2px;
+    text-underline-offset: 1px;
     transition: color .15s ease-in, text-decoration-color .15s ease-in;
 
     &:hover {
         color: var(--hover-color);
         text-decoration-color: var(--hover-border-color);
+    }
+
+    &.decoration-none {
+        text-decoration: none;
     }
 }
 
