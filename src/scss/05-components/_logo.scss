@@ -2,11 +2,13 @@
     --height: #{rem(60px)};
     --name-translate: 1px, 0;
     --color: var(--text-primary-reverse);
-    --bg: var(--text-accent);
+    --bg: var(--bg-accent);
 
     position: relative;
+    margin-right: var(--space-huge);
     font-weight: $font-weight-medium;
-    font-size: rem(font-scale-value(heading-medium, tablet, font-size) * 1px);
+    font-size: 1.875rem;
+    font-family: $headings-font-family-v;
     text-decoration: none;
 
     .logo-bulb {
