@@ -10,3 +10,7 @@
 [class*="heading-"] {
     @extend %heading;
 }
+
+.text-uppercase {
+    letter-spacing: .2em;
+}

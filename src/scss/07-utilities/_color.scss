@@ -1,5 +1,9 @@
-// Colors
-@each $name, $color in $ui-colors {
+[class*="theme-"] {
+    color: var(--text-primary);
+}
+
+// Make color utility classes
+@each $name, $color in $ui-colors-light {
     .#{$name} {
         color: var(--#{$name});
     }
