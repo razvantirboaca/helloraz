@@ -28,7 +28,7 @@ $grid-breakpoints: (
 // Set the max-width and specify the
 
 $layout: (
-    section-padding-x:      $spacer * 6,
+    section-padding-x:      rem(32px),
     layout-max-width:       rem(1120px)
 ) !default;
 
@@ -45,17 +45,17 @@ $gaps: $spacers !default;
 // Typography
 
 $font-weight-light:     300;
-$font-weight-normal:    400;
+$font-weight-regular:    400;
 $font-weight-medium:    600;
 $font-weight-bold:      700;
 
 $font-size-root:        null;
-$font-weight-base:      $font-weight-normal;
-$font-weight-bold-base: $font-weight-medium;
+$font-weight-base:      $font-weight-regular;
+$font-weight-bold-base: $font-weight-bold;
 $font-family-base:      -apple-system, blinkmacsystemfont, avenir next, avenir, segoe ui, helvetica neue, helvetica, ubuntu, roboto, noto, arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
-$font-family-base-v:    "Amulya Variable", -apple-system, blinkmacsystemfont, avenir next, avenir, segoe ui, helvetica neue, helvetica, ubuntu, roboto, noto, arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+$font-family-base-v:    -apple-system, blinkmacsystemfont, avenir next, avenir, segoe ui, helvetica neue, helvetica, ubuntu, roboto, noto, arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
 
-$headings-font-weight:  $font-weight-medium;
+$headings-font-weight:  $font-weight-bold;
 $headings-font-family:  -apple-system, blinkmacsystemfont, avenir next, avenir, segoe ui, helvetica neue, helvetica, ubuntu, roboto, noto, arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
 $headings-font-family-v: "Amulya Variable", -apple-system, blinkmacsystemfont, avenir next, avenir, segoe ui, helvetica neue, helvetica, ubuntu, roboto, noto, arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
 $headings-font-style:   normal;
@@ -71,19 +71,23 @@ $font-scale: (
             line-height:    16
         )
     ),
-    body-small: (
+    body: (
         null: (
             font-size:      16,
             line-height:    24
+        ),
+        tablet: (
+            font-size:      18,
+            line-height:    26
         )
     ),
-    body: (
+    body-large: (
         null: (
-            font-size:      18,
+            font-size:      20,
             line-height:    28
         ),
         tablet: (
-            font-size:      21,
+            font-size:      24,
             line-height:    32
         )
     ),
@@ -100,20 +104,20 @@ $font-scale: (
     ),
     heading-medium: (
         null: (
-            font-size:      21,
-            line-height:    28,
+            font-size:      40,
+            line-height:    48,
             font-weight:    $headings-font-weight
         ),
         tablet: (
-            font-size:      30,
-            line-height:    36
+            font-size:      64,
+            line-height:    72
         )
     ),
     heading-large: (
         null: (
             font-size:      66,
             line-height:    64,
-            font-weight:    $font-weight-bold
+            font-weight:    $headings-font-weight
         ),
         tablet: (
             font-size:      144,
@@ -122,45 +126,33 @@ $font-scale: (
     )
 ) !default;
 
-// Colors
-
-$colors: (
-    // Neytral
-    neutral-0:      hsl(0, 0%, 100%),
-    neutral-1000:   hsl(45, 10%, 16%),
-    // Primary
-    primary-100:    hsl(249, 100%, 96%),
-    primary-200:    hsl(249, 90%, 93%),
-    primary-300:    hsl(249, 90%, 90%),
-    primary-400:    hsl(249, 90%, 68%),
-    primary-500:    hsl(249, 70%, 55%),
-    primary-600:    hsl(249, 74%, 44%),
-    primary-700:    hsl(249, 73%, 34%),
-    primary-800:    hsl(249, 76%, 22%),
-    primary-900:    hsl(249, 73%, 17%),
-    // Accent
-    accent-200:     hsl(350, 85%, 95%),
-    accent-600:     hsl(350, 85%, 55%),
-    // Transparent
-    transparent:    transparent
-) !default;
-
-$gradients: (
-    primary:        linear-gradient(to right bottom, #1a0d63, #190d5e, #180d5a, #170c55, #160c51, #150c4e, #150c4c, #140c49, #140c47, #130b45, #130b44, #130a42)
-) !default;
-
-$ui-colors: (
+$ui-colors-light: (
     color-white:          var(--color-neutral-0),
-    bg-primary:           var(--gradient-primary),
-    bg-subtle:            var(--color-primary-800),
-    bg-accent:            var(--color-accent-600),
-    text-primary:         var(--color-primary-100),
-    text-subtle:          var(--color-primary-400),
-    text-muted:           var(--color-primary-600),
-    text-accent:          var(--color-accent-600),
-    link-color:           var(--text-primary),
+    bg-primary:           hsl(0, 0%, 96%),
+    bg-subtle:            hsl(0, 0%, 100%),
+    bg-accent:            hsl(350, 61%, 48%),
+    text-primary:         hsla(211, 45%, 8%, .96),
+    text-primary-reverse: hsla(0, 0%, 100%, .96),
+    text-subtle:          hsla(211, 45%, 12%, .68),
+    text-muted:           hsla(211, 45%, 12%, .12),
+    text-accent:          hsl(350, 61%, 48%),
+    link-color:           inherit,
     link-border-color:    var(--text-accent),
-    text-primary-reverse: var(--color-primary-900),
+    divider:              var(--color-primary-300)
+) !default;
+
+$ui-colors-dark: (
+    color-white:          hsl(0, 0%, 100%),
+    bg-primary:           hsl(0, 0%, 8%),
+    bg-subtle:            hsl(0, 0%, 12%),
+    bg-accent:            hsl(199, 98%, 48%),
+    text-primary:         hsla(211, 45%, 98%, .96),
+    text-primary-reverse: hsla(0, 0%, 8%, 1),
+    text-subtle:          hsla(211, 45%, 98%, .48),
+    text-muted:           hsla(211, 45%, 98%, .12),
+    text-accent:          hsl(199, 98%, 48%),
+    link-color:           inherit,
+    link-border-color:    var(--text-accent),
     divider:              var(--color-primary-300)
 ) !default;
 

@@ -21,7 +21,7 @@
     --disabled-border-color: var(--color-neutral-dark);
     --disabled-box-shadow: none;
 
-    @include font-scale(body-small);
+    @include font-scale(body);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -103,7 +103,7 @@
 
 // Social button
 
-.button-social {
+.button-circle {
     --padding-y: var(--space-large);
     --padding-x: var(--space-large);
     --color: var(--text-primary);
@@ -151,5 +151,16 @@
             opacity: 1;
             transition: transform .32s cubic-bezier(.175, .885, .32, 1.275);
         }
+    }
+}
+
+.button-theme {
+
+    [data-theme="dark"] & .icon-moon {
+        display: none;
+    }
+
+    [data-theme="light"] & .icon-sun {
+        display: none;
     }
 }
