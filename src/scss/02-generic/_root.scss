@@ -4,25 +4,30 @@
     --font-family-headings: #{$headings-font-family};
     --font-family-headings-v: #{$headings-font-family-v};
 
-    // Colors
-    @each $name, $color in $colors {
-        --color-#{$name}: #{$color};
-    }
-
-    // Gradients
-    @each $name, $color in $gradients {
-        --gradient-#{$name}: #{$color};
-    }
-
-    // UI
-    @each $name, $color in $ui-colors {
-        --#{$name}: #{$color};
-    }
-
     // Spacers
     @each $name, $value in $spacers {
         --#{$name}: #{$value};
     }
 
+    // Layout
+    @each $name, $value in $layout {
+        --#{$name}: #{$value};
+    }
+
     font-size: $font-size-root;
+}
+
+// Define themes
+//
+// Light theme
+.theme-light {
+    @each $name, $color in $ui-colors-light {
+        --#{$name}: #{$color};
+    }
+}
+// Dark theme
+.theme-dark {
+    @each $name, $color in $ui-colors-dark {
+        --#{$name}: #{$color};
+    }
 }
