@@ -1,18 +1,14 @@
 .section {
-    --padding-t: #{rem(80px)};
-    --padding-b: #{rem(80px)};
+    --padding-t: #{rem(56px)};
+    --padding-b: #{rem(56px)};
 
     width: 100%;
     max-width: 100%;
     padding: var(--padding-t) var(--section-padding-x) var(--padding-b);
 
     @include media-breakpoint-up(laptop) {
-        --padding-t: #{rem(120px)};
-        --padding-b: #{rem(120px)};
-
-        &.section-tall {
-            --padding-t: #{rem(240px)};
-        }
+        --padding-t: #{rem(80px)};
+        --padding-b: #{rem(80px)};
     }
 }
 
