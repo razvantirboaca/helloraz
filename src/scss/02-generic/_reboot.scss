@@ -47,11 +47,6 @@ hr {
 }
 
 %heading {
-    --font-family: var(--font-family-headings);
-    @supports (font-variation-settings: normal) {
-        --font-family: var(--font-family-headings-v);
-    }
-
     margin-top: 0;
     margin-bottom: var(--margin-b);
     font-weight: $headings-font-weight;

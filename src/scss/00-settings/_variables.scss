@@ -1,3 +1,12 @@
+// Layout
+//
+// Set the max-width and specify the
+
+$layout: (
+    section-padding-x:      rem(32px),
+    layout-max-width:       rem(1120px)
+) !default;
+
 // Spacing
 
 $spacer:                rem(4px) !default;
@@ -23,15 +32,6 @@ $grid-breakpoints: (
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
 @include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
 
-// Layout
-//
-// Set the max-width and specify the
-
-$layout: (
-    section-padding-x:      rem(32px),
-    layout-max-width:       rem(1120px)
-) !default;
-
 // Grid columns
 //
 // Set the number of columns and specify the width of the gutters.
@@ -53,7 +53,7 @@ $font-size-root:        null;
 $font-weight-base:      $font-weight-regular;
 $font-weight-bold-base: $font-weight-bold;
 $font-family-base:      -apple-system, blinkmacsystemfont, avenir next, avenir, segoe ui, helvetica neue, helvetica, ubuntu, roboto, noto, arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
-$font-family-base-v:    -apple-system, blinkmacsystemfont, avenir next, avenir, segoe ui, helvetica neue, helvetica, ubuntu, roboto, noto, arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+$font-family-base-v:    "Satoshi", -apple-system, blinkmacsystemfont, avenir next, avenir, segoe ui, helvetica neue, helvetica, ubuntu, roboto, noto, arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
 
 $headings-font-weight:  $font-weight-bold;
 $headings-font-family:  -apple-system, blinkmacsystemfont, avenir next, avenir, segoe ui, helvetica neue, helvetica, ubuntu, roboto, noto, arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
@@ -87,7 +87,7 @@ $font-scale: (
             line-height:    28
         ),
         tablet: (
-            font-size:      24,
+            font-size:      25,
             line-height:    32
         )
     ),
