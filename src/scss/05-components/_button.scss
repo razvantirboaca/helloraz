@@ -109,9 +109,7 @@
     --color: var(--text-primary);
     --bg: none;
     --border-radius: 0;
-    --hover-color: var(--text-primary-reverse);
-    --hover-shape-bg: var(--text-primary);
-    --active-color: var(--hover-color);
+    --hover-color: var(--text-primary);
 
     position: relative;
     border-width: 0;
@@ -138,18 +136,24 @@
         fill: var(--hover-shape-bg);
     }
 
-    &:hover,
-    &:active {
+    @include media-breakpoint-up(laptop) {
+        --hover-color: var(--text-primary-reverse);
+        --hover-shape-bg: var(--text-primary);
+        --active-color: var(--hover-color);
 
-        .icon {
-            transform: scale(1);
-            transition: transform .28s cubic-bezier(.175, .885, .32, 1.275) .04s;
-        }
+        &:hover,
+        &:active {
 
-        .icon-bg {
-            transform: scale(1);
-            opacity: 1;
-            transition: transform .32s cubic-bezier(.175, .885, .32, 1.275);
+            .icon {
+                transform: scale(1);
+                transition: transform .28s cubic-bezier(.175, .885, .32, 1.275) .04s;
+            }
+
+            .icon-bg {
+                transform: scale(1);
+                opacity: 1;
+                transition: transform .32s cubic-bezier(.175, .885, .32, 1.275);
+            }
         }
     }
 }
