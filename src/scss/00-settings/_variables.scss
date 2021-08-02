@@ -128,11 +128,11 @@ $font-scale: (
 
 $ui-colors-light: (
     color-white:          var(--color-neutral-0),
-    bg-primary:           hsl(0, 0%, 96%),
+    bg-primary:           hsl(211, 45%, 98%),
     bg-subtle:            hsl(0, 0%, 100%),
     bg-accent:            hsl(350, 61%, 48%),
     text-primary:         hsla(211, 45%, 8%, .96),
-    text-primary-reverse: hsla(0, 0%, 100%, .96),
+    text-primary-reverse: hsla(211, 45%, 98%, .96),
     text-subtle:          hsla(211, 45%, 12%, .68),
     text-muted:           hsla(211, 45%, 12%, .12),
     text-accent:          hsl(350, 61%, 48%),
@@ -143,11 +143,11 @@ $ui-colors-light: (
 
 $ui-colors-dark: (
     color-white:          hsl(0, 0%, 100%),
-    bg-primary:           hsl(0, 0%, 8%),
+    bg-primary:           hsl(211, 40%, 9%),
     bg-subtle:            hsl(0, 0%, 12%),
     bg-accent:            hsl(199, 98%, 48%),
     text-primary:         hsla(211, 45%, 98%, .96),
-    text-primary-reverse: hsla(0, 0%, 8%, 1),
+    text-primary-reverse: hsla(211, 40%, 9%, .96),
     text-subtle:          hsla(211, 45%, 98%, .48),
     text-muted:           hsla(211, 45%, 98%, .12),
     text-accent:          hsl(199, 98%, 48%),
