@@ -135,7 +135,7 @@ const fonts = () => gulp.src(`${config.fonts.src}/**/*`)
     .pipe(gulp.dest(config.fonts.dest));
 
 const video = () => gulp.src(`${config.video.src}/**/*`)
-.pipe(gulp.dest(config.video.dest));
+    .pipe(gulp.dest(config.video.dest));
 
 const copyfiles = () => gulp.src([
     //'./src/robots.txt',
