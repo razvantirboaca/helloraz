@@ -1,5 +1,3 @@
-import Darkmode from 'drkmd-js';
-
 (function () {
     'use strict';
 
