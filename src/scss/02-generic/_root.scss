@@ -15,19 +15,14 @@
     }
 
     font-size: $font-size-root;
-}
 
-// Define themes
-//
-// Light theme
-.theme-light {
-    @each $name, $color in $ui-colors-light {
-        --#{$name}: #{$color};
-    }
-}
-// Dark theme
-.theme-dark {
     @each $name, $color in $ui-colors-dark {
         --#{$name}: #{$color};
+    }
+
+    @media (prefers-color-scheme: light) {
+        @each $name, $color in $ui-colors-light {
+            --#{$name}: #{$color};
+        }
     }
 }
