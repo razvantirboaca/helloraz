@@ -48,6 +48,10 @@ Object.assign(config, {
     video: {
         src: `${config.src}/assets/video`,
         dest: `${config.dest}/assets/video`
+    },
+    favicon: {
+        src: `${config.src}/assets/favicon`,
+        dest: `${config.dest}/assets/favicon`
     }
 });
 
@@ -137,6 +141,9 @@ const fonts = () => gulp.src(`${config.fonts.src}/**/*`)
 const video = () => gulp.src(`${config.video.src}/**/*`)
     .pipe(gulp.dest(config.video.dest));
 
+const favicon = () => gulp.src(`${config.favicon.src}/**/*`)
+    .pipe(gulp.dest(config.favicon.dest));
+
 const copyfiles = () => gulp.src([
     //'./src/robots.txt',
     './src/.htaccess',
@@ -173,7 +180,7 @@ const watch = () => {
         .on('change', gulp.series(browserSync.reload));
 };
 
-const build = gulp.series(clean, html, js, css, svg, img, fonts, video, copyfiles);
+const build = gulp.series(clean, html, js, css, svg, img, fonts, video, favicon, copyfiles);
 
 exports.build = build;
 exports.serve = serve;
