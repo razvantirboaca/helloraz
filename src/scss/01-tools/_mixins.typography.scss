@@ -2,7 +2,7 @@
 
 // Utility function for mixin font-size
 @mixin make-font-scale($token, $breakpoint) {
-    --font-size: #{rem(font-scale-value($token, $breakpoint, font-size) + 0px)};
+    --font-size: #{rem(font-scale-value($token, $breakpoint, font-size) * 1px)};
     --line-height: #{math.div(font-scale-value($token, $breakpoint, line-height), font-scale-value($token, $breakpoint, font-size))};
     font-weight: font-scale-value($token, $breakpoint, font-weight);
     letter-spacing: font-scale-value($token, $breakpoint, letter-spacing);
