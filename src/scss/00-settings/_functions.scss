@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "sass:list";
+@use "sass:math";
 
 // Get color from our UI color scheme
 @function ui-color($name) {
@@ -64,7 +65,7 @@ $rem-px-only: false !default;
         @if type-of($value) == "number" and unit($value) == "rem" and $to == "px" {
         $result: append($result, $value / 1rem * $rem-baseline, $separator);
         } @else if type-of($value) == "number" and unit($value) == "px" and $to == "rem" {
-        $result: append($result, $value / $rem-baseline * 1rem, $separator);
+        $result: append($result, math.div($value, $rem-baseline) * 1rem, $separator);
         } @else if type-of($value) == "list" {
         $value-separator: rem-separator($value);
         $value: rem-convert($to, $value...);
