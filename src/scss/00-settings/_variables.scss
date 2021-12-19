@@ -104,6 +104,17 @@ $font-scale: (
     ),
     heading-medium: (
         null: (
+            font-size:      24,
+            line-height:    28,
+            font-weight:    $headings-font-weight
+        ),
+        tablet: (
+            font-size:      32,
+            line-height:    32
+        )
+    ),
+    heading-large: (
+        null: (
             font-size:      40,
             line-height:    40,
             font-weight:    $headings-font-weight
@@ -111,17 +122,6 @@ $font-scale: (
         tablet: (
             font-size:      64,
             line-height:    64
-        )
-    ),
-    heading-large: (
-        null: (
-            font-size:      66,
-            line-height:    64,
-            font-weight:    $headings-font-weight
-        ),
-        tablet: (
-            font-size:      144,
-            line-height:    136
         )
     )
 ) !default;
