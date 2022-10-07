@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html {{ site.lang }}} class="h-full bg-neutral-background">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if title %}{{ title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="title" content="{% if title %}{{ title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="theme-color" content="#0D0A1E">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    {% include 'meta.njk' %}
+    {% include 'analytics.njk' %}
+</head>
+<body class="antialiased h-full flex flex-col">
+    <header class="flex justify-center p-6 md:px-8">
+        Raz Tirboaca
+    </header>
+
+    {{ content | safe }}
+
+    <footer class="flex justify-center p-6 md:px-8">
+        <p class="text-sm text-neutral-text-weak">
+            Made in sunny Barcelona 🇪🇸
+        </p>
+    </footer>
+
+</body>
+</html>
