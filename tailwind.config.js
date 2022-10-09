@@ -20,7 +20,7 @@ module.exports = {
       'secondary': '#b1d255',
     },
     backgroundImage: {
-      'primary': 'linear-gradient(315deg, #00CDAC 0%, #02AAB0 74%)',
+      'primary': 'linear-gradient(315deg, #007dcd 0%, #02AAB0 74%)',
     },
   },
 }
