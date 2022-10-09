@@ -13,10 +13,10 @@ module.exports = {
     },
     colors: {
       'transparent': 'transparent',
-      'primary': 'rgb(255 255 255 / 96%)',
-      'primary-weak': 'rgb(255 255 255 / 36%)',
-      'primary-medium': 'rgb(255 255 255 / 64%)',
       'primary-strong': '#090c07',
+      'primary': '#ffffff',
+      'primary-medium': 'rgb(255 255 255 / 60%)',
+      'primary-weak': 'rgb(255 255 255 / 36%)',
       'secondary': '#b1d255',
     },
     backgroundImage: {
