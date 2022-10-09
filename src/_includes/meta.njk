@@ -1,0 +1,26 @@
+
+{# Favicon #}
+<link rel="mask-icon" sizes="any" href="{{ '/assets/images/favicon/favicon.svg' | url }}" color="#211131">
+<link rel="apple-touch-icon" sizes="192x192" href="{{ '/assets/images/favicon/apple-touch-icon.png' | url }}">
+<link rel="icon" type="image/png" sizes="192x192" href="{{ '/assets/images/favicon/favicon-192x192.png' | url }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/favicon/favicon-16x16.png' | url }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/images/favicon/favicon-32x32.png' | url }}">
+<link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon/favicon.svg' | url }}">
+<link rel="shortcut icon" href="{{ '/assets/images/favicon/favicon.ico' | url }}">
+<link rel="manifest" href="{{ '/manifest.json' | url }}" crossorigin="use-credentials">
+
+{# Facebook #}
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.url }}">
+<meta property="og:title" content="{% if title %}{{ title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:image" content="{{ site.url }}/assets/images/sm.jpg">
+
+{# Twitter #}
+<meta property="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@fotopulse">
+<meta name="twitter:creator" content="@razvantirboaca">
+<meta property="twitter:url" content="{{ site.url }}">
+<meta property="twitter:title" content="{% if title %}{{ title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="twitter:description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
+<meta property="twitter:image" content="{{ site.url }}/assets/images/sm.jpg">

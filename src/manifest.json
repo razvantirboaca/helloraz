@@ -1,0 +1,42 @@
+{
+    "lang": "en",
+    "dir": "ltr",
+    "name": "Raz Tirboaca",
+    "short_name": "Raz",
+    "description": "I'm Raz, a Barcelona based designer and maker. Welcome to my personal website!",
+    "icons": [
+        {
+            "src": "/assets/images/favicon/favicon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/favicon/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/favicon/favicon-192x192-maskable.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "background_color": "#090c07",
+    "start_url": "/index.html",
+    "display": "fullscreen",
+    "display_override": [
+        "window-controls-overlay"
+    ],
+    "orientation": "natural",
+    "share_target": {
+        "action": "/share/",
+        "method": "GET",
+        "enctype": "application/x-www-form-urlencoded",
+        "params": {
+            "title": "Raz Tirboaca",
+            "text": "I'm Raz, a Barcelona based designer and maker. Welcome to my personal website!",
+            "url": "https://helloraz.com"
+        }
+    }
+}
