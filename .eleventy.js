@@ -15,6 +15,7 @@ module.exports = function  (eleventyConfig) {
     // Markdown Parsing
 
     // Pass-through files
+    eleventyConfig.addPassthroughCopy("./src/assets/scripts/");
     eleventyConfig.addPassthroughCopy("./src/assets/images/");
     eleventyConfig.addPassthroughCopy("./src/manifest.json");
 
