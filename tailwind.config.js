@@ -20,7 +20,12 @@ module.exports = {
       'secondary': '#b1d255',
     },
     backgroundImage: {
-      'primary': 'linear-gradient(315deg, #007dcd 0%, #02AAB0 74%)',
+      'primary': 'linear-gradient(315deg, #4cb8c4 0%, #3cd3ad 86%)',
+    },
+    extend: {
+      fontSize: {
+        '3xl': ['1.7rem', '2rem'],
+      },
     },
   },
 }
