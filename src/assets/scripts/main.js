@@ -3,9 +3,9 @@ const elements = document.querySelectorAll('.line');
 function handleIntersection(entries) {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('text-primary')
+            entry.target.classList.add('text-neutral')
         } else {
-            entry.target.classList.remove('text-primary')
+            entry.target.classList.remove('text-neutral')
         }
     });
 }
