@@ -14,7 +14,7 @@ var observer = new IntersectionObserver(handleIntersection);
 
 var config = {
     root:null,
-    rootMargin: '-30% 0% -66% 0%',
+    rootMargin: '-30% 0% -63% 0%',
     threshold: 0 
 }
   
