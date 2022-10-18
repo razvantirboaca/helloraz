@@ -3,7 +3,7 @@
     "dir": "ltr",
     "name": "Raz Tirboaca",
     "short_name": "Raz",
-    "description": "I'm Raz, a Barcelona based designer and maker. Welcome to my personal website!",
+    "description": "I'm Raz, a Barcelona based designer and maker.",
     "icons": [
         {
             "src": "/assets/images/favicon/favicon-192x192.png",
@@ -35,7 +35,7 @@
         "enctype": "application/x-www-form-urlencoded",
         "params": {
             "title": "Raz Tirboaca",
-            "text": "I'm Raz, a Barcelona based designer and maker. Welcome to my personal website!",
+            "text": "I'm Raz, a Barcelona based designer and maker.",
             "url": "https://helloraz.com"
         }
     }
