@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html {{ site.lang }}} class="h-full bg-neutral-strong bg-fixed text-neutral-medium font-medium">
+<html lang="{{ site.lang }}" class="h-full">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,14 +11,15 @@
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Figtree:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Figtree:wght@400;500;800&display=swap" rel="stylesheet">
     <script src="{{ '/assets/scripts/main.js' | url }}" defer></script>
     {% include 'meta.njk' %}
-    {% include 'analytics.njk' %}
 </head>
-<body class="antialiased h-full flex flex-col">
+<body class="antialiased h-full flex flex-col bg-neutral text-neutral-medium">
 
     {{ content | safe }}
 
+
+    {% include 'analytics.njk' %}
 </body>
 </html>
