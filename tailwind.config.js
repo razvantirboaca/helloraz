@@ -26,7 +26,8 @@ module.exports = {
     },
     extend: {
       fontSize: {
-        '3xl': ['1.7rem', '2rem'],
+        'xl': ['1.25rem', '1.5'],
+        '2xl': ['1.75rem', '1.2'],
       },
     },
   },
@@ -34,12 +35,12 @@ module.exports = {
     plugin(function ({ addBase }) {
       addBase({
         ':root': {
-          '--color-neutral': 'rgb(250 250 250)',
+          '--color-neutral': 'rgb(247 247 247)',
           '--color-neutral-weakest': 'rgb(26 30 32 / 10%)',
           '--color-neutral-weak': 'rgb(26 30 32 / 32%)',
           '--color-neutral-medium': 'rgb(26 30 32 / 72%)',
           '--color-neutral-strong': 'rgb(26 30 32)',
-          '--color-primary': 'rgb(0 181 40)',
+          '--color-primary': 'rgb(52 168 71)',
           '--gradient-primary-start': 'rgb(-149 187 206)',
           '--gradient-primary-end': 'rgb(-236 219 165)',
         },
