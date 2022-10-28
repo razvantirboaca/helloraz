@@ -13,7 +13,7 @@ module.exports = function  (eleventyConfig) {
     // Transforms
     Object.keys(transforms).forEach((transformName) => {
         eleventyConfig.addTransform(transformName, transforms[transformName])
-    })
+    });
 
     // Asset Watch Targets
     eleventyConfig.addWatchTarget("./src/assets/");
