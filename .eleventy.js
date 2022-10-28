@@ -1,4 +1,5 @@
 const filters = require('./utils/filters.js');
+const transforms = require('./utils/transforms.js');
 
 module.exports = function  (eleventyConfig) {
 
@@ -8,6 +9,11 @@ module.exports = function  (eleventyConfig) {
     Object.keys(filters).forEach((filterName) => {
         eleventyConfig.addFilter(filterName, filters[filterName])
     });
+
+    // Transforms
+    Object.keys(transforms).forEach((transformName) => {
+        eleventyConfig.addTransform(transformName, transforms[transformName])
+    })
 
     // Asset Watch Targets
     eleventyConfig.addWatchTarget("./src/assets/");
