@@ -47,11 +47,11 @@ module.exports = {
         },
         '@media (prefers-color-scheme: dark)': {
           ':root': {
-            '--color-neutral': 'rgb(15 17 19)',
-            '--color-neutral-weakest': 'rgb(255 255 255 / 10%)',
+            '--color-neutral': 'rgb(1 9 32)',
+            '--color-neutral-weakest': 'rgb(255 255 255 / 6%)',
             '--color-neutral-weak': 'rgb(255 255 255 / 24%)',
-            '--color-neutral-medium': 'rgb(255 255 255 / 72%)',
-            '--color-neutral-strong': 'rgb(255 255 255 / 90%)',
+            '--color-neutral-medium': 'rgb(255 255 255 / 80%)',
+            '--color-neutral-strong': 'rgb(255 255 255 / 94%)',
           }
         }
       })
