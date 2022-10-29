@@ -24,6 +24,7 @@ module.exports = function  (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/assets/scripts/");
     eleventyConfig.addPassthroughCopy("./src/assets/images/");
     eleventyConfig.addPassthroughCopy("./src/manifest.json");
+    eleventyConfig.addPassthroughCopy("./old/portfolio/");
 
     // Deep-Merge
     eleventyConfig.setDataDeepMerge(true);
