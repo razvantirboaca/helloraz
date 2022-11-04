@@ -27,8 +27,10 @@ module.exports = {
     extend: {
       fontSize: {
         'xl': ['1.25rem', '1.6'],
-        '2xl': ['1.65rem', '1.2'],
-        '4xl': ['2.5rem', '1.2'],
+        '2xl': ['1.5rem', '1.35'],
+        '3xl': ['1.75rem', '1.2'],
+        '4xl': ['2.25rem', '1.2'],
+        '5xl': ['2.5rem', '1.15'],
       },
     },
   },
@@ -39,7 +41,7 @@ module.exports = {
           '--color-neutral': 'rgb(247 247 247)',
           '--color-neutral-weakest': 'rgb(26 30 32 / 16%)',
           '--color-neutral-weak': 'rgb(26 30 32 / 32%)',
-          '--color-neutral-medium': 'rgb(26 30 32 / 86%)',
+          '--color-neutral-medium': 'rgb(26 30 32 / 82%)',
           '--color-neutral-strong': 'rgb(26 30 32)',
           '--color-primary': 'rgb(52 168 71)',
           '--gradient-primary-start': 'rgb(-149 187 206)',
@@ -48,7 +50,7 @@ module.exports = {
         '@media (prefers-color-scheme: dark)': {
           ':root': {
             '--color-neutral': 'rgb(1 9 32)',
-            '--color-neutral-weakest': 'rgb(255 255 255 / 6%)',
+            '--color-neutral-weakest': 'rgb(255 255 255 / 16%)',
             '--color-neutral-weak': 'rgb(255 255 255 / 24%)',
             '--color-neutral-medium': 'rgb(255 255 255 / 80%)',
             '--color-neutral-strong': 'rgb(255 255 255 / 94%)',
