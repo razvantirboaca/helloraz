@@ -38,7 +38,7 @@ module.exports = {
     plugin(function ({ addBase }) {
       addBase({
         ':root': {
-          '--color-neutral': 'rgb(247 247 247)',
+          '--color-neutral': 'rgb(251 251 251)',
           '--color-neutral-weakest': 'rgb(26 30 32 / 16%)',
           '--color-neutral-weak': 'rgb(26 30 32 / 32%)',
           '--color-neutral-medium': 'rgb(26 30 32 / 82%)',
