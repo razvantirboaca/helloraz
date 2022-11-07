@@ -20,9 +20,7 @@ module.exports = {
       'neutral-medium': 'var(--color-neutral-medium)',
       'neutral-strong': 'var(--color-neutral-strong)',
       'primary': 'var(--color-primary)',
-    },
-    backgroundImage: {
-      'primary-gradient': 'linear-gradient(315deg, var(--gradient-primary-start) 0%, var(--gradient-primary-end) 86%)',
+      'secondary': 'var(--color-secondary)',
     },
     extend: {
       fontSize: {
@@ -38,14 +36,13 @@ module.exports = {
     plugin(function ({ addBase }) {
       addBase({
         ':root': {
-          '--color-neutral': 'rgb(251 251 251)',
+          '--color-neutral': 'rgb(252 252 252)',
           '--color-neutral-weakest': 'rgb(26 30 32 / 16%)',
           '--color-neutral-weak': 'rgb(26 30 32 / 32%)',
           '--color-neutral-medium': 'rgb(26 30 32 / 82%)',
           '--color-neutral-strong': 'rgb(26 30 32)',
           '--color-primary': 'rgb(52 168 71)',
-          '--gradient-primary-start': 'rgb(-149 187 206)',
-          '--gradient-primary-end': 'rgb(-236 219 165)',
+          '--color-secondary': 'rgb(251 126 168)',
         },
         '@media (prefers-color-scheme: dark)': {
           ':root': {
