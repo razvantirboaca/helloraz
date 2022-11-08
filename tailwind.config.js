@@ -22,6 +22,11 @@ module.exports = {
       'primary': 'var(--color-primary)',
       'secondary': 'var(--color-secondary)',
     },
+    borderRadius: {
+      'none': '0',
+      DEFAULT: '1.5rem',
+      'full': '9999px',
+    },
     boxShadow: {
       'sm': '0.2px 0.3px 0.4px hsl(var(--shadow-color) / 0.24), 0.2px 0.5px 0.6px -1.2px hsl(var(--shadow-color) / 0.24), 0.5px 1.2px 1.5px -2.5px hsl(var(--shadow-color) / 0.24)',
       'md': '0.2px 0.3px 0.4px hsl(var(--shadow-color) / 0.25), 0.5px 1px 1.3px -0.8px hsl(var(--shadow-color) / 0.25), 1.1px 2.4px 3px -1.7px hsl(var(--shadow-color) / 0.25), 2.7px 5.8px 7.2px -2.5px hsl(var(--shadow-color) / 0.25)',
@@ -45,7 +50,7 @@ module.exports = {
           '--color-neutral': 'rgb(252 252 252)',
           '--color-neutral-weakest': 'rgb(26 30 32 / 4%)',
           '--color-neutral-weak': 'rgb(26 30 32 / 16%)',
-          '--color-neutral-medium': 'rgb(26 30 32 / 82%)',
+          '--color-neutral-medium': 'rgb(26 30 32 / 72%)',
           '--color-neutral-strong': 'rgb(26 30 32)',
           '--color-primary': 'rgb(52 168 71)',
           '--color-secondary': 'rgb(251 126 168)',
@@ -54,9 +59,9 @@ module.exports = {
         '@media (prefers-color-scheme: dark)': {
           ':root': {
             '--color-neutral': 'rgb(1 9 32)',
-            '--color-neutral-weakest': 'rgb(255 255 255 / 4%)',
+            '--color-neutral-weakest': 'rgb(255 255 255 / 6%)',
             '--color-neutral-weak': 'rgb(255 255 255 / 16%)',
-            '--color-neutral-medium': 'rgb(255 255 255 / 80%)',
+            '--color-neutral-medium': 'rgb(255 255 255 / 72%)',
             '--color-neutral-strong': 'rgb(255 255 255 / 94%)',
             '--shadow-color': '225deg 94% 6%',
           }
