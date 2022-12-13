@@ -3,7 +3,7 @@
     "dir": "ltr",
     "name": "Raz Tirboaca",
     "short_name": "Raz",
-    "description": "I'm Raz, a Barcelona based designer and maker.",
+    "description": "Barcelona–based designer and maker.",
     "icons": [
         {
             "src": "/assets/images/favicon/favicon-192x192.png",
@@ -23,7 +23,7 @@
         }
     ],
     "background_color": "#090c07",
-    "start_url": "/index.html",
+    "start_url": "/",
     "display": "fullscreen",
     "display_override": [
         "window-controls-overlay"
@@ -35,7 +35,7 @@
         "enctype": "application/x-www-form-urlencoded",
         "params": {
             "title": "Raz Tirboaca",
-            "text": "I'm Raz, a Barcelona based designer and maker.",
+            "text": "Barcelona–based designer and maker.",
             "url": "https://helloraz.com"
         }
     }
