@@ -53,7 +53,7 @@ module.exports = {
           '--color-neutral-weak': 'hsl(210deg 8% 92%)',
           '--color-neutral-medium': 'hsl(210deg 8% 46%)',
           '--color-neutral-strong': 'hsl(210deg 4% 4%)',
-          '--color-primary': 'rgb(52 168 71)',
+          '--color-primary': 'hsl(189deg 76% 34%)',
           '--color-secondary': 'rgb(251 126 168)',
           '--shadow-color': '210deg 20% 72%',
         }
