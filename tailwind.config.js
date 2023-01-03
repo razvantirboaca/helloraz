@@ -49,7 +49,7 @@ module.exports = {
       addBase({
         ':root': {
           '--color-neutral': 'hsl(0deg 0% 100%)',
-          '--color-neutral-weakest': 'hsl(210deg 12% 98%)',
+          '--color-neutral-weakest': 'hsl(210deg 1% 97%)',
           '--color-neutral-weak': 'hsl(210deg 8% 92%)',
           '--color-neutral-medium': 'hsl(210deg 8% 46%)',
           '--color-neutral-strong': 'hsl(210deg 4% 4%)',
